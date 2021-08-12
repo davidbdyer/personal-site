@@ -1,0 +1,65 @@
+:root {
+	--trans-black: hsla(0, 0%, 0%, .1);
+	--trans-white: hsla(0, 0%, 100%, .1);
+	--trans-black-text: hsla(0, 0%, 0%, .4);
+}
+
+body {
+	background: color(srgb 0.175 0.175 0.175);
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 4em;
+	padding-inline: 1em;
+}
+
+header p {
+	font-size: 2em;
+	margin-block: auto;
+
+}
+
+header img {
+	height: 2em;
+}
+
+li {
+	margin: 1vw;
+}
+
+.trans-black-background {
+	background: var(--trans-black);
+}
+
+#animation-toggle {
+	font-size: .5em;
+	max-width: 18ch;
+	text-align: right;
+	float: right;
+	border-top: 0;
+	border-right: 0;
+	border-radius: 0 0 0 4px;
+	border-color: var(--trans-black);
+	color: var(--trans-black-text);
+	transition: ease-in-out 500ms;
+}
+
+#animation-toggle:hover {
+	background-color: var(--trans-black);
+}
+
+/* bootstrap modification */
+.card {
+	transition: transform 500ms ease;
+}
+
+.card:hover {
+	transform: scale(1.05);
+}
+
+.card-text {
+	min-height: 4em;
+}
