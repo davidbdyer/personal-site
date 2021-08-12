@@ -2,10 +2,11 @@
 	--trans-black: hsla(0, 0%, 0%, .1);
 	--trans-white: hsla(0, 0%, 100%, .1);
 	--trans-black-text: hsla(0, 0%, 0%, .4);
+	--solid-background: hsla(206, 51%, 55%, 1.00);
 }
 
 body {
-	background: color(srgb 0.175 0.175 0.175);
+	background-color: var(--solid-background);
 }
 
 header {
