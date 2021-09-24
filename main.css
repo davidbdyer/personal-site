@@ -1,5 +1,5 @@
 :root {
-	--trans-black: hsla(0, 0%, 0%, .1);
+	--trans-background: hsla(0, 0%, 0%, .1);
 	--trans-white: hsla(0, 0%, 100%, .1);
 	--trans-black-text: hsla(0, 0%, 0%, .4);
 	--solid-background: hsla(206, 51%, 55%, 1.00);
@@ -32,7 +32,7 @@ li {
 }
 
 .trans-black-background {
-	background: var(--trans-black);
+	background: var(--trans-background);
 }
 
 #animation-toggle {
@@ -43,13 +43,13 @@ li {
 	border-top: 0;
 	border-right: 0;
 	border-radius: 0 0 0 4px;
-	border-color: var(--trans-black);
+	border-color: var(--trans-background);
 	color: var(--trans-black-text);
 	transition: ease-in-out 500ms;
 }
 
 #animation-toggle:hover {
-	background-color: var(--trans-black);
+	background-color: var(--trans-background);
 }
 
 /* bootstrap modification */
