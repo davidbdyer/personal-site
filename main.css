@@ -35,6 +35,8 @@ li {
 	background: var(--trans-background);
 }
 
+/* background animation toggle */
+
 #animation-toggle {
 	font-size: .5em;
 	max-width: 18ch;
@@ -53,14 +55,21 @@ li {
 }
 
 /* bootstrap modification */
-.card {
-	transition: transform 500ms ease;
-}
-
-.card:hover {
-	transform: scale(1.05);
-}
 
 .card-text {
 	height: 5em;
+}
+
+@media screen and (min-width:500px) {
+	.card {
+
+	}
+
+	.card {
+		transition: transform 500ms ease;
+	}
+
+	.card:hover {
+		transform: scale(1.05);
+	}
 }
