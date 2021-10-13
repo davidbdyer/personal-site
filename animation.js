@@ -1,38 +1,30 @@
-function setStyleSheet(url) {
-	let stylesheet = document.getElementById("fancy-theme");
-	stylesheet.setAttribute('href', url);
-}
-
 const animationButton = document.getElementById('animation-toggle');
+const animationState = localStorage.getItem('animation-state');
+
 animationButton.addEventListener('click', () => {
 	if (document.body.style.animationPlayState === 'running') {
-		setStyleSheet(null);
+		document.body.classList.remove('rainbow');
 		document.body.style.animationPlayState = 'paused'
 		animationButton.textContent = 'enable animation';
+		localStorage.setItem('animation-state', 'disabled');
 	} else {
-		setStyleSheet('rainbow.css')
+		document.body.classList.add('rainbow');
 		document.body.style.animationPlayState = 'running'
 		animationButton.textContent = 'disable animation';
+		localStorage.setItem('animation-state', 'enabled');
 	}
 });
 
-
-function setStyleSheet(url) {
-	let stylesheet = document.getElementById("fancy-theme");
-	stylesheet.setAttribute('href', url);
+if (animationState === 'disabled') {
+	document.body.classList.remove('rainbow');
+	document.body.style.animationPlayState = 'paused'
+	animationButton.textContent = 'enable animation';
 }
 
-// const checkPrefersLightMode = function () {
-// 	const { matches } = window.matchMedia('(prefers-color-scheme: light)')
-// 	if (matches === true) {
-// 		setStyleSheet('theme2.css')
-// 		document.getElementById('theme-2').checked = true;
-// 	}
-// }
 
-// onload = checkPrefersLightMode();
+
 
 document.addEventListener("dblclick", event => {
 	event.preventDefault()
 	event.stopPropagation()
-  })
+})

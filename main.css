@@ -3,6 +3,7 @@
 	--trans-white: hsla(0, 0%, 100%, .1);
 	--trans-black-text: hsla(0, 0%, 0%, .4);
 	--solid-background: hsla(206, 51%, 55%, 1.00);
+	--btn-background: hsla(206, 51%, 55%, 1.00);
 }
 
 body {
@@ -33,6 +34,40 @@ li {
 
 .trans-black-background {
 	background: var(--trans-background);
+}
+
+.github-svg-nav {
+	fill: white;
+	width: 32px;
+}
+
+.github-svg {
+	width: 1.3em;
+	fill: #3dd5f3;
+}
+
+.btn-info {
+	color: white;
+	background-color: var(--btn-background);
+	border-color: var(--btn-background);
+}
+
+.btn-info:hover {
+	background-color: var(--btn-background);
+	color: white;
+	border-color: var(--btn-background);
+}
+
+.btn-outline-info {
+	border-color: var(--btn-background);
+	color: var(--btn-background);
+}
+
+.btn-outline-info:hover, .github-svg:hover {
+	color: white;
+	fill: white;
+	background-color: var(--btn-background);
+	border-color: var(--btn-background);
 }
 
 /* background animation toggle */
