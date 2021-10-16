@@ -10,6 +10,10 @@ body {
 	background-color: var(--solid-background);
 }
 
+.trans-black-background {
+	background: var(--trans-background);
+}
+
 header {
 	display: flex;
 	justify-content: space-between;
@@ -32,10 +36,6 @@ li {
 	margin: 1vw;
 }
 
-.trans-black-background {
-	background: var(--trans-background);
-}
-
 .github-svg-nav {
 	fill: white;
 	width: 32px;
@@ -44,6 +44,7 @@ li {
 .github-svg {
 	width: 1.3em;
 	fill: #3dd5f3;
+	margin-top: -.2em;
 }
 
 .btn-info {

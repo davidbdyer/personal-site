@@ -21,6 +21,7 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="word_rotate.css">
     <link rel="stylesheet" href="rainbow.css" id="fancy-theme" class="alternative">
 </head>
 
@@ -38,6 +39,7 @@
     </header>
 
     <button class="btn btn-sm text-light" id="animation-toggle">disable animation</button>
+
     <section>
         <div class="row py-lg-5 px-3">
             <div class="col-lg-6 col-md-8 mx-auto">
@@ -50,9 +52,9 @@
     <main>
         <div class="py-5 trans-black-background">
             <div class="container">
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" id="dynamic-list">
 
-                    <div class="col">
+                    <!-- <div class="col">
                         <div class="card shadow-sm">
                             <img class="card-img-top" src="images/prayup.jpg" alt="Pray Up Site Image">
                             <div class="card-body">
@@ -79,6 +81,22 @@
 
                     <div class="col">
                         <div class="card shadow-sm">
+                            <img class="card-img-top" src="images/yelpcamp.jpg" alt="Yelp Camp">
+                            <div class="card-body">
+                                <h5 class="card-title">Yelp Camp</h5>
+                                <p class="card-text">Web App I did for a development course.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a href="https://damp-sierra-93991.herokuapp.com/" target="_blank" rel="noreferrer noopener" class="card-link btn btn-info">Link</a>
+                                    <div class="text-muted">
+                                        2021
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm">
                             <img class="card-img-top" src="images/calculator.jpg" alt="Calculator App">
                             <div class="card-body">
                                 <h5 class="card-title">Calculator</h5>
@@ -91,9 +109,24 @@
                                                 <g transform="matrix(4.16667,0,0,4.16667,256,497.088)">
                                                     <path d="M0,-118.275C-33.347,-118.275 -60.388,-91.24 -60.388,-57.887C-60.388,-31.207 -43.085,-8.571 -19.091,-0.586C-16.073,-0.027 -14.965,-1.896 -14.965,-3.491C-14.965,-4.93 -15.021,-9.688 -15.047,-14.734C-31.847,-11.081 -35.392,-21.859 -35.392,-21.859C-38.139,-28.838 -42.097,-30.695 -42.097,-30.695C-47.576,-34.443 -41.684,-34.366 -41.684,-34.366C-35.62,-33.94 -32.427,-28.142 -32.427,-28.142C-27.041,-18.911 -18.3,-21.58 -14.854,-23.123C-14.311,-27.025 -12.747,-29.69 -11.02,-31.198C-24.433,-32.724 -38.533,-37.903 -38.533,-61.042C-38.533,-67.634 -36.174,-73.021 -32.311,-77.25C-32.938,-78.772 -35.005,-84.914 -31.725,-93.232C-31.725,-93.232 -26.654,-94.854 -15.115,-87.041C-10.298,-88.379 -5.132,-89.05 0,-89.074C5.132,-89.05 10.302,-88.379 15.128,-87.041C26.654,-94.854 31.718,-93.232 31.718,-93.232C35.005,-84.914 32.938,-78.772 32.311,-77.25C36.183,-73.021 38.525,-67.634 38.525,-61.042C38.525,-37.847 24.398,-32.741 10.951,-31.246C13.117,-29.372 15.047,-25.697 15.047,-20.063C15.047,-11.983 14.978,-5.48 14.978,-3.491C14.978,-1.883 16.064,0 19.125,-0.593C43.107,-8.587 60.388,-31.215 60.388,-57.887C60.388,-91.24 33.351,-118.275 0,-118.275" style="fill:currentColor;" />
                                                 </g>
-                                            </svg>
-                                        </a>
+                                              </svg                                        </a>
                                     </div>
+                                    <div class="text-muted">
+                                        2021
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img class="card-img-top" src="images/museum-of-candy.jpg" alt="museum of candy">
+                            <div class="card-body">
+                                <h5 class="card-title">Museum of Candy</h5>
+                                <p class="card-text">A responsive simple website.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a href="portfolio_sites/museum_of_candy/index.html" target="_blank" rel="noreferrer noopener" class="card-link btn btn-info">Link</a>
                                     <div class="text-muted">
                                         2021
                                     </div>
@@ -132,39 +165,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img class="card-img-top" src="images/yelpcamp.jpg" alt="Yelp Camp">
-                            <div class="card-body">
-                                <h5 class="card-title">Yelp Camp</h5>
-                                <p class="card-text">Web App I did for a development course.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <a href="https://damp-sierra-93991.herokuapp.com/" target="_blank" rel="noreferrer noopener" class="card-link btn btn-info">Link</a>
-                                    <div class="text-muted">
-                                        2018
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img class="card-img-top" src="images/museum-of-candy.jpg" alt="museum of candy">
-                            <div class="card-body">
-                                <h5 class="card-title">Museum of Candy</h5>
-                                <p class="card-text">A responsive simple website.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <a href="portfolio_sites/museum_of_candy/index.html" target="_blank" rel="noreferrer noopener" class="card-link btn btn-info">Link</a>
-                                    <div class="text-muted">
-                                        2021
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    </div> -->
 
                 </div>
             </div>
