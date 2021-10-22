@@ -3,6 +3,10 @@ body {
     font-family: "Nunito", sans-serif;
 }
 
+.blurb {
+    aspect-ratio: 1 / 1;
+}
+
 .blurb h2 {
     color: #ea1c2c;
     font-weight: 100;
@@ -14,7 +18,13 @@ body {
     font-weight: 100;
     font-size: 1.125rem;
     line-height: 2;
+}
 
+.img {
+    height: 128px;
+    width: 128px;
+    position: relative;
+    left: calc(50% - 64px);
 }
 
 #mainNavbar {

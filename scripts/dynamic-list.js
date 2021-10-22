@@ -88,11 +88,11 @@ const create = () => {
 
 		const title = document.createElement('h5');
 			title.classList.add('card-title');
-			title.innerText = portfolio[site].cardTitle;
+			title.textContent = portfolio[site].cardTitle;
 
 		const cardText = document.createElement('p');
 			cardText.classList.add('card-text');
-			cardText.innerText = portfolio[site].cardText;
+			cardText.textContent = portfolio[site].cardText;
 
 		const cardFooter = document.createElement('div');
 			cardFooter.classList.add('d-flex', 'justify-content-between', 'align-items-center')
@@ -103,7 +103,7 @@ const create = () => {
 		const siteUrl = document.createElement('a');
 			siteUrl.href = portfolio[site].siteUrl;
 			siteUrl.classList.add('btn', 'btn-info');
-			siteUrl.innerText = 'Link';
+			siteUrl.textContent = 'Link';
 			siteUrl.target = '_blank';
 			siteUrl.rel = 'noreferrer noopener';
 
@@ -118,7 +118,7 @@ const create = () => {
 
 		const year = document.createElement('div');
 			year.classList.add('text-muted');
-			year.innerText = portfolio[site].year;
+			year.textContent = portfolio[site].year;
 
 		const image = document.createElement('img');
 			image.classList.add('card-img-top');
