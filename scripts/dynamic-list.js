@@ -4,7 +4,7 @@ const portfolio = [
 	{
 		cardTitle: 'Pray Up',
 		cardText: 'Designed and implemented website for Pray Up ministry.',
-		year: '2021',
+		year: 'Jan 2021',
 		siteUrl: 'https://prayuplife.com',
 		imgUrl: 'images/prayup.jpg',
 		imgAlt: 'pray up site thumbnail',
@@ -17,7 +17,7 @@ const portfolio = [
 	{
 		cardTitle: 'Yelp Camp',
 		cardText: 'Web App I did for a development course.',
-		year: '2018',
+		year: 'Sept 2021',
 		siteUrl: 'https://damp-sierra-93991.herokuapp.com/',
 		imgUrl: 'images/yelpcamp.jpg',
 		imgAlt: 'Yelp Camp',
@@ -29,9 +29,21 @@ const portfolio = [
 		]
 	},
 	{
+		cardTitle: 'Tip Calculator',
+		cardText: 'Tip Calculator App, implemented from design files.',
+		year: 'Oct 2021',
+		siteUrl: 'https://davidbdeath.github.io/tip-calculator-app/',
+		imgUrl: 'images/tip_calculator.jpg',
+		imgAlt: 'Tip Calculator App',
+		gitUrl: 'https://github.com/davidbdeath/tip-calculator-app',
+		tags: [
+			'frontend mentor'
+		]
+	},
+	{
 		cardTitle: 'Calculator',
-		cardText: 'Calculator web app, I implemented from design files.',
-		year: '2021',
+		cardText: 'Calculator App, implemented from design files.',
+		year: 'May 2021',
 		siteUrl: 'https://davidbdeath.github.io/calculator-app-main/',
 		imgUrl: 'images/calculator.jpg',
 		imgAlt: 'Calculator App',
@@ -43,7 +55,7 @@ const portfolio = [
 	{
 		cardTitle: 'Museum of Candy',
 		cardText: 'A responsive simple website.',
-		year: '2021',
+		year: 'May 2021',
 		siteUrl: 'portfolio_sites/museum_of_candy/index.html',
 		imgUrl: 'images/museum-of-candy.jpg',
 		imgAlt: 'museum of candy',
@@ -54,7 +66,7 @@ const portfolio = [
 	{
 		cardTitle: 'Score Keeper',
 		cardText: 'App for score keeping.',
-		year: '2021',
+		year: 'Jun 2021',
 		siteUrl: 'portfolio_sites/score_keeper/index.html',
 		imgUrl: 'images/score_keeper.jpg',
 		imgAlt: 'score_keeper',
