@@ -92,8 +92,9 @@ const portfolio = [
 		siteUrl: 'portfolio_sites/GamePad/index.html',
 		imgUrl: 'images/gamepad.jpg',
 		imgAlt: 'gamepad thumbnail',
+		gitUrl: 'https://github.com/davidbdeath/GamePad',
 		tags: [
-			'ux design'
+			'iwu'
 		]
 	}
 ]
