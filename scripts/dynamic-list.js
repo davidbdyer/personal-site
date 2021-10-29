@@ -100,7 +100,7 @@ const portfolio = [
 	},
 	{
 		cardTitle: 'Game Pad',
-		cardText: 'A website for an app I designed for class.',
+		cardText: 'A website for an app I designed in class.',
 		year: 'Nov 2017',
 		siteUrl: 'portfolio_sites/GamePad/index.html',
 		imgUrl: 'images/gamepad.jpg',

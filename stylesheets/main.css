@@ -1,7 +1,7 @@
 :root {
 	--trans-background: hsla(0, 0%, 0%, .1);
-	--trans-white: hsla(0, 0%, 100%, .1);
-	--trans-black-text: hsla(0, 0%, 0%, .4);
+	--trans-white: rgba(255, 255, 255, 0.375);
+	--trans-black: hsla(0, 0%, 0%, .4);
 	--solid-background: hsla(206, 51%, 55%, 1.00);
 	--btn-background: hsla(206, 51%, 55%, 1.00);
 }
@@ -10,8 +10,12 @@ body {
 	background-color: var(--solid-background);
 }
 
-.trans-black-background {
-	background: var(--trans-background);
+.trans-background {
+	background: var(--trans-black);
+	border-radius: 1rem;
+	margin-inline: 2vw;
+	margin-block: 3rem;
+
 }
 
 header {
@@ -25,7 +29,6 @@ header {
 header p {
 	font-size: 2em;
 	margin-block: auto;
-
 }
 
 header img {
@@ -44,6 +47,10 @@ li {
 .github-svg {
 	width: 1.3em;
 	margin-top: -.2em;
+}
+
+.card {
+	border: none;
 }
 
 .card-body {
@@ -85,7 +92,7 @@ li {
 	border-right: 0;
 	border-radius: 0 0 0 4px;
 	border-color: var(--trans-background);
-	color: var(--trans-black-text);
+	color: var(--trans-black);
 	transition: ease-in-out 500ms;
 }
 
