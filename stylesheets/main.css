@@ -63,7 +63,7 @@ li {
 	color: var(--btn-background);
 }
 
-.btn-outline-info:hover {
+.btn-outline-info:hover, .btn-outline-info:active {
 	color: white;
 	fill: white;
 	background-color: var(--btn-background);

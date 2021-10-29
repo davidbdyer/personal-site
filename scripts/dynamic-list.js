@@ -76,13 +76,24 @@ const portfolio = [
 	},
 	{
 		cardTitle: 'Derek Ancil Designs',
-		cardText: 'I implemented this website designed by Derek Ancil',
+		cardText: 'I implemented this website designed by Derek Ancil.',
 		year: '2018',
 		siteUrl: 'http://derekancildesign.com/index.html',
 		imgUrl: 'images/derek_ancil_design.jpg',
 		imgAlt: 'derek ancil design thumbnail',
 		tags: [
 			'freelance'
+		]
+	},
+	{
+		cardTitle: 'Game Pad',
+		cardText: 'A website for an app I designed for class.',
+		year: 'Nov 2017',
+		siteUrl: 'portfolio_sites/GamePad/index.html',
+		imgUrl: 'images/gamepad.jpg',
+		imgAlt: 'gamepad thumbnail',
+		tags: [
+			'ux design'
 		]
 	}
 ]
