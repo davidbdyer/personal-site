@@ -46,6 +46,10 @@ li {
 	margin-top: -.2em;
 }
 
+.card-body {
+	border-top: 1px solid rgb(227, 227, 227);
+}
+
 .btn-info {
 	color: white;
 	background-color: var(--btn-background);

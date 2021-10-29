@@ -3,7 +3,7 @@ const list = document.querySelector('#dynamic-list');
 const portfolio = [
 	{
 		cardTitle: 'Pray Up',
-		cardText: 'Designed and implemented website for Pray Up ministry.',
+		cardText: 'Website designed and implemented for Pray Up ministry.',
 		year: 'Jan 2021',
 		siteUrl: 'https://prayuplife.com',
 		imgUrl: 'images/prayup.jpg',
@@ -16,40 +16,46 @@ const portfolio = [
 	},
 	{
 		cardTitle: 'Yelp Camp',
-		cardText: 'Web App I did for a development course.',
+		cardText: 'Campground rating app implemented frontend and backend.',
 		year: 'Sept 2021',
 		siteUrl: 'https://damp-sierra-93991.herokuapp.com/',
 		imgUrl: 'images/yelpcamp.jpg',
 		imgAlt: 'Yelp Camp',
 		tags: [
-			'web bootcamp',
+			'colt steele',
 			'nodejs',
 			'express',
 			'mongo'
 		]
 	},
 	{
-		cardTitle: 'Tip Calculator',
-		cardText: 'Tip Calculator App, implemented from design files.',
+		cardTitle: 'Tip Calculator App',
+		cardText: 'Implemented from design files.',
 		year: 'Oct 2021',
 		siteUrl: 'https://davidbdeath.github.io/tip-calculator-app/',
 		imgUrl: 'images/tip_calculator.jpg',
 		imgAlt: 'Tip Calculator App',
 		gitUrl: 'https://github.com/davidbdeath/tip-calculator-app',
 		tags: [
-			'frontend mentor'
+			'frontend mentor',
+			'html',
+			'css',
+			'javascript'
 		]
 	},
 	{
-		cardTitle: 'Calculator',
-		cardText: 'Calculator App, implemented from design files.',
+		cardTitle: 'Calculator App',
+		cardText: 'Implemented from design files.',
 		year: 'May 2021',
 		siteUrl: 'https://davidbdeath.github.io/calculator-app-main/',
 		imgUrl: 'images/calculator.jpg',
 		imgAlt: 'Calculator App',
 		gitUrl: 'https://github.com/davidbdeath/calculator-app-main',
 		tags: [
-			'frontend mentor'
+			'frontend mentor',
+			'html',
+			'css',
+			'javascript'
 		]
 	},
 	{
@@ -60,29 +66,36 @@ const portfolio = [
 		imgUrl: 'images/museum-of-candy.jpg',
 		imgAlt: 'museum of candy',
 		tags: [
-			'web bootcamp'
+			'colt steele'
 		]
 	},
 	{
-		cardTitle: 'Score Keeper',
-		cardText: 'App for score keeping.',
+		cardTitle: 'Score Keeper App',
+		cardText: 'Ping Pong score keeper.',
 		year: 'Jun 2021',
 		siteUrl: 'portfolio_sites/score_keeper/index.html',
 		imgUrl: 'images/score_keeper.jpg',
 		imgAlt: 'score_keeper',
 		tags: [
-			'web bootcamp'
+			'colt steele',
+			'html',
+			'css',
+			'javascript'
 		]
 	},
 	{
 		cardTitle: 'Derek Ancil Designs',
-		cardText: 'I implemented this website designed by Derek Ancil.',
+		cardText: 'Implemented from design files.',
 		year: '2018',
 		siteUrl: 'http://derekancildesign.com/index.html',
 		imgUrl: 'images/derek_ancil_design.jpg',
 		imgAlt: 'derek ancil design thumbnail',
 		tags: [
-			'freelance'
+			'freelance',
+			'html',
+			'css',
+			'javascript',
+			'php'
 		]
 	},
 	{
@@ -94,7 +107,9 @@ const portfolio = [
 		imgAlt: 'gamepad thumbnail',
 		gitUrl: 'https://github.com/davidbdeath/GamePad',
 		tags: [
-			'iwu'
+			'iwu',
+			'html',
+			'css'
 		]
 	}
 ]
