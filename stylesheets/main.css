@@ -1,7 +1,5 @@
 :root {
-	--trans-background: hsla(0, 0%, 0%, .1);
-	--trans-white: rgba(255, 255, 255, 0.375);
-	--trans-black: hsla(0, 0%, 0%, .4);
+	--trans-background: hsla(0, 0%, 0%, .4);
 	--solid-background: hsla(206, 51%, 55%, 1.00);
 	--btn-background: hsla(206, 51%, 55%, 1.00);
 }
@@ -11,7 +9,7 @@ body {
 }
 
 .trans-background {
-	background: var(--trans-black);
+	background: var(--trans-background);
 	border-radius: 1rem;
 	margin-inline: 2vw;
 	margin-block: 3rem;
@@ -92,7 +90,7 @@ li {
 	border-right: 0;
 	border-radius: 0 0 0 4px;
 	border-color: var(--trans-background);
-	color: var(--trans-black);
+	color: var(--trans-background);
 	transition: ease-in-out 500ms;
 }
 
