@@ -1,30 +1,33 @@
 const list = document.querySelector('#dynamic-list');
 
-const portfolio = [
-	{
+const portfolio = [{
 		cardTitle: 'Pray Up',
-		cardText: 'Website designed and implemented for Pray Up ministry.',
+		cardText: 'Pray Up ministry.',
 		year: 'Jan 2021',
 		siteUrl: 'https://prayuplife.com',
 		imgUrl: 'images/prayup.jpg',
 		imgAlt: 'pray up site thumbnail',
 		gitUrl: 'https://github.com/davidbdeath/prayup_website',
 		tags: [
-			'ministry',
-			'freelance'
+			'html',
+			'css',
+			'javascript'
 		]
 	},
 	{
 		cardTitle: 'Yelp Camp',
-		cardText: 'Campground rating app implemented frontend and backend.',
+		cardText: 'Campground rating app.',
 		year: 'Sept 2021',
 		siteUrl: 'https://damp-sierra-93991.herokuapp.com/',
 		imgUrl: 'images/yelpcamp.jpg',
 		imgAlt: 'Yelp Camp',
-		tags: [
-			'colt steele',
-			'nodejs',
+		langLib: [
+			'html',
+			'css',
+			'javascript',
+			'node',
 			'express',
+			'ejs',
 			'mongo'
 		]
 	},
@@ -37,7 +40,6 @@ const portfolio = [
 		imgAlt: 'Tip Calculator App',
 		gitUrl: 'https://github.com/davidbdeath/tip-calculator-app',
 		tags: [
-			'frontend mentor',
 			'html',
 			'css',
 			'javascript'
@@ -52,7 +54,6 @@ const portfolio = [
 		imgAlt: 'Calculator App',
 		gitUrl: 'https://github.com/davidbdeath/calculator-app-main',
 		tags: [
-			'frontend mentor',
 			'html',
 			'css',
 			'javascript'
@@ -66,7 +67,8 @@ const portfolio = [
 		imgUrl: 'images/museum-of-candy.jpg',
 		imgAlt: 'museum of candy',
 		tags: [
-			'colt steele'
+			'html',
+			'css'
 		]
 	},
 	{
@@ -77,7 +79,6 @@ const portfolio = [
 		imgUrl: 'images/score_keeper.jpg',
 		imgAlt: 'score_keeper',
 		tags: [
-			'colt steele',
 			'html',
 			'css',
 			'javascript'
@@ -91,7 +92,6 @@ const portfolio = [
 		imgUrl: 'images/derek_ancil_design.jpg',
 		imgAlt: 'derek ancil design thumbnail',
 		tags: [
-			'freelance',
 			'html',
 			'css',
 			'javascript',
@@ -107,7 +107,6 @@ const portfolio = [
 		imgAlt: 'gamepad thumbnail',
 		gitUrl: 'https://github.com/davidbdeath/GamePad',
 		tags: [
-			'iwu',
 			'html',
 			'css'
 		]
@@ -115,53 +114,53 @@ const portfolio = [
 ]
 
 const create = () => {
-	for (let site in portfolio){
+	for (let site in portfolio) {
 		const col = document.createElement('div');
-			col.classList.add('col');
+		// col.classList.add('col');
 
 		const card = document.createElement('div');
-			card.classList.add('card', 'shadow-sm');
+		card.classList.add('card', 'shadow-sm');
 
 		const cardBody = document.createElement('div');
-			cardBody.classList.add('card-body');
+		cardBody.classList.add('card-body');
 
 		const title = document.createElement('h5');
-			title.classList.add('card-title');
-			title.textContent = portfolio[site].cardTitle;
+		title.classList.add('card-title');
+		title.textContent = portfolio[site].cardTitle;
 
 		const cardText = document.createElement('p');
-			cardText.classList.add('card-text');
-			cardText.textContent = portfolio[site].cardText;
+		cardText.classList.add('card-text');
+		cardText.textContent = portfolio[site].cardText;
 
 		const cardFooter = document.createElement('div');
-			cardFooter.classList.add('d-flex', 'justify-content-between', 'align-items-center')
+		cardFooter.classList.add('d-flex', 'justify-content-between', 'align-items-center')
 
 		const btnGroup = document.createElement('div')
-			btnGroup.classList.add('btn-group');
+		btnGroup.classList.add('btn-group');
 
 		const siteUrl = document.createElement('a');
-			siteUrl.href = portfolio[site].siteUrl;
-			siteUrl.classList.add('btn', 'btn-info');
-			siteUrl.textContent = 'Link';
-			siteUrl.target = '_blank';
-			siteUrl.rel = 'noreferrer noopener';
+		siteUrl.href = portfolio[site].siteUrl;
+		siteUrl.classList.add('btn', 'btn-info');
+		siteUrl.textContent = 'Link';
+		siteUrl.target = '_blank';
+		siteUrl.rel = 'noreferrer noopener';
 
 		const gitBtn = document.createElement('a');
-			gitBtn.href = portfolio[site].gitUrl;
-			gitBtn.classList.add('btn', 'btn-outline-info');
-			gitBtn.innerHTML = `<svg class="github-svg" xmlns="http://www.w3.org/2000/svg" width="1.3em" height="1.3em" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+		gitBtn.href = portfolio[site].gitUrl;
+		gitBtn.classList.add('btn', 'btn-outline-info');
+		gitBtn.innerHTML = `<svg class="github-svg" xmlns="http://www.w3.org/2000/svg" width="1.3em" height="1.3em" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
 			  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
 			</svg>`
-			gitBtn.target = '_blank';
-			gitBtn.rel = 'noreferrer noopener';
+		gitBtn.target = '_blank';
+		gitBtn.rel = 'noreferrer noopener';
 
 		const year = document.createElement('div');
-			year.classList.add('text-muted');
-			year.textContent = portfolio[site].year;
+		year.classList.add('text-muted');
+		year.textContent = portfolio[site].year;
 
 		const image = document.createElement('img');
-			image.classList.add('card-img-top');
-			image.src = portfolio[site].imgUrl;
+		image.classList.add('card-img-top');
+		image.src = portfolio[site].imgUrl;
 
 		list.appendChild(col);
 		col.appendChild(card);

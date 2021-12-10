@@ -1,6 +1,6 @@
 :root {
 	--trans-background: hsla(0, 0%, 0%, .4);
-	--solid-background: hsla(206, 51%, 55%, 1.00);
+	--solid-background: hsl(210, 7%, 28%);
 	--btn-background: hsla(206, 51%, 55%, 1.00);
 }
 
@@ -10,12 +10,13 @@ body {
 
 .trans-background {
 	background: var(--trans-background);
-	border-radius: 1rem;
+	border-radius: 6pt;
 	margin-inline: 2vw;
-	margin-block: 3rem;
+	margin-block: 2vw;
 
 }
 
+/* header */
 header {
 	display: flex;
 	justify-content: space-between;
@@ -24,27 +25,24 @@ header {
 	padding-inline: 1em;
 }
 
-header p {
-	font-size: 2em;
+header h1 {
 	margin-block: auto;
 }
 
-header img {
-	height: 2em;
-}
-
-li {
-	margin: 1vw;
-}
-
-.github-svg-nav {
+.github-svg-header {
 	fill: white;
-	width: 32px;
+	width: 2.5em;
+	aspect-ratio: 1;
 }
 
 .github-svg {
 	width: 1.3em;
 	margin-top: -.2em;
+}
+
+.grid-width {
+	width: 80vw;
+	margin-inline: auto;
 }
 
 .card {
@@ -72,31 +70,14 @@ li {
 	color: var(--btn-background);
 }
 
-.btn-outline-info:hover, .btn-outline-info:active {
+.btn-outline-info:hover,
+.btn-outline-info:active {
 	color: white;
 	fill: white;
 	background-color: var(--btn-background);
 	border-color: var(--btn-background);
 }
 
-/* background animation toggle */
-
-#animation-toggle {
-	font-size: .5em;
-	max-width: 18ch;
-	text-align: right;
-	float: right;
-	border-top: 0;
-	border-right: 0;
-	border-radius: 0 0 0 4px;
-	border-color: var(--trans-background);
-	color: var(--trans-background);
-	transition: ease-in-out 500ms;
-}
-
-#animation-toggle:hover {
-	background-color: var(--trans-background);
-}
 
 /* bootstrap modification */
 
@@ -105,15 +86,14 @@ li {
 }
 
 @media screen and (min-width:500px) {
-	.card {
-
-	}
+	.card {}
 
 	.card {
 		transition: transform 500ms ease;
 	}
 
 	.card:hover {
-		transform: scale(1.05);
+		/* 		transform: scale(1.05); */
 	}
 }
+
