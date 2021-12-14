@@ -1,0 +1,49 @@
+@use 'abstracts'as *;
+
+.card {
+	aspect-ratio: 1;
+	border-radius: .5em;
+	overflow: hidden;
+}
+
+img {
+	width: 100%;
+}
+
+.card-info {
+	$info-height: 3em;
+	position: relative;
+	top: -$info-height;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-inline: .5em;
+	height: $info-height;
+	font-family: $subtitle-ff;
+	background-color: $trans-black-90;
+
+	h3 {
+		font-size: 1rem;
+	}
+}
+
+
+
+
+.btn-group {
+	width: fit-content;
+	height: fit-content;
+	border: solid 1px $grey;
+	border-radius: .5em;
+	overflow: hidden;
+
+	button {
+		border: unset;
+		color: $font-clr;
+		background: black;
+	}
+
+	.btn-group > button:not(:last-child) {
+		border-right: solid 1px $grey;
+	}
+}

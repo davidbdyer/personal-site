@@ -14,21 +14,15 @@
 	<meta property="og:title" content="David Dyer - Web Development Portfolio">
 	<meta property="og:description" content="David Dyer - Web Development Portfolio">
 
-	<!-- safari theme -->
-	<!--     <meta name="theme-color" content="#5194C6" media="(prefers-color-scheme: light)"> -->
-	<!--     <meta name="theme-color" content="#5194C6" media="(prefers-color-scheme: dark)"> -->
-
 	<!-- CSS only -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-	<link rel="stylesheet" href="stylesheets/main.css">
-	<link rel="stylesheet" href="stylesheets/orb.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-	<canvas class="orb-canvas"></canvas>
+	<!-- 	<canvas class="orb-canvas"></canvas> -->
 
-	<header class="trans-background">
-		<h1 class="text-light">David Dyer</h1>
+	<header class="primary-header block">
+		<h1>David Dyer</h1>
 		<a href="https://github.com/davidbdeath" target="_blank" rel="noreferrer noopener">
 			<svg class="github-svg-header" width="100%" height="100%" viewBox="0 0 512 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
 				<g transform="matrix(4.16667,0,0,4.16667,256,497.088)">
@@ -40,32 +34,96 @@
 
 	<!-- <button class="btn btn-sm text-light" id="animation-toggle">disable animation</button> -->
 
-	<section>
-		<div class="row py-5 px-3 trans-background">
-			<div>
-				<h2 class="fw-light text-light fs-1">A Few Projects</h2>
-				<p class="lead text-light fs-6">I'm a web developer who loves to collaborate with designers. I've worked with artists: designers, photographers, illustrators—most of my adult life. While I'm a capable designer, design is not my passion. My understanding of design and user experience allows me to recognize design and usability issues before implementation.</p>
-			</div>
-		</div>
+	<section class="introduction block">
+		<h2>A Few Projects</h2>
+		<p>
+			I'm a web developer who loves to collaborate with designers. I've worked with artists: designers, photographers, illustrators—most of my adult life. While I'm a capable designer, design is not my passion. My understanding of design and user experience allows me to recognize design and usability issues before implementation.
+		</p>
 	</section>
 
-	<main>
-		<div class="py-5 trans-background">
-			<div class="grid-width">
-				<div class="row row-cols-md-2 row-cols-lg-4 g-3 g-lg-4 g-xl-5" id="dynamic-list">
+	<main class="block">
+		<div class="project-grid">
+			<div class="card">
+				<img src="images/yelpcamp.jpg" alt="￼">
+				<div class="card-info">
+					<h3>Yelp Camp</h3>
+					<div class="btn-group"><button>Link</button><button>Git</button></div>
+				</div>
+			</div>
 
+			<div class="card">
+				<img src="images/yelpcamp.jpg" alt="￼">
+				<div class="card-info">
+					<h3>Yelp Camp</h3>
+					<div class="btn-group"><button>Link</button><button>Git</button></div>
+				</div>
+			</div>
+
+			<div class="card">
+				<img src="images/yelpcamp.jpg" alt="￼">
+				<div class="card-info">
+					<h3>Yelp Camp</h3>
+					<div class="btn-group"><button>Link</button><button>Git</button></div>
+				</div>
+			</div>
+
+			<div class="card">
+				<img src="images/yelpcamp.jpg" alt="￼">
+				<div class="card-info">
+					<h3>Yelp Camp</h3>
+					<div class="btn-group"><button>Link</button><button>Git</button></div>
+				</div>
+			</div>
+
+			<div class="card">
+				<img src="images/yelpcamp.jpg" alt="￼">
+				<div class="card-info">
+					<h3>Yelp Camp</h3>
+					<div class="btn-group"><button>Link</button><button>Git</button></div>
+				</div>
+			</div>
+
+			<div class="card">
+				<img src="images/yelpcamp.jpg" alt="￼">
+				<div class="card-info">
+					<h3>Yelp Camp</h3>
+					<div class="btn-group"><button>Link</button><button>Git</button></div>
+				</div>
+			</div>
+
+			<div class="card">
+				<img src="images/yelpcamp.jpg" alt="￼">
+				<div class="card-info">
+					<h3>Yelp Camp</h3>
+					<div class="btn-group"><button>Link</button><button>Git</button></div>
+				</div>
+			</div>
+
+			<div class="card">
+				<img src="images/yelpcamp.jpg" alt="￼">
+				<div class="card-info">
+					<h3>Yelp Camp</h3>
+					<div class="btn-group"><button>Link</button><button>Git</button></div>
 				</div>
 			</div>
 		</div>
+
+		<article hidden>
+			<h3>Yelp Camp</h3>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+		</article>
+
 	</main>
+
+
 
 	<!-- scripts -->
 	<script type="module" src="scripts/orb.js"></script>
-	<!-- <script src="scripts/animation.js"></script> -->
-	<script src="scripts/dynamic-list.js"></script>
+	<script src="scripts/info-panel.js"></script>
+	<!-- 	<script src="scripts/dynamic-list.js"></script> -->
 
-	<!-- JavaScript Bundle with Popper -->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 
 </html>

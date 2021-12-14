@@ -1,0 +1,26 @@
+@use 'abstracts'as *;
+
+// Projects Grid
+
+.project-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 100%);
+	justify-content: space-between;
+	// gap: 2rem;
+	gap: min(2rem, 5vw);
+
+	@media screen and (min-width: $md) {
+		.project-grid {
+			grid-template-columns: repeat(auto-fill, 45%);
+		}
+	}
+
+
+	@media (min-width: $xl) {
+		grid-template-columns: repeat(auto-fill, 20%);
+	}
+
+	@media (min-width: $xxl) {
+		grid-template-columns: repeat(auto-fill, 15%);
+	}
+}

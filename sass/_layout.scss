@@ -1,0 +1,57 @@
+@use 'abstracts'as *;
+
+body {
+	background-color: $grey;
+}
+
+.block {
+	margin-inline: auto;
+	padding-inline: 2rem;
+	padding-block: 1rem;
+	margin-block: 2rem;
+	max-width: 96vw;
+	border-radius: 6px;
+	color: $font-clr;
+	background-color: $trans-black-50;
+}
+
+.primary-header {
+	display: flex;
+	justify-content: space-between;
+
+	h1 {
+		font-family: $title-ff;
+		font-size: $title-fs;
+		font-weight: $title-fw;
+		color: $font-clr;
+	}
+
+	h2 {
+		font-family: $subtitle-ff;
+		font-size: $subtitle-f2;
+		font-weight: $subtitle-fw;
+		margin-bottom: .5rem;
+	}
+
+	.github-svg-header {
+		fill: white;
+		width: $title-fs;
+		aspect-ratio: 1;
+	}
+}
+
+.introduction {
+	h2 {
+		font-family: $subtitle-ff;
+		font-size: $subtitle-f2;
+		font-weight: $subtitle-fw;
+		margin-bottom: .5rem;
+	}
+
+	p {
+		font-family: $paragraph-ff;
+		font-size: $paragraph-fs;
+		font-weight: $paragraph-fw;
+		margin-bottom: 1rem;
+	}
+}
