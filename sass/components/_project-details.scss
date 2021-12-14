@@ -1,0 +1,36 @@
+@use 'abstracts'as *;
+
+main {
+	display: flex;
+	flex: 0 1 100%;
+	gap: min(2rem, 5vw);
+	width: $block-width;
+	margin-inline: auto;
+
+	.block {
+		margin-block: 0;
+	}
+}
+
+.block {
+	flex-basis: 100%;
+}
+
+#container--project-details {
+	flex-grow: 2;
+	flex-basis: 200%;
+
+	h2 {
+		font-family: $subtitle-ff;
+		font-size: $subtitle-f2;
+		font-weight: $subtitle-fw;
+		margin-bottom: .5rem;
+	}
+
+	p {
+		font-family: $paragraph-ff;
+		font-size: $paragraph-fs;
+		font-weight: $paragraph-fw;
+		margin-bottom: 1rem;
+	}
+}

@@ -1,7 +1,7 @@
 @use 'abstracts'as *;
 
 body {
-	background-color: $grey;
+	background-color: $base;
 }
 
 .block {
@@ -9,10 +9,11 @@ body {
 	padding-inline: 2rem;
 	padding-block: 1rem;
 	margin-block: 2rem;
-	max-width: 96vw;
+	max-width: $block-width;
 	border-radius: 6px;
 	color: $font-clr;
-	background-color: $trans-black-50;
+	backdrop-filter: blur(2px);
+	background-color: rgba($block, .5);
 }
 
 .primary-header {
