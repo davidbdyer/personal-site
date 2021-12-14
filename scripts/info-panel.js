@@ -18,9 +18,15 @@ const changeTabPane = (e) => {
 	const targetTab = e.target;
 	const targetPanel = targetTab.getAttribute('aria-controls')
 
-	hideContent(main, '.project-details');
-	showContent(main, `#${targetPanel}`);
-	showContent(main, '#container--project-details');
+
+
+	if (main.querySelector('#container--project-details').hidden === true) {
+		hideContent(main, '.project-details');
+		showContent(main, `#${targetPanel}`);
+		showContent(main, '#container--project-details');
+	} else {
+		main.querySelector('#container--project-details').setAttribute('hidden', true);
+	}
 }
 
 

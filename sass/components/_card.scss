@@ -21,6 +21,7 @@
 		font-family: $subtitle-ff;
 		background-color: rgba($block, .9);
 		backdrop-filter: blur(2px);
+		overflow: hidden;
 	}
 
 	&-title {

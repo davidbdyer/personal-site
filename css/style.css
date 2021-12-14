@@ -171,6 +171,7 @@ body {
 	background-color: rgba(0, 0, 0, 0.9);
 	-webkit-backdrop-filter: blur(2px);
 	        backdrop-filter: blur(2px);
+	overflow: hidden;
 }
 .card-title {
 	font-size: 1rem;
