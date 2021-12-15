@@ -232,7 +232,7 @@ body {
 }
 @media (min-width: 1920px) {
 	.project-grid {
-		grid-template-columns: repeat(auto-fill, 600px);
+		grid-template-columns: repeat(auto-fill, 400px);
 	}
 }
 
@@ -263,16 +263,35 @@ main .block {
 	-ms-flex-preferred-size: 200%;
 	    flex-basis: 200%;
 }
-#container--project-details h2 {
+
+.project-details .title-group {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: baseline;
+	    -ms-flex-align: baseline;
+	        align-items: baseline;
+	margin-bottom: 1.5em;
+}
+.project-details .title-group h2 {
 	font-family: "Roboto", sans-serif;
 	font-size: 2rem;
 	font-weight: 400;
 	margin-bottom: 0.5rem;
 }
-#container--project-details p {
+.project-details .title-group date {
+	font-family: "Roboto", sans-serif;
+	font-size: 1rem;
+	font-weight: 300;
+}
+.project-details p {
 	font-family: "Roboto", sans-serif;
 	font-size: 1rem;
 	font-weight: 300;
 	margin-bottom: 1rem;
+	margin-left: 4ch;
 }
 /*# sourceMappingURL=style.css.map */
