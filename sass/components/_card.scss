@@ -21,7 +21,7 @@
 		font-family: $subtitle-ff;
 		background-color: rgba($block, .9);
 		backdrop-filter: blur(2px);
-		overflow: hidden;
+		border-radius: 0 0 .5em .5em;
 	}
 
 	&-title {
@@ -45,12 +45,26 @@
 	overflow: hidden;
 
 	button {
+		height: 1.5em;
 		border: unset;
 		color: $font-clr;
 		background: black;
+
+		a {
+			color: $font-clr;
+			vertical-align: middle;
+			text-decoration: none;
+
+			svg {
+				margin-top: .2em;
+			}
+		}
 	}
 
-	.btn-group > button:not(:last-child) {
+	> button:not(:last-child) {
 		border-right: solid 1px $base;
+	}
+
+	> .btn-git {
 	}
 }

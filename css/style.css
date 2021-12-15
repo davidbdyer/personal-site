@@ -171,7 +171,7 @@ body {
 	background-color: rgba(0, 0, 0, 0.9);
 	-webkit-backdrop-filter: blur(2px);
 	        backdrop-filter: blur(2px);
-	overflow: hidden;
+	border-radius: 0 0 0.5em 0.5em;
 }
 .card-title {
 	font-size: 1rem;
@@ -196,14 +196,22 @@ body {
 	overflow: hidden;
 }
 .btn-group button {
+	height: 1.5em;
 	border: unset;
 	color: #fff;
 	background: black;
 }
-.btn-group .btn-group > button:not(:last-child) {
+.btn-group button a {
+	color: #fff;
+	vertical-align: middle;
+	text-decoration: none;
+}
+.btn-group button a svg {
+	margin-top: 0.2em;
+}
+.btn-group > button:not(:last-child) {
 	border-right: solid 1px #42474C;
 }
-
 .project-grid {
 	display: -ms-grid;
 	display: grid;

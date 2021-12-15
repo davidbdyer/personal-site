@@ -1,6 +1,7 @@
-const list = document.querySelector('#dynamic-list');
+const projectList = main.querySelector('#dynamic-list');
+const detailList = main.querySelector('#container--project-details')
 
-const portfolio = [{
+const portfolioData = [{
 		cardTitle: 'Pray Up',
 		cardText: 'Pray Up ministry.',
 		year: 'Jan 2021',
@@ -114,67 +115,59 @@ const portfolio = [{
 ]
 
 const create = () => {
-	for (let site in portfolio) {
-		const col = document.createElement('div');
-		// col.classList.add('col');
+	for (let site in portfolioData) {
 
 		const card = document.createElement('div');
-		card.classList.add('card', 'shadow-sm');
+		card.classList.add('card');
 
-		const cardBody = document.createElement('div');
-		cardBody.classList.add('card-body');
+		const image = document.createElement('img');
+		image.classList.add('card-img');
+		image.src = portfolioData[site].imgUrl;
 
-		const title = document.createElement('h5');
+		const cardInfo = document.createElement('div')
+		cardInfo.classList.add('card-info');
+
+		const title = document.createElement('h3');
 		title.classList.add('card-title');
-		title.textContent = portfolio[site].cardTitle;
-
-		const cardText = document.createElement('p');
-		cardText.classList.add('card-text');
-		cardText.textContent = portfolio[site].cardText;
-
-		const cardFooter = document.createElement('div');
-		cardFooter.classList.add('d-flex', 'justify-content-between', 'align-items-center')
+		title.textContent = portfolioData[site].cardTitle;
 
 		const btnGroup = document.createElement('div')
 		btnGroup.classList.add('btn-group');
 
+		const btnLink = document.createElement('button');
+
 		const siteUrl = document.createElement('a');
-		siteUrl.href = portfolio[site].siteUrl;
-		siteUrl.classList.add('btn', 'btn-info');
+		siteUrl.href = portfolioData[site].siteUrl;
 		siteUrl.textContent = 'Link';
 		siteUrl.target = '_blank';
 		siteUrl.rel = 'noreferrer noopener';
 
-		const gitBtn = document.createElement('a');
-		gitBtn.href = portfolio[site].gitUrl;
-		gitBtn.classList.add('btn', 'btn-outline-info');
-		gitBtn.innerHTML = `<svg class="github-svg" xmlns="http://www.w3.org/2000/svg" width="1.3em" height="1.3em" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+		const btnGit = document.createElement('button');
+
+		const gitLink = document.createElement('a');
+		gitLink.href = portfolioData[site].gitUrl;
+		gitLink.classList.add('btn-git');
+		gitLink.innerHTML = `<svg class="github-svg" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
 			  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
 			</svg>`
-		gitBtn.target = '_blank';
-		gitBtn.rel = 'noreferrer noopener';
+		gitLink.target = '_blank';
+		gitLink.rel = 'noreferrer noopener';
 
-		const year = document.createElement('div');
-		year.classList.add('text-muted');
-		year.textContent = portfolio[site].year;
+		// const year = document.createElement('div');
+		// year.classList.add('text-muted');
+		// year.textContent = portfolioData[site].year;
 
-		const image = document.createElement('img');
-		image.classList.add('card-img-top');
-		image.src = portfolio[site].imgUrl;
-
-		list.appendChild(col);
-		col.appendChild(card);
+		projectList.appendChild(card);
 		card.appendChild(image);
-		card.appendChild(cardBody);
-		cardBody.appendChild(title);
-		cardBody.appendChild(cardText);
-		cardBody.appendChild(cardFooter);
-		cardFooter.appendChild(btnGroup);
-		btnGroup.appendChild(siteUrl);
-		if (portfolio[site].gitUrl) {
-			btnGroup.appendChild(gitBtn);
+		card.appendChild(cardInfo);
+		cardInfo.appendChild(title);
+		cardInfo.appendChild(btnGroup);
+		btnGroup.appendChild(btnLink);
+		btnLink.appendChild(siteUrl);
+		if (portfolioData[site].gitUrl) {
+			btnGroup.appendChild(btnGit);
+			btnGit.appendChild(gitLink);
 		}
-		cardFooter.appendChild(year);
 	}
 
 }
