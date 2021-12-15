@@ -2,8 +2,8 @@ const projectList = document.querySelector('#dynamic-list');
 const detailList = document.querySelector('#container--project-details')
 
 const portfolioData = [{
-		cardTitle: 'Pray Up',
-		cardText: 'Pray Up ministry.',
+		title: 'Pray Up',
+		discription: 'Pray Up ministry.',
 		year: 'Jan 2021',
 		siteUrl: 'https://prayuplife.com',
 		imgUrl: 'images/prayup.jpg',
@@ -17,8 +17,8 @@ const portfolioData = [{
 		]
 	},
 	{
-		cardTitle: 'Yelp Camp',
-		cardText: 'Campground rating app.',
+		title: 'Yelp Camp',
+		discription: 'Campground rating app.',
 		year: 'Sept 2021',
 		siteUrl: 'https://damp-sierra-93991.herokuapp.com/',
 		imgUrl: 'images/yelpcamp.jpg',
@@ -35,8 +35,8 @@ const portfolioData = [{
 		]
 	},
 	{
-		cardTitle: 'Tip Calculator App',
-		cardText: 'Implemented from design files.',
+		title: 'Tip Calculator App',
+		discription: 'Implemented from design files.',
 		year: 'Oct 2021',
 		siteUrl: 'https://davidbdeath.github.io/tip-calculator-app/',
 		imgUrl: 'images/tip_calculator.jpg',
@@ -50,8 +50,8 @@ const portfolioData = [{
 		]
 	},
 	{
-		cardTitle: 'Calculator App',
-		cardText: 'Implemented from design files.',
+		title: 'Calculator App',
+		discription: 'Implemented from design files.',
 		year: 'May 2021',
 		siteUrl: 'https://davidbdeath.github.io/calculator-app-main/',
 		imgUrl: 'images/calculator.jpg',
@@ -65,8 +65,8 @@ const portfolioData = [{
 		]
 	},
 	{
-		cardTitle: 'Museum of Candy',
-		cardText: 'A responsive simple website.',
+		title: 'Museum of Candy',
+		discription: 'A responsive simple website.',
 		year: 'May 2021',
 		siteUrl: 'portfolio_sites/museum_of_candy/index.html',
 		imgUrl: 'images/museum-of-candy.jpg',
@@ -78,8 +78,8 @@ const portfolioData = [{
 		]
 	},
 	{
-		cardTitle: 'Score Keeper App',
-		cardText: 'Ping Pong score keeper.',
+		title: 'Score Keeper App',
+		discription: 'Ping Pong score keeper.',
 		year: 'Jun 2021',
 		siteUrl: 'portfolio_sites/score_keeper/index.html',
 		imgUrl: 'images/score_keeper.jpg',
@@ -92,8 +92,8 @@ const portfolioData = [{
 		]
 	},
 	{
-		cardTitle: 'Derek Ancil Designs',
-		cardText: 'Implemented from design files.',
+		title: 'Derek Ancil Designs',
+		discription: 'Implemented from design files.',
 		year: '2018',
 		siteUrl: 'http://derekancildesign.com/index.html',
 		imgUrl: 'images/derek_ancil_design.jpg',
@@ -107,8 +107,8 @@ const portfolioData = [{
 		]
 	},
 	{
-		cardTitle: 'Game Pad',
-		cardText: 'A website for an app I designed in class.',
+		title: 'Game Pad',
+		discription: 'A website for an app I designed in class.',
 		year: 'Nov 2017',
 		siteUrl: 'portfolio_sites/GamePad/index.html',
 		imgUrl: 'images/gamepad.jpg',
@@ -139,7 +139,7 @@ const createProjectList = () => {
 		title.classList.add('card-title');
 		title.setAttribute('aria-controls', portfolioData[site].aria);
 		title.setAttribute('role', 'tab');
-		title.textContent = portfolioData[site].cardTitle;
+		title.textContent = portfolioData[site].title;
 
 		const btnGroup = document.createElement('div')
 		btnGroup.classList.add('btn-group');
@@ -181,4 +181,25 @@ const createProjectList = () => {
 	}
 }
 
+const createDetailList = () => {
+	for (let site in portfolioData) {
+
+		const projectDetail = document.createElement('article');
+		projectDetail.classList.add('project-details');
+		projectDetail.id = portfolioData[site].aria;
+		projectDetail.setAttribute('role', 'tabpanel');
+
+		const detailTitle = document.createElement('h2');
+		detailTitle.textContent = portfolioData[site].title;
+
+		const detailDiscription = document.createElement('p');
+		detailDiscription.textContent = portfolioData[site].discription;
+
+		detailList.appendChild(projectDetail);
+		projectDetail.appendChild(detailTitle);
+		projectDetail.appendChild(detailDiscription);
+	}
+}
+
 createProjectList();
+createDetailList();
