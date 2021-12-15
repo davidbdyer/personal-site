@@ -1,5 +1,5 @@
-const projectList = main.querySelector('#dynamic-list');
-const detailList = main.querySelector('#container--project-details')
+const projectList = document.querySelector('#dynamic-list');
+const detailList = document.querySelector('#container--project-details')
 
 const portfolioData = [{
 		cardTitle: 'Pray Up',
@@ -9,7 +9,8 @@ const portfolioData = [{
 		imgUrl: 'images/prayup.jpg',
 		imgAlt: 'pray up site thumbnail',
 		gitUrl: 'https://github.com/davidbdeath/prayup_website',
-		tags: [
+		aria: 'pray-up--tab',
+		lang_lib: [
 			'html',
 			'css',
 			'javascript'
@@ -22,7 +23,8 @@ const portfolioData = [{
 		siteUrl: 'https://damp-sierra-93991.herokuapp.com/',
 		imgUrl: 'images/yelpcamp.jpg',
 		imgAlt: 'Yelp Camp',
-		langLib: [
+		aria: 'yelp-camp--tab',
+		lang_lib: [
 			'html',
 			'css',
 			'javascript',
@@ -40,7 +42,8 @@ const portfolioData = [{
 		imgUrl: 'images/tip_calculator.jpg',
 		imgAlt: 'Tip Calculator App',
 		gitUrl: 'https://github.com/davidbdeath/tip-calculator-app',
-		tags: [
+		aria: 'tip-calculator--tab',
+		lang_lib: [
 			'html',
 			'css',
 			'javascript'
@@ -54,7 +57,8 @@ const portfolioData = [{
 		imgUrl: 'images/calculator.jpg',
 		imgAlt: 'Calculator App',
 		gitUrl: 'https://github.com/davidbdeath/calculator-app-main',
-		tags: [
+		aria: 'calculator--tab',
+		lang_lib: [
 			'html',
 			'css',
 			'javascript'
@@ -67,7 +71,8 @@ const portfolioData = [{
 		siteUrl: 'portfolio_sites/museum_of_candy/index.html',
 		imgUrl: 'images/museum-of-candy.jpg',
 		imgAlt: 'museum of candy',
-		tags: [
+		aria: 'museum-of-candy--tab',
+		lang_lib: [
 			'html',
 			'css'
 		]
@@ -79,7 +84,8 @@ const portfolioData = [{
 		siteUrl: 'portfolio_sites/score_keeper/index.html',
 		imgUrl: 'images/score_keeper.jpg',
 		imgAlt: 'score_keeper',
-		tags: [
+		aria: 'score-keeper--tab',
+		lang_lib: [
 			'html',
 			'css',
 			'javascript'
@@ -92,7 +98,8 @@ const portfolioData = [{
 		siteUrl: 'http://derekancildesign.com/index.html',
 		imgUrl: 'images/derek_ancil_design.jpg',
 		imgAlt: 'derek ancil design thumbnail',
-		tags: [
+		aria: 'derek-ancil-designs--tab',
+		lang_lib: [
 			'html',
 			'css',
 			'javascript',
@@ -107,14 +114,15 @@ const portfolioData = [{
 		imgUrl: 'images/gamepad.jpg',
 		imgAlt: 'gamepad thumbnail',
 		gitUrl: 'https://github.com/davidbdeath/GamePad',
-		tags: [
+		aria: 'game-pad--tab',
+		lang_lib: [
 			'html',
 			'css'
 		]
 	}
 ]
 
-const create = () => {
+const createProjectList = () => {
 	for (let site in portfolioData) {
 
 		const card = document.createElement('div');
@@ -129,6 +137,8 @@ const create = () => {
 
 		const title = document.createElement('h3');
 		title.classList.add('card-title');
+		title.setAttribute('aria-controls', portfolioData[site].aria);
+		title.setAttribute('role', 'tab');
 		title.textContent = portfolioData[site].cardTitle;
 
 		const btnGroup = document.createElement('div')
@@ -169,7 +179,6 @@ const create = () => {
 			btnGit.appendChild(gitLink);
 		}
 	}
-
 }
 
-create();
+createProjectList();
