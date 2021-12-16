@@ -31,6 +31,16 @@ main {
 
 .project-details {
 
+	.close-ctrl {
+		position: absolute;
+		right: -1rem;
+
+		@media (max-width: $md) {
+			position: absolute;
+			right: 1em;
+		}
+	}
+
 	.title-group {
 		h2 {
 			font-family: $subtitle-ff;
@@ -77,11 +87,10 @@ main {
 			font-weight: 400;
 			text-align: right;
 		}
-
 	}
 
 	@media screen and (min-width: $md) {
 		position: sticky;
-		top: 2em;
+		top: 2rem;
 	}
 }

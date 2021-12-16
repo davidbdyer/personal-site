@@ -123,6 +123,9 @@ const portfolioData = [
 	}
 ]
 
+
+// dynamically generate project section
+
 const createProjectList = () => {
 	for (let site in portfolioData) {
 
@@ -182,6 +185,9 @@ const createProjectList = () => {
 	}
 }
 
+
+// dynamically generate details section
+
 const createDetailList = () => {
 	for (let site in portfolioData) {
 
@@ -190,6 +196,12 @@ const createDetailList = () => {
 		projectDetail.id = portfolioData[site].aria;
 		projectDetail.setAttribute('role', 'tabpanel');
 		projectDetail.setAttribute("hidden", true);
+		projectDetail.innerHTML = `<svg class="close-ctrl" id="detail-close-ctrl" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+			<g fill="#d0d6f9">
+				<path d="m2.575.454 16.97 16.97-2.12 2.122-16.97-16.97 2.12-2.122z" />
+				<path d="m.454 17.425 16.97-16.97 2.122 2.12-16.97 16.97-2.122-2.12z" />
+			</g>
+		</svg>`
 
 		const titleGrp = document.createElement('div');
 		titleGrp.classList.add('title-group');

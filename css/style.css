@@ -222,6 +222,16 @@ main .block {
 	margin-top: 0;
 }
 
+.project-details .close-ctrl {
+	position: absolute;
+	right: -1rem;
+}
+@media (max-width: 768px) {
+	.project-details .close-ctrl {
+		position: absolute;
+		right: 1em;
+	}
+}
 .project-details .title-group h2 {
 	font-family: "Roboto", sans-serif;
 	font-size: 2rem;
@@ -275,7 +285,7 @@ main .block {
 @media screen and (min-width: 768px) {
 	.project-details {
 		position: sticky;
-		top: 2em;
+		top: 2rem;
 	}
 }
 
@@ -309,6 +319,11 @@ main .block {
 
 .php {
 	color: #8892bf;
+}
+
+.close-ctrl {
+	width: 1em;
+	aspect-ratio: 1;
 }
 
 .primary-header {
@@ -372,21 +387,5 @@ main .block {
 
 body {
 	background-color: #42474C;
-}
-
-.block {
-	margin-inline: auto;
-	margin-block: 2rem;
-	padding-inline: 2rem;
-	padding-block: 1rem;
-	max-width: 96vw;
-	border-radius: 6px;
-	color: #fff;
-	-webkit-backdrop-filter: blur(2px);
-	        backdrop-filter: blur(2px);
-	background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 0, 0, 0.5)), to(black));
-	background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), black);
-	-webkit-box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
-	        box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 /*# sourceMappingURL=style.css.map */
