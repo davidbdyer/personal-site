@@ -4,7 +4,7 @@ const detailList = document.querySelector('#container--project-details')
 const portfolioData = [
 	{
 		title: 'Pray Up',
-		discription: 'Pray Up ministry.',
+		discription: 'Site designed and implemented for Pray Up ministies.',
 		date: 'Jan 2021',
 		siteUrl: 'https://prayuplife.com',
 		imgUrl: 'images/prayup.jpg',
@@ -222,6 +222,7 @@ const createDetailList = () => {
 			const listItem = document.createElement('li');
 
 			listItem.innerHTML = portfolioData[site].lang_lib[langLib]
+			listItem.classList.add(portfolioData[site].lang_lib[langLib]);
 			detailLangList.appendChild(listItem);
 		}
 	}

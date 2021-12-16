@@ -6,21 +6,19 @@ main {
 	gap: min(2rem, 5vw);
 	width: $block-width;
 	margin-inline: auto;
-	overflow: hidden;
 
 	.block {
-		margin-block: 0;
+		margin-top: 0;
 	}
-}
-
-.block {
-	flex-basis: 100%;
 }
 
 #container--project-details {
 }
 
 .project-details {
+	position: sticky;
+	top: 2em;
+
 	.title-group {
 		display: flex;
 		justify-content: space-between;
@@ -49,15 +47,12 @@ main {
 		p {
 			flex-grow: 3;
 			margin-bottom: 1rem;
-			// margin-left: 4ch;
 			margin-bottom: 0;
 			padding-top: 2em;
 			padding-bottom: 50%;
 			font-family: $paragraph-ff;
 			font-size: $paragraph-fs;
 			font-weight: $paragraph-fw;
-			// border: 2px solid $base;
-			// border-radius: .5em;
 		}
 
 		ul {
@@ -66,14 +61,12 @@ main {
 			margin: 0;
 			padding-top: 2em;
 			padding-right: 0;
-			// border: 2px solid $base;
-			// border-radius: .5em;
 		}
 
 		li {
 			list-style: none;
 			font-family: $paragraph-ff;
-			font-size: 1.5rem;
+			font-size: 1rem;
 			font-weight: 400;
 			text-align: right;
 		}

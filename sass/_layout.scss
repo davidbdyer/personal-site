@@ -6,20 +6,21 @@ body {
 
 .block {
 	margin-inline: auto;
+	margin-block: 2rem;
 	padding-inline: 2rem;
 	padding-block: 1rem;
-	margin-block: 2rem;
 	max-width: $block-width;
 	border-radius: 6px;
 	color: $font-clr;
-	backdrop-filter: blur(2px);
-	// background-color: rgba($block, .5);
+	// backdrop-filter: blur(2px);
 	background-image: linear-gradient(to bottom right, rgba($block, .5), rgba($block, 1));
+	box-shadow: .5rem .5rem 1rem rgba($block, .2);
 }
 
 .primary-header {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 
 	h1 {
 		font-family: $title-ff;
@@ -39,6 +40,7 @@ body {
 		fill: white;
 		width: $title-fs;
 		aspect-ratio: 1;
+		vertical-align: middle;
 	}
 }
 

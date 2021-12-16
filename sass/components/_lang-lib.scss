@@ -1,0 +1,29 @@
+@use 'abstracts'as *;
+
+.html {
+	color: $html;
+}
+
+.css {
+	color: $css;
+}
+
+.javascript {
+	color: $javascript;
+}
+
+.node {
+	color: $nodejs;
+}
+
+.express {
+	color: $express;
+}
+
+.ejs {
+	color: $ejs;
+}
+
+.mongo {
+	color: $mongodb;
+}

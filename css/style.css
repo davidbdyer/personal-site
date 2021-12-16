@@ -78,6 +78,11 @@ select {
 		scroll-behavior: auto !important;
 	}
 }
+.flex-100 {
+	-ms-flex-preferred-size: 100%;
+	    flex-basis: 100%;
+}
+
 .orb-canvas {
 	position: fixed;
 	top: 0;
@@ -95,16 +100,16 @@ body {
 
 .block {
 	margin-inline: auto;
+	margin-block: 2rem;
 	padding-inline: 2rem;
 	padding-block: 1rem;
-	margin-block: 2rem;
 	max-width: 96vw;
 	border-radius: 6px;
 	color: #fff;
-	-webkit-backdrop-filter: blur(2px);
-	        backdrop-filter: blur(2px);
 	background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 0, 0, 0.5)), to(black));
 	background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), black);
+	-webkit-box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
+	        box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
 .primary-header {
@@ -114,6 +119,9 @@ body {
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 .primary-header h1 {
 	font-family: "Roboto", sans-serif;
@@ -131,6 +139,7 @@ body {
 	fill: white;
 	width: 3rem;
 	aspect-ratio: 1;
+	vertical-align: middle;
 }
 
 .introduction h2 {
@@ -222,7 +231,7 @@ body {
 	gap: min(2rem, 5vw);
 }
 @media screen and (min-width: 768px) {
-	.project-grid .project-grid {
+	.project-grid {
 		grid-template-columns: repeat(auto-fill, 45%);
 	}
 }
@@ -247,17 +256,15 @@ main {
 	gap: min(2rem, 5vw);
 	width: 96vw;
 	margin-inline: auto;
-	overflow: hidden;
 }
 main .block {
-	margin-block: 0;
+	margin-top: 0;
 }
 
-.block {
-	-ms-flex-preferred-size: 100%;
-	    flex-basis: 100%;
+.project-details {
+	position: sticky;
+	top: 2em;
 }
-
 .project-details .title-group {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -316,8 +323,36 @@ main .block {
 .project-details .detail-body li {
 	list-style: none;
 	font-family: "Roboto", sans-serif;
-	font-size: 1.5rem;
+	font-size: 1rem;
 	font-weight: 400;
 	text-align: right;
+}
+
+.html {
+	color: #E34F26;
+}
+
+.css {
+	color: #264DE4;
+}
+
+.javascript {
+	color: #F0DB4F;
+}
+
+.node {
+	color: #689F63;
+}
+
+.express {
+	color: #FFFFFF;
+}
+
+.ejs {
+	color: #A91E50;
+}
+
+.mongo {
+	color: #01684A;
 }
 /*# sourceMappingURL=style.css.map */
