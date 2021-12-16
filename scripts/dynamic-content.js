@@ -4,7 +4,7 @@ const detailList = document.querySelector('#container--project-details')
 const portfolioData = [
 	{
 		title: 'Pray Up',
-		discription: 'Site designed and implemented for Pray Up ministies.',
+		discription: 'Website I designed and implemented for Pray Up ministries. Precursor for a much bigger social media app we are designing.',
 		date: 'Jan 2021',
 		siteUrl: 'https://prayuplife.com',
 		imgUrl: 'images/site-thumbs/prayup.jpg',
@@ -19,7 +19,7 @@ const portfolioData = [
 	},
 	{
 		title: 'Yelp Camp',
-		discription: 'Campground search and ratings app.',
+		discription: 'Campground rating web app. I implemented the front and backend.',
 		date: 'Sept 2021',
 		siteUrl: 'https://damp-sierra-93991.herokuapp.com/',
 		imgUrl: 'images/site-thumbs/yelpcamp.jpg',
@@ -37,7 +37,7 @@ const portfolioData = [
 	},
 	{
 		title: 'Tip Calculator',
-		discription: 'Implemented from design files.',
+		discription: 'Web app for splitting the bill and calculating the tip I implemented from design files.',
 		date: 'Oct 2021',
 		siteUrl: 'https://davidbdeath.github.io/tip-calculator-app/',
 		imgUrl: 'images/site-thumbs/tip_calculator.jpg',
@@ -52,7 +52,7 @@ const portfolioData = [
 	},
 	{
 		title: 'Calculator',
-		discription: 'Implemented from design files.',
+		discription: 'Web app I implemented from design files.',
 		date: 'May 2021',
 		siteUrl: 'https://davidbdeath.github.io/calculator-app-main/',
 		imgUrl: 'images/site-thumbs/calculator.jpg',
@@ -67,7 +67,7 @@ const portfolioData = [
 	},
 	{
 		title: 'Museum of Candy',
-		discription: 'A responsive simple website.',
+		discription: 'A simple responsive single page website I implemented.',
 		date: 'May 2021',
 		siteUrl: 'portfolio_sites/museum_of_candy/index.html',
 		imgUrl: 'images/site-thumbs/museum-of-candy.jpg',
@@ -80,7 +80,7 @@ const portfolioData = [
 	},
 	{
 		title: 'Score Keeper',
-		discription: 'Ping Pong score keeper.',
+		discription: 'Web app for keeping score of a ping pong game, I designed and implemented.',
 		date: 'Jun 2021',
 		siteUrl: 'portfolio_sites/score_keeper/index.html',
 		imgUrl: 'images/site-thumbs/score_keeper.jpg',
@@ -94,7 +94,7 @@ const portfolioData = [
 	},
 	{
 		title: 'Derek Ancil Designs',
-		discription: 'Implemented from design files.',
+		discription: 'Website I implemented for a designer.',
 		date: '2018',
 		siteUrl: 'http://derekancildesign.com/index.html',
 		imgUrl: 'images/site-thumbs/derek_ancil_design.jpg',
@@ -109,7 +109,7 @@ const portfolioData = [
 	},
 	{
 		title: 'Game Pad',
-		discription: 'A website for an app I designed in class.',
+		discription: 'Website I implemented for an app I designed for UX class.',
 		date: 'Nov 2017',
 		siteUrl: 'portfolio_sites/GamePad/index.html',
 		imgUrl: 'images/site-thumbs/gamepad.jpg',
