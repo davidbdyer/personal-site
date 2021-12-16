@@ -22,7 +22,7 @@ const enableBodyMute = () => {
 	mobileBodyMute.style.display = "unset";
 }
 
-const closeCtrl = (e) => {
+const closeCtrl = () => {
 	detailsSection.setAttribute('hidden', true);
 	mobileBodyMute.style.display = "none";
 }
