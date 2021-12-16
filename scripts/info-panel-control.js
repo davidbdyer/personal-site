@@ -16,19 +16,31 @@ const showContent = (parent, query) => {
 
 
 // selects tab and changes visibility
+// const changeTabPane = (e) => {
+// 	const targetTab = e.target;
+// 	const targetPanel = targetTab.getAttribute('aria-controls')
+//
+// 	if (currentTab === `#${targetPanel}`) {
+// 		main.querySelector('#container--project-details').setAttribute('hidden', true);
+// 		currentTab = ''
+// 	} else {
+// 		hideContent(main, '.project-details');
+// 		showContent(main, `#${targetPanel}`);
+// 		currentTab = `#${targetPanel}`;
+// 		showContent(main, '#container--project-details');
+// 	}
+// }
+
 const changeTabPane = (e) => {
 	const targetTab = e.target;
 	const targetPanel = targetTab.getAttribute('aria-controls')
 
-	if (currentTab === `#${targetPanel}`) {
-		main.querySelector('#container--project-details').setAttribute('hidden', true);
-		currentTab = ''
-	} else {
-		hideContent(main, '.project-details');
-		showContent(main, `#${targetPanel}`);
-		currentTab = `#${targetPanel}`;
-		showContent(main, '#container--project-details');
-	}
+	main.querySelector('#container--project-details').setAttribute('hidden', true);
+
+	hideContent(main, '.project-details');
+	showContent(main, `#${targetPanel}`);
+	currentTab = `#${targetPanel}`;
+	showContent(main, '#container--project-details');
 }
 
 
@@ -40,6 +52,10 @@ cardTitle.forEach((elm) => {
 	elm.addEventListener('click', changeTabPane);
 });
 
-// cardTitle.forEach((elm) => {
-// 	elm.addEventListener('blur', changeTabPane);
-// });
+cardTitle.forEach((elm) => {
+	elm.addEventListener('blur', (e) => {
+		if (currentTab.slice(1) === e.target.getAttribute('aria-controls')) {
+			main.querySelector('#container--project-details').setAttribute('hidden', true);
+		}
+	});
+});

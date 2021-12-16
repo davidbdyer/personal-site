@@ -1,0 +1,28 @@
+@use 'abstracts'as *;
+
+.primary-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	h1 {
+		font-family: $title-ff;
+		font-size: $title-fs;
+		font-weight: $title-fw;
+		color: $font-clr;
+	}
+
+	h2 {
+		font-family: $subtitle-ff;
+		font-size: $subtitle-f2;
+		font-weight: $subtitle-fw;
+		margin-bottom: .5rem;
+	}
+
+	.github-svg-header {
+		fill: white;
+		width: $title-fs;
+		aspect-ratio: 1;
+		vertical-align: middle;
+	}
+}

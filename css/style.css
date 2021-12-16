@@ -94,69 +94,6 @@ select {
 	opacity: 0.3;
 }
 
-body {
-	background-color: #42474C;
-}
-
-.block {
-	margin-inline: auto;
-	margin-block: 2rem;
-	padding-inline: 2rem;
-	padding-block: 1rem;
-	max-width: 96vw;
-	border-radius: 6px;
-	color: #fff;
-	-webkit-backdrop-filter: blur(2px);
-	        backdrop-filter: blur(2px);
-	background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 0, 0, 0.5)), to(black));
-	background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), black);
-	-webkit-box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
-	        box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
-}
-
-.primary-header {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
-}
-.primary-header h1 {
-	font-family: "Roboto", sans-serif;
-	font-size: 3rem;
-	font-weight: 400;
-	color: #fff;
-}
-.primary-header h2 {
-	font-family: "Roboto", sans-serif;
-	font-size: 2rem;
-	font-weight: 400;
-	margin-bottom: 0.5rem;
-}
-.primary-header .github-svg-header {
-	fill: white;
-	width: 3rem;
-	aspect-ratio: 1;
-	vertical-align: middle;
-}
-
-.introduction h2 {
-	font-family: "Roboto", sans-serif;
-	font-size: 2rem;
-	font-weight: 400;
-	margin-bottom: 0.5rem;
-}
-.introduction p {
-	font-family: "Roboto", sans-serif;
-	font-size: 1rem;
-	font-weight: 300;
-	margin-bottom: 1rem;
-}
-
 .card {
 	aspect-ratio: 1;
 	border-radius: 0.5em;
@@ -265,7 +202,7 @@ body {
 		-webkit-transform: translate(-50%, -50%);
 		        transform: translate(-50%, -50%);
 		width: 95vw;
-		height: 95vh;
+		height: 70vh;
 		background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 0, 0, 0.9)), to(black));
 		background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.9), black);
 	}
@@ -372,5 +309,84 @@ main .block {
 
 .php {
 	color: #8892bf;
+}
+
+.primary-header {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+.primary-header h1 {
+	font-family: "Roboto", sans-serif;
+	font-size: 3rem;
+	font-weight: 400;
+	color: #fff;
+}
+.primary-header h2 {
+	font-family: "Roboto", sans-serif;
+	font-size: 2rem;
+	font-weight: 400;
+	margin-bottom: 0.5rem;
+}
+.primary-header .github-svg-header {
+	fill: white;
+	width: 3rem;
+	aspect-ratio: 1;
+	vertical-align: middle;
+}
+
+.introduction h2 {
+	font-family: "Roboto", sans-serif;
+	font-size: 2rem;
+	font-weight: 400;
+	margin-bottom: 0.5rem;
+}
+.introduction p {
+	font-family: "Roboto", sans-serif;
+	font-size: 1rem;
+	font-weight: 300;
+	margin-bottom: 1rem;
+}
+
+.block {
+	margin-inline: auto;
+	margin-block: 2rem;
+	padding-inline: 2rem;
+	padding-block: 1rem;
+	max-width: 96vw;
+	border-radius: 6px;
+	color: #fff;
+	-webkit-backdrop-filter: blur(2px);
+	        backdrop-filter: blur(2px);
+	background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 0, 0, 0.5)), to(black));
+	background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), black);
+	-webkit-box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
+	        box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+body {
+	background-color: #42474C;
+}
+
+.block {
+	margin-inline: auto;
+	margin-block: 2rem;
+	padding-inline: 2rem;
+	padding-block: 1rem;
+	max-width: 96vw;
+	border-radius: 6px;
+	color: #fff;
+	-webkit-backdrop-filter: blur(2px);
+	        backdrop-filter: blur(2px);
+	background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 0, 0, 0.5)), to(black));
+	background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), black);
+	-webkit-box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
+	        box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 /*# sourceMappingURL=style.css.map */

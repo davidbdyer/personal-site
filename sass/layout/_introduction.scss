@@ -1,0 +1,17 @@
+@use 'abstracts'as *;
+
+.introduction {
+	h2 {
+		font-family: $subtitle-ff;
+		font-size: $subtitle-f2;
+		font-weight: $subtitle-fw;
+		margin-bottom: .5rem;
+	}
+
+	p {
+		font-family: $paragraph-ff;
+		font-size: $paragraph-fs;
+		font-weight: $paragraph-fw;
+		margin-bottom: 1rem;
+	}
+}
