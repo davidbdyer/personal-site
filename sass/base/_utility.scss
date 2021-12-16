@@ -1,3 +1,18 @@
+@use 'abstracts'as *;
+
 .flex-100 {
 	flex-basis: 100%;
+}
+
+@media (max-width: $md) {
+	.body-mute {
+		position: fixed;
+		top: 0;
+		left: 0;
+		display: none;
+		width: 100vw;
+		height: 100vh;
+		// z-index: 100;
+		background: rgba($block, .5);
+	}
 }

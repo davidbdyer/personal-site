@@ -83,6 +83,17 @@ select {
 	    flex-basis: 100%;
 }
 
+@media (max-width: 768px) {
+	.body-mute {
+		position: fixed;
+		top: 0;
+		left: 0;
+		display: none;
+		width: 100vw;
+		height: 100vh;
+		background: rgba(0, 0, 0, 0.5);
+	}
+}
 .orb-canvas {
 	position: fixed;
 	top: 0;
@@ -202,7 +213,7 @@ select {
 		-webkit-transform: translate(-50%, -50%);
 		        transform: translate(-50%, -50%);
 		width: 95vw;
-		height: 70vh;
+		height: 50vh;
 		background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 0, 0, 0.9)), to(black));
 		background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.9), black);
 	}
@@ -229,7 +240,7 @@ main .block {
 @media (max-width: 768px) {
 	.project-details .close-ctrl {
 		position: absolute;
-		right: 1em;
+		right: 1rem;
 	}
 }
 .project-details .title-group h2 {
@@ -322,7 +333,7 @@ main .block {
 }
 
 .close-ctrl {
-	width: 1em;
+	width: 1.5em;
 	aspect-ratio: 1;
 }
 

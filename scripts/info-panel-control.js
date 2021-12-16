@@ -1,7 +1,10 @@
 const main = document.querySelector('main');
+const detailsSection = main.querySelector('#container--project-details');
 const cardArray = main.querySelectorAll('.card');
-const detailsArray = main.querySelectorAll('.project-details');
-const detailsCloseCtrl = main.querySelector('#detail-close-ctrl');
+const detailsArray = detailsSection.querySelectorAll('.project-details');
+const detailsCloseCtrl = detailsSection.querySelectorAll('.detail-close-ctrl');
+const cardTitle = main.querySelectorAll('.card-title');
+const mobileBodyMute = main.querySelector('#mobile-body-mute');
 
 
 // utility functions
@@ -15,32 +18,40 @@ const showContent = (parent, query) => {
 	parent.querySelector(query).removeAttribute('hidden');
 }
 
+const enableBodyMute = () => {
+	mobileBodyMute.style.display = "unset";
+}
+
+const closeCtrl = (e) => {
+	const nodeToClose = e.target.parentNode.parentNode;
+	nodeToClose.setAttribute('hidden', true);
+	mobileBodyMute.style.display = "none";
+}
 
 const changeTabPane = (e) => {
 	const targetTab = e.target;
 	const targetPanel = targetTab.getAttribute('aria-controls')
 
-	main.querySelector('#container--project-details').setAttribute('hidden', true);
-
 	hideContent(main, '.project-details');
+	enableBodyMute();
 	showContent(main, `#${targetPanel}`);
-	currentTab = `#${targetPanel}`;
 	showContent(main, '#container--project-details');
 }
 
-
 // event listeners
-const cardTitle = main.querySelectorAll('.card-title');
-
-
 cardTitle.forEach((elm) => {
 	elm.addEventListener('click', changeTabPane);
 });
 
-cardTitle.forEach((elm) => {
-	elm.addEventListener('blur', (e) => {
-		if (currentTab.slice(1) === e.target.getAttribute('aria-controls')) {
-			main.querySelector('#container--project-details').setAttribute('hidden', true);
-		}
-	});
+detailsCloseCtrl.forEach((elm) => {
+	elm.addEventListener('click', closeCtrl);
 });
+
+
+
+
+
+
+// notes
+
+// main.querySelector('#container--project-details').setAttribute('hidden', true);
