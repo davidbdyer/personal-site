@@ -13,7 +13,8 @@ body {
 	border-radius: 6px;
 	color: $font-clr;
 	backdrop-filter: blur(2px);
-	background-color: rgba($block, .5);
+	// background-color: rgba($block, .5);
+	background-image: linear-gradient(to bottom right, rgba($block, .5), rgba($block, 1));
 }
 
 .primary-header {
