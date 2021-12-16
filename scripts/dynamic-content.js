@@ -189,6 +189,7 @@ const createDetailList = () => {
 		projectDetail.classList.add('project-details');
 		projectDetail.id = portfolioData[site].aria;
 		projectDetail.setAttribute('role', 'tabpanel');
+		projectDetail.setAttribute("hidden", true);
 
 		const titleGrp = document.createElement('div');
 		titleGrp.classList.add('title-group');
@@ -199,6 +200,9 @@ const createDetailList = () => {
 		const detailDate = document.createElement('date');
 		detailDate.textContent = portfolioData[site].date;
 
+		const detailBody = document.createElement('div');
+		detailBody.classList.add('detail-body');
+
 		const detailDiscription = document.createElement('p');
 		detailDiscription.textContent = portfolioData[site].discription;
 
@@ -208,8 +212,11 @@ const createDetailList = () => {
 		projectDetail.appendChild(titleGrp);
 		titleGrp.appendChild(detailTitle);
 		titleGrp.appendChild(detailDate);
-		projectDetail.appendChild(detailDiscription);
-		projectDetail.appendChild(detailLangList);
+
+		projectDetail.appendChild(detailBody);
+
+		detailBody.appendChild(detailDiscription);
+		detailBody.appendChild(detailLangList);
 
 		for (let langLib in portfolioData[site].lang_lib) {
 			const listItem = document.createElement('li');

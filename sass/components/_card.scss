@@ -45,7 +45,6 @@
 	overflow: hidden;
 
 	button {
-		height: 1.5em;
 		border: unset;
 		color: $font-clr;
 		background: black;
@@ -56,7 +55,8 @@
 			text-decoration: none;
 
 			svg {
-				margin-top: .2em;
+				margin-bottom: .2em;
+				vertical-align: middle;
 			}
 		}
 	}
@@ -65,6 +65,5 @@
 		border-right: solid 1px $base;
 	}
 
-	> .btn-git {
-	}
+	> .btn-git {}
 }

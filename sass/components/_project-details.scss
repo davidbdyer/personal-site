@@ -6,6 +6,7 @@ main {
 	gap: min(2rem, 5vw);
 	width: $block-width;
 	margin-inline: auto;
+	overflow: hidden;
 
 	.block {
 		margin-block: 0;
@@ -20,6 +21,13 @@ main {
 	flex-grow: 2;
 	flex-basis: 200%;
 }
+
+.container--project-details-hidden {
+	transform: translateX(calc(100% + 2rem));
+	transition: transform 500ms ease-in-out;
+}
+
+
 
 .project-details {
 	.title-group {
@@ -42,11 +50,40 @@ main {
 		}
 	}
 
-	p {
-		font-family: $paragraph-ff;
-		font-size: $paragraph-fs;
-		font-weight: $paragraph-fw;
-		margin-bottom: 1rem;
-		margin-left: 4ch;
+	.detail-body {
+		display: flex;
+		justify-content: space-between;
+		gap: 2em;
+
+		p {
+			flex-grow: 3;
+			margin-bottom: 1rem;
+			margin-left: 4ch;
+			margin-bottom: 0;
+			padding: 2em;
+			padding-bottom: 50%;
+			font-family: $paragraph-ff;
+			font-size: $paragraph-fs;
+			font-weight: $paragraph-fw;
+			border: 2px solid $base;
+			border-radius: .5em;
+		}
+
+		ul {
+			flex-grow: 1;
+			min-width: fit-content;
+			margin: 0;
+			padding: 2em;
+			border: 2px solid $base;
+			border-radius: .5em;
+		}
+
+		li {
+			list-style: none;
+			font-family: $paragraph-ff;
+			font-size: $paragraph-fs;
+			font-weight: 400;
+		}
+
 	}
 }
