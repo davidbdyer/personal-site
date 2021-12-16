@@ -23,8 +23,7 @@ const enableBodyMute = () => {
 }
 
 const closeCtrl = (e) => {
-	const nodeToClose = e.target.parentNode.parentNode;
-	nodeToClose.setAttribute('hidden', true);
+	detailsSection.setAttribute('hidden', true);
 	mobileBodyMute.style.display = "none";
 }
 
@@ -46,12 +45,3 @@ cardTitle.forEach((elm) => {
 detailsCloseCtrl.forEach((elm) => {
 	elm.addEventListener('click', closeCtrl);
 });
-
-
-
-
-
-
-// notes
-
-// main.querySelector('#container--project-details').setAttribute('hidden', true);
