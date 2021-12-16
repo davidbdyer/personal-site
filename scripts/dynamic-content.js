@@ -19,7 +19,7 @@ const portfolioData = [
 	},
 	{
 		title: 'Yelp Camp',
-		discription: 'Campground rating app.',
+		discription: 'Campground search and ratings app.',
 		date: 'Sept 2021',
 		siteUrl: 'https://damp-sierra-93991.herokuapp.com/',
 		imgUrl: 'images/yelpcamp.jpg',
@@ -36,7 +36,7 @@ const portfolioData = [
 		]
 	},
 	{
-		title: 'Tip Calculator App',
+		title: 'Tip Calculator',
 		discription: 'Implemented from design files.',
 		date: 'Oct 2021',
 		siteUrl: 'https://davidbdeath.github.io/tip-calculator-app/',
@@ -51,7 +51,7 @@ const portfolioData = [
 		]
 	},
 	{
-		title: 'Calculator App',
+		title: 'Calculator',
 		discription: 'Implemented from design files.',
 		date: 'May 2021',
 		siteUrl: 'https://davidbdeath.github.io/calculator-app-main/',
@@ -79,7 +79,7 @@ const portfolioData = [
 		]
 	},
 	{
-		title: 'Score Keeper App',
+		title: 'Score Keeper',
 		discription: 'Ping Pong score keeper.',
 		date: 'Jun 2021',
 		siteUrl: 'portfolio_sites/score_keeper/index.html',
@@ -136,7 +136,7 @@ const createProjectList = () => {
 		const cardInfo = document.createElement('div')
 		cardInfo.classList.add('card-info');
 
-		const title = document.createElement('h3');
+		const title = document.createElement('button');
 		title.classList.add('card-title');
 		title.setAttribute('aria-controls', portfolioData[site].aria);
 		title.setAttribute('role', 'tab');

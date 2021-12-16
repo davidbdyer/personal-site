@@ -106,6 +106,8 @@ body {
 	max-width: 96vw;
 	border-radius: 6px;
 	color: #fff;
+	-webkit-backdrop-filter: blur(2px);
+	        backdrop-filter: blur(2px);
 	background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 0, 0, 0.5)), to(black));
 	background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), black);
 	-webkit-box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
@@ -184,14 +186,18 @@ body {
 	border-radius: 0 0 0.5em 0.5em;
 }
 .card-title {
-	font-size: 1rem;
+	width: -webkit-fit-content;
+	width: -moz-fit-content;
+	width: fit-content;
+	height: -webkit-fit-content;
+	height: -moz-fit-content;
+	height: fit-content;
+	font-size: 1em;
+	color: #fff;
+	background-color: black;
+	border: solid 1px #42474C;
+	border-radius: 0.5em;
 	cursor: pointer;
-	border-bottom: 2px solid rgba(255, 255, 255, 0);
-	-webkit-transition: border-color 250ms ease-in-out;
-	transition: border-color 250ms ease-in-out;
-}
-.card-title:hover, .card-title:focus {
-	border-bottom: 2px solid white;
 }
 
 .btn-group {
@@ -246,6 +252,24 @@ body {
 	}
 }
 
+#container--project-details {
+	-ms-flex-preferred-size: 35%;
+	    flex-basis: 35%;
+}
+
+@media screen and (max-width: 768px) {
+	#container--project-details {
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		        transform: translate(-50%, -50%);
+		width: 95vw;
+		height: 95vh;
+		background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 0, 0, 0.9)), to(black));
+		background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.9), black);
+	}
+}
 main {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -261,22 +285,6 @@ main .block {
 	margin-top: 0;
 }
 
-.project-details {
-	position: sticky;
-	top: 2em;
-}
-.project-details .title-group {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
-	-webkit-box-align: baseline;
-	    -ms-flex-align: baseline;
-	        align-items: baseline;
-	margin-bottom: 1.5em;
-}
 .project-details .title-group h2 {
 	font-family: "Roboto", sans-serif;
 	font-size: 2rem;
@@ -327,6 +335,12 @@ main .block {
 	font-weight: 400;
 	text-align: right;
 }
+@media screen and (min-width: 768px) {
+	.project-details {
+		position: sticky;
+		top: 2em;
+	}
+}
 
 .html {
 	color: #E34F26;
@@ -354,5 +368,9 @@ main .block {
 
 .mongo {
 	color: #01684A;
+}
+
+.php {
+	color: #8892bf;
 }
 /*# sourceMappingURL=style.css.map */

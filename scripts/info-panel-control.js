@@ -35,6 +35,11 @@ const changeTabPane = (e) => {
 // event listeners
 const cardTitle = main.querySelectorAll('.card-title');
 
+
 cardTitle.forEach((elm) => {
 	elm.addEventListener('click', changeTabPane);
 });
+
+// cardTitle.forEach((elm) => {
+// 	elm.addEventListener('blur', changeTabPane);
+// });
