@@ -1,0 +1,26 @@
+@use 'abstracts'as *;
+
+.contact-form {
+	display: grid;
+
+	label {
+		font-family: $subtitle-ff;
+		font-size: $subtitle-f2;
+		font-weight: $regular;
+	}
+
+	input,
+	textarea,
+	button {
+		margin-bottom: 2em;
+		font-family: $robo;
+	}
+
+	button {
+		@media (min-width: $md) {
+			width: 10em;
+			justify-self: end;
+		}
+	}
+
+}

@@ -5,6 +5,10 @@
 	justify-content: space-between;
 	align-items: center;
 
+	a {
+		text-decoration: none;
+	}
+
 	h1 {
 		font-family: $title-ff;
 		font-size: 2rem;

@@ -244,6 +244,9 @@ select {
 	    -ms-flex-align: center;
 	        align-items: center;
 }
+.primary-header a {
+	text-decoration: none;
+}
 .primary-header h1 {
 	font-family: "Roboto", sans-serif;
 	font-size: 2rem;
@@ -394,6 +397,29 @@ main .block {
 	.project-details {
 		position: sticky;
 		top: 2rem;
+	}
+}
+
+.contact-form {
+	display: -ms-grid;
+	display: grid;
+}
+.contact-form label {
+	font-family: "Roboto", sans-serif;
+	font-size: 2rem;
+	font-weight: 400;
+}
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+	margin-bottom: 2em;
+	font-family: "Roboto", sans-serif;
+}
+@media (min-width: 768px) {
+	.contact-form button {
+		width: 10em;
+		-ms-grid-column-align: end;
+		    justify-self: end;
 	}
 }
 
