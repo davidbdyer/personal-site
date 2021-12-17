@@ -246,17 +246,28 @@ select {
 }
 .primary-header h1 {
 	font-family: "Roboto", sans-serif;
-	font-size: 3rem;
+	font-size: 2rem;
 	font-weight: 400;
 	color: #fff;
+}
+@media (min-width: 768px) {
+	.primary-header h1 {
+		font-size: 3rem;
+	}
 }
 .primary-header .github-icon {
 	fill: white;
 }
-.primary-header div > a > svg {
-	width: 3rem;
-	margin-left: 2rem;
+.primary-header .header-icon {
+	margin-left: 1em;
+	width: 2em;
 	vertical-align: middle;
+}
+@media (min-width: 768px) {
+	.primary-header .header-icon {
+		width: 3em;
+		margin-left: 2rem;
+	}
 }
 
 .introduction h2 {
@@ -301,7 +312,7 @@ select {
 	    flex-basis: 40%;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
 	#container--project-details {
 		position: fixed;
 		top: 50%;
@@ -312,7 +323,7 @@ select {
 		height: 50vh;
 		background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 0, 0, 0.9)), to(black));
 		background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.9), black);
-		border: 1px solid rgba(255, 255, 255, 0.4);
+		border: 1px solid #42474C;
 	}
 }
 main {

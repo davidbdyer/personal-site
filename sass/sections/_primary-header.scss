@@ -7,19 +7,29 @@
 
 	h1 {
 		font-family: $title-ff;
-		font-size: $title-fs;
+		font-size: 2rem;
 		font-weight: $title-fw;
 		color: $font-clr;
+
+		@media (min-width: $md) {
+			font-size: $title-fs;
+		}
 	}
 
 	.github-icon {
 		fill: white;
 	}
 
-	div > a > svg {
-		width: 3rem;
-		margin-left: 2rem;
+	.header-icon {
+		margin-left: 1em;
+		width: 2em;
 		vertical-align: middle;
+
+		@media (min-width: $md) {
+			width: 3em;
+			margin-left: 2rem;
+
+		}
 	}
 
 }
