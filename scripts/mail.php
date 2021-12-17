@@ -8,4 +8,4 @@ $subject = "Contact Form";
 $mailheader = "From: info@prayuplife.com \r\n";
 mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
 // echo "Thank You!";
-header('Location: https://prayuplife.com/confirmation_page.html');
+header('Location: https:prayuplife.com/confirmation_page.html');

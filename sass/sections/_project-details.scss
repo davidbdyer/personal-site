@@ -22,7 +22,7 @@
 main {
 	display: flex;
 	flex: 0 1 100%;
-	gap: min(2rem, 5vw);
+	gap: min(1rem, 5vw);
 	width: $block-width;
 	margin-inline: auto;
 
@@ -59,35 +59,29 @@ main {
 	}
 
 	.detail-body {
-		display: flex;
-		justify-content: space-between;
-		gap: 2em;
 
 		p {
-			flex-grow: 3;
-			margin-bottom: 1rem;
-			margin-bottom: 0;
-			padding-top: 2em;
-			padding-bottom: 50%;
+			margin-block: 2em;
 			font-family: $paragraph-ff;
 			font-size: $paragraph-fs;
 			font-weight: $paragraph-fw;
 		}
 
 		ul {
-			flex-grow: 1;
-			min-width: fit-content;
+			display: flex;
+			flex-wrap: wrap;
 			margin: 0;
-			padding-top: 2em;
-			padding-right: 0;
+			padding: 0;
+			width: 100%;
 		}
 
 		li {
+
+			margin-right: 1em;
 			list-style: none;
 			font-family: $paragraph-ff;
 			font-size: 1rem;
-			font-weight: 400;
-			text-align: right;
+			font-weight: 500;
 		}
 	}
 
