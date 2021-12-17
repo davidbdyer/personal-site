@@ -12,5 +12,14 @@
 		color: $font-clr;
 	}
 
+	.github-icon {
+		fill: white;
+	}
+
+	div > a > svg {
+		width: 3rem;
+		margin-left: 2rem;
+		vertical-align: middle;
+	}
 
 }

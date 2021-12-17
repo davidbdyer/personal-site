@@ -229,17 +229,6 @@ select {
 	aspect-ratio: 1;
 }
 
-.github-svg-header {
-	fill: white;
-	height: 3rem;
-	vertical-align: middle;
-}
-
-.contact-icon {
-	height: 3rem;
-	vertical-align: middle;
-}
-
 .primary-header {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -256,6 +245,14 @@ select {
 	font-size: 3rem;
 	font-weight: 400;
 	color: #fff;
+}
+.primary-header .github-icon {
+	fill: white;
+}
+.primary-header div > a > svg {
+	width: 3rem;
+	margin-left: 2rem;
+	vertical-align: middle;
 }
 
 .introduction h2 {
