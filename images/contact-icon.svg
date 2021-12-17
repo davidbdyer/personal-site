@@ -1,0 +1,10 @@
+<svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.5" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<clipPath id="a">
+		<path clip-rule="evenodd" d="m0 0h500v500h-500z" />
+	</clipPath>
+	<path d="m0 0h500v500h-500z" fill="none" />
+	<g clip-path="url(#a)">
+		<path d="m500 48.551c0-26.796-21.755-48.551-48.551-48.551h-402.898c-26.796 0-48.551 21.755-48.551 48.551v402.898c0 26.796 21.755 48.551 48.551 48.551h402.898c26.796 0 48.551-21.755 48.551-48.551zm-450 1.449v400h400v-400z" fill="#ebebeb" />
+		<path d="m485.625 31.5-235.625 263.5-235.625-263.5" fill="none" stroke="#ebebeb" stroke-width="50" />
+	</g>
+</svg>
