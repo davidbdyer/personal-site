@@ -3,18 +3,16 @@
 .contact-form {
 	display: grid;
 
-	label {
-		font-family: $subtitle-ff;
-		font-size: $subtitle-f2;
-		font-weight: $regular;
+	& * {
+		margin-top: 2em;
+		font-family: $robo;
+
+		&:last-child {
+			margin-bottom: 1em;
+		}
 	}
 
-	input,
-	textarea,
-	button {
-		margin-bottom: 2em;
-		font-family: $robo;
-	}
+
 
 	button {
 		@media (min-width: $md) {

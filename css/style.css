@@ -94,6 +94,19 @@ select {
 		background: rgba(0, 0, 0, 0.5);
 	}
 }
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	/* added line */
+	border: 0;
+}
+
 .orb-canvas {
 	position: fixed;
 	top: 0;
@@ -404,16 +417,12 @@ main .block {
 	display: -ms-grid;
 	display: grid;
 }
-.contact-form label {
+.contact-form * {
+	margin-top: 2em;
 	font-family: "Roboto", sans-serif;
-	font-size: 2rem;
-	font-weight: 400;
 }
-.contact-form input,
-.contact-form textarea,
-.contact-form button {
-	margin-bottom: 2em;
-	font-family: "Roboto", sans-serif;
+.contact-form *:last-child {
+	margin-bottom: 1em;
 }
 @media (min-width: 768px) {
 	.contact-form button {
