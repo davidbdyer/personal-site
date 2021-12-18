@@ -60,18 +60,18 @@
 	</header>
 
 	<div class="block">
-		<form method="POST" class="contact-form" name="contact-form" id="contact-form" action="scripts/mail.php">
+		<form method="POST" action="scripts/mail.php" class="contact-form" name="contact-form" id="contact-form">
 			<label class="sr-only" for="name">name</label>
 			<input type="text" name="name" id="name" minlength="2" maxlength="20" placeholder="name" required>
 
 			<label class="sr-only" for="email">email</label>
-			<input type="email" name="email" id="email" minlength="2" maxlength="50" placeholder="email" required>
+			<input type="email" name="email" id="email" minlength="5" maxlength="50" placeholder="email" required>
 
 			<label class="sr-only" for="subject">subject</label>
-			<input type="text" name="subject" id="subject" minlength="5" maxlength="50" placeholder="subject" required>
+			<input type="text" name="subject" id="subject" minlength="4" maxlength="50" placeholder="subject" required>
 
 			<label class="sr-only" for="message">message</label>
-			<textarea name="message" id="message" cols="30" rows="10"></textarea>
+			<textarea name="message" id="message" rows="10"></textarea>
 
 			<input class="btn" type="submit" value="Send">
 		</form>
