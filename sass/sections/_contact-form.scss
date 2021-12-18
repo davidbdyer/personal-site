@@ -6,19 +6,20 @@
 	& * {
 		margin-top: 2em;
 		font-family: $robo;
+		border: none;
+		border-radius: 6px;
 
 		&:last-child {
 			margin-bottom: 1em;
 		}
 	}
 
+	.btn {
+		background: mix($block, $base, 50%);
 
-
-	button {
 		@media (min-width: $md) {
 			width: 10em;
 			justify-self: end;
 		}
 	}
-
 }

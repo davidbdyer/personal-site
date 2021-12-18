@@ -241,9 +241,50 @@ select {
 	color: #bf4080;
 }
 
+.html,
+.css,
+.javascript,
+.node,
+.express,
+.ejs,
+.mongo,
+.php,
+.sass {
+	font-family: "Roboto", sans-serif;
+	font-size: 1rem;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
 .close-ctrl {
 	width: 1.5em;
 	aspect-ratio: 1;
+}
+
+.btn {
+	border: solid 1px #42474C;
+	border-radius: 0.5em;
+	color: #fff;
+	background: black;
+}
+
+button {
+	-webkit-transition: opacity 200ms ease-in-out;
+	transition: opacity 200ms ease-in-out;
+}
+button:hover {
+	opacity: 0.8;
+}
+
+a {
+	text-decoration: none;
+}
+a > * {
+	-webkit-transition: opacity 200ms ease-in-out;
+	transition: opacity 200ms ease-in-out;
+}
+a > *:hover {
+	opacity: 0.8;
 }
 
 .primary-header {
@@ -256,9 +297,6 @@ select {
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
-}
-.primary-header a {
-	text-decoration: none;
 }
 .primary-header h1 {
 	font-family: "Roboto", sans-serif;
@@ -282,7 +320,7 @@ select {
 @media (min-width: 768px) {
 	.primary-header .header-icon {
 		width: 3em;
-		margin-left: 2rem;
+		margin-left: 1rem;
 	}
 }
 
@@ -402,9 +440,6 @@ main .block {
 .project-details .detail-body li {
 	margin-right: 1em;
 	list-style: none;
-	font-family: "Roboto", sans-serif;
-	font-size: 1rem;
-	font-weight: 500;
 }
 @media screen and (min-width: 768px) {
 	.project-details {
@@ -420,12 +455,17 @@ main .block {
 .contact-form * {
 	margin-top: 2em;
 	font-family: "Roboto", sans-serif;
+	border: none;
+	border-radius: 6px;
 }
 .contact-form *:last-child {
 	margin-bottom: 1em;
 }
+.contact-form .btn {
+	background: #212426;
+}
 @media (min-width: 768px) {
-	.contact-form button {
+	.contact-form .btn {
 		width: 10em;
 		-ms-grid-column-align: end;
 		    justify-self: end;

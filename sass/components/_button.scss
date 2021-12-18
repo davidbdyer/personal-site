@@ -1,0 +1,17 @@
+@use 'abstracts'as *;
+
+.btn {
+	border: solid 1px $base;
+	border-radius: .5em;
+	color: $font-clr;
+	background: $block;
+
+}
+
+button {
+	transition: opacity 200ms ease-in-out;
+
+	&:hover {
+		opacity: .8;
+	}
+}

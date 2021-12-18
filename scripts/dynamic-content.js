@@ -3,14 +3,14 @@ const detailList = document.querySelector('#container--project-details')
 
 const portfolioData = [
 	{
-		title: 'Pray Up',
-		discription: 'Website I designed and implemented for Pray Up ministries. Precursor for a much bigger social media app we are designing.',
-		date: 'Jan 2021',
-		siteUrl: 'https://prayuplife.com',
-		imgUrl: 'images/site-thumbs/prayup.jpg',
-		imgAlt: 'pray up site thumbnail',
-		gitUrl: 'https://github.com/davidbdeath/prayup_website',
-		aria: 'pray-up--tab',
+		title: 'Tip Calculator',
+		discription: 'Web app for splitting the bill and calculating the tip I implemented from design files.',
+		date: 'Oct 2021',
+		siteUrl: 'https://davidbdeath.github.io/tip-calculator-app/',
+		imgUrl: 'images/site-thumbs/tip_calculator.jpg',
+		imgAlt: 'Tip Calculator App',
+		gitUrl: 'https://github.com/davidbdeath/tip-calculator-app',
+		aria: 'tip-calculator--tab',
 		lang_lib: [
 			'html',
 			'css',
@@ -36,14 +36,14 @@ const portfolioData = [
 		]
 	},
 	{
-		title: 'Tip Calculator',
-		discription: 'Web app for splitting the bill and calculating the tip I implemented from design files.',
-		date: 'Oct 2021',
-		siteUrl: 'https://davidbdeath.github.io/tip-calculator-app/',
-		imgUrl: 'images/site-thumbs/tip_calculator.jpg',
-		imgAlt: 'Tip Calculator App',
-		gitUrl: 'https://github.com/davidbdeath/tip-calculator-app',
-		aria: 'tip-calculator--tab',
+		title: 'Pray Up',
+		discription: 'Website I designed and implemented for Pray Up ministries. Precursor for a much bigger social media app we are designing.',
+		date: 'Jan 2021',
+		siteUrl: 'https://prayuplife.com',
+		imgUrl: 'images/site-thumbs/prayup.jpg',
+		imgAlt: 'pray up site thumbnail',
+		gitUrl: 'https://github.com/davidbdeath/prayup_website',
+		aria: 'pray-up--tab',
 		lang_lib: [
 			'html',
 			'css',
