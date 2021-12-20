@@ -83,6 +83,12 @@ select {
 	    flex-basis: 100%;
 }
 
+.stick-bottom {
+	position: fixed;
+	bottom: 1rem;
+	right: 2rem;
+}
+
 @media (max-width: 768px) {
 	.body-mute {
 		position: fixed;
@@ -268,11 +274,17 @@ select {
 	background: black;
 }
 
-button {
+button,
+.btn {
+	padding-inline: 1em;
+	padding-block: 0.2em;
+	font-family: "Roboto", sans-serif;
+	font-size: 1em;
 	-webkit-transition: opacity 200ms ease-in-out;
 	transition: opacity 200ms ease-in-out;
 }
-button:hover {
+button:hover,
+.btn:hover {
 	opacity: 0.8;
 }
 
@@ -454,6 +466,7 @@ main .block {
 }
 .contact-form * {
 	margin-top: 2em;
+	padding-inline: 0.5em;
 	font-family: "Roboto", sans-serif;
 	border: none;
 	border-radius: 6px;
@@ -463,6 +476,7 @@ main .block {
 }
 .contact-form .btn {
 	background: #212426;
+	border: solid 1px rgba(255, 255, 255, 0.2);
 }
 @media (min-width: 768px) {
 	.contact-form .btn {

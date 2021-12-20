@@ -4,6 +4,12 @@
 	flex-basis: 100%;
 }
 
+.stick-bottom {
+	position: fixed;
+	bottom: 1rem;
+	right: 2rem;
+}
+
 @media (max-width: $md) {
 	.body-mute {
 		position: fixed;
@@ -25,6 +31,7 @@
 	margin: -1px;
 	overflow: hidden;
 	clip: rect(0, 0, 0, 0);
-	white-space: nowrap; /* added line */
+	white-space: nowrap;
+	/* added line */
 	border: 0;
-  }
+}

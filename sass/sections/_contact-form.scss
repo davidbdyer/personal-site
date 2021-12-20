@@ -5,6 +5,7 @@
 
 	& * {
 		margin-top: 2em;
+		padding-inline: .5em;
 		font-family: $robo;
 		border: none;
 		border-radius: 6px;
@@ -16,6 +17,7 @@
 
 	.btn {
 		background: mix($block, $base, 50%);
+		border: solid 1px rgba($font-clr, .2);
 
 		@media (min-width: $md) {
 			width: 10em;
