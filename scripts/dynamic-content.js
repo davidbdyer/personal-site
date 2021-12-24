@@ -3,6 +3,21 @@ const detailList = document.querySelector('#container--project-details')
 
 const portfolioData = [
 	{
+		title: 'Score Keeper',
+		discription: 'Web app for keeping score of a ping pong game, I designed and implemented.',
+		date: 'Dec 2021',
+		siteUrl: 'https://davidbdeath.github.io/ping-pong_score_keeper/',
+		gitUrl: 'https://github.com/davidbdeath/ping-pong_score_keeper',
+		imgUrl: 'images/site-thumbs/ping-pong-score_keeper.jpg',
+		imgAlt: 'ping pong score keeper',
+		aria: 'score-keeper--tab',
+		lang_lib: [
+			'html',
+			'sass',
+			'javascript'
+		]
+	},
+	{
 		title: 'Tip Calculator',
 		discription: 'Web app for splitting the bill and calculating the tip I implemented from design files.',
 		date: 'Oct 2021',
@@ -76,20 +91,6 @@ const portfolioData = [
 		lang_lib: [
 			'html',
 			'css'
-		]
-	},
-	{
-		title: 'Score Keeper',
-		discription: 'Web app for keeping score of a ping pong game, I designed and implemented.',
-		date: 'Jun 2021',
-		siteUrl: 'portfolio_sites/score_keeper/index.html',
-		imgUrl: 'images/site-thumbs/score_keeper.jpg',
-		imgAlt: 'score_keeper',
-		aria: 'score-keeper--tab',
-		lang_lib: [
-			'html',
-			'css',
-			'javascript'
 		]
 	},
 	{
