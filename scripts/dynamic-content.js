@@ -8,7 +8,7 @@ const portfolioData = [
 		date: 'Dec 2021',
 		siteUrl: 'https://davidbdeath.github.io/ping-pong_score_keeper/',
 		gitUrl: 'https://github.com/davidbdeath/ping-pong_score_keeper',
-		imgUrl: 'images/site-thumbs/ping-pong-score_keeper.jpg',
+		imgUrl: 'images/site-thumbs/ping-pong-score-keeper.jpg',
 		imgAlt: 'ping pong score keeper',
 		aria: 'score-keeper--tab',
 		lang_lib: [
