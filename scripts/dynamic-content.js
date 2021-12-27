@@ -18,8 +18,23 @@ const portfolioData = [
 		]
 	},
 	{
+		title: 'Space Tourism',
+		discription: 'Website, implemented by me, designed by Frontend Mentor.',
+		date: 'Dec 2021',
+		siteUrl: 'https://davidbdeath.github.io/space-tourism-website/',
+		gitUrl: 'https://github.com/davidbdeath/space-tourism-website',
+		imgUrl: 'images/site-thumbs/space-tourism.jpg',
+		imgAlt: 'space tourism',
+		aria: 'space-tourism--tab',
+		lang_lib: [
+			'html',
+			'css',
+			'javascript'
+		]
+	},
+	{
 		title: 'Tip Calculator',
-		discription: 'Web app for splitting the bill and calculating the tip I implemented from design files.',
+		discription: 'Web app for splitting the bill and calculating the tip, implemented by me, designed by Frontend Mentor.',
 		date: 'Oct 2021',
 		siteUrl: 'https://davidbdeath.github.io/tip-calculator-app/',
 		imgUrl: 'images/site-thumbs/tip_calculator.jpg',
@@ -34,7 +49,7 @@ const portfolioData = [
 	},
 	{
 		title: 'Yelp Camp',
-		discription: 'Campground rating web app. I implemented the front and backend.',
+		discription: 'Campground rating web app. I implemented the frontend and backend.',
 		date: 'Sept 2021',
 		siteUrl: 'https://damp-sierra-93991.herokuapp.com/',
 		imgUrl: 'images/site-thumbs/yelpcamp.jpg',
@@ -67,7 +82,7 @@ const portfolioData = [
 	},
 	{
 		title: 'Calculator',
-		discription: 'Web app I implemented from design files.',
+		discription: 'Web app, implemented by me, designed by Frontend Mentor.',
 		date: 'May 2021',
 		siteUrl: 'https://davidbdeath.github.io/calculator-app-main/',
 		imgUrl: 'images/site-thumbs/calculator.jpg',
@@ -95,7 +110,7 @@ const portfolioData = [
 	},
 	{
 		title: 'Derek Ancil Designs',
-		discription: 'Website I implemented for a designer.',
+		discription: 'Website I implemented for desiger Derek Ancil.',
 		date: '2018',
 		siteUrl: 'http://derekancildesign.com/index.html',
 		imgUrl: 'images/site-thumbs/derek_ancil_design.jpg',
@@ -110,7 +125,7 @@ const portfolioData = [
 	},
 	{
 		title: 'Game Pad',
-		discription: 'Website I implemented for an app I designed for UX class.',
+		discription: 'Website I implemented and designed for an app I designed for UX class.',
 		date: 'Nov 2017',
 		siteUrl: 'portfolio_sites/GamePad/index.html',
 		imgUrl: 'images/site-thumbs/gamepad.jpg',
