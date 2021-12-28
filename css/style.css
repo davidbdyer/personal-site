@@ -439,6 +439,16 @@ main .block {
 	font-size: 1rem;
 	font-weight: 300;
 }
+.project-details .detail-body p a {
+	color: #fff;
+	text-decoration: underline;
+}
+.project-details .detail-body p a:link {
+	color: #fff;
+}
+.project-details .detail-body p a:visited {
+	color: #fff;
+}
 .project-details .detail-body ul {
 	display: -webkit-box;
 	display: -ms-flexbox;

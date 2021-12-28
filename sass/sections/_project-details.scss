@@ -1,4 +1,4 @@
-@use '../abstracts' as *;
+@use '../abstracts'as *;
 
 
 #container--project-details {
@@ -64,6 +64,19 @@ main {
 			font-family: $paragraph-ff;
 			font-size: $paragraph-fs;
 			font-weight: $paragraph-fw;
+
+			a {
+				color: $font-clr;
+				text-decoration: underline;
+
+				&:link {
+					color: $font-clr;
+				}
+
+				&:visited {
+					color: $font-clr;
+				}
+			}
 		}
 
 		ul {

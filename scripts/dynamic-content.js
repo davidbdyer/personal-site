@@ -49,7 +49,7 @@ const portfolioData = [
 	},
 	{
 		title: 'Yelp Camp',
-		discription: 'Campground rating web app. I implemented the frontend and backend.',
+		discription: 'Campground rating web app. I implemented the frontend and backend. Design based on a project from <a href="https://www.udemy.com/share/101W923@0AHFLcM1tVaGQceAH4TxemyQ-r5T4YPxJg1AW3GjmKdmgXhCa0JxOIeAvNWLXTZ6/">Colt Steele Web Developer Bootcamp</a> project.',
 		date: 'Sept 2021',
 		siteUrl: 'https://damp-sierra-93991.herokuapp.com/',
 		imgUrl: 'images/site-thumbs/yelpcamp.jpg',
@@ -97,7 +97,7 @@ const portfolioData = [
 	},
 	{
 		title: 'Museum of Candy',
-		discription: 'A simple responsive single page website I implemented.',
+		discription: 'A simple responsive single-page website I implemented. Design based on a project from <a href="https://www.udemy.com/share/101W923@0AHFLcM1tVaGQceAH4TxemyQ-r5T4YPxJg1AW3GjmKdmgXhCa0JxOIeAvNWLXTZ6/">Colt Steele Web Developer Bootcamp</a> project.',
 		date: 'May 2021',
 		siteUrl: 'portfolio_sites/museum_of_candy/index.html',
 		imgUrl: 'images/site-thumbs/museum-of-candy.jpg',
@@ -232,7 +232,7 @@ const createDetailList = () => {
 		detailBody.classList.add('detail-body');
 
 		const detailDiscription = document.createElement('p');
-		detailDiscription.textContent = portfolioData[site].discription;
+		detailDiscription.innerHTML = portfolioData[site].discription;
 
 		const detailLangList = document.createElement('ul');
 
