@@ -1,0 +1,10 @@
+@use '../abstracts' as *;
+
+#copyright {
+	color: $font-clr;
+	font-family: $paragraph-ff;
+	text-align: right;
+	margin-inline: auto;
+	max-width: $block-width;
+	border-radius: 6px;
+}
