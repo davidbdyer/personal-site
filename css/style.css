@@ -124,6 +124,10 @@ select {
 	opacity: 0.3;
 }
 
+body {
+	background-color: #42474C;
+}
+
 .block {
 	margin-inline: auto;
 	margin-block: 2rem;
@@ -163,9 +167,10 @@ select {
 	padding-inline: 0.5em;
 	height: 3em;
 	font-family: "Roboto", sans-serif;
-	background-color: rgba(0, 0, 0, 0.9);
+	background-color: rgba(0, 0, 0, 0.7);
 	-webkit-backdrop-filter: blur(2px);
 	        backdrop-filter: blur(2px);
+	border: 1px solid #42474C;
 	border-radius: 0 0 0.5em 0.5em;
 }
 .card-title {
@@ -175,7 +180,7 @@ select {
 	height: -webkit-fit-content;
 	height: -moz-fit-content;
 	height: fit-content;
-	font-size: 1em;
+	font-size: min(1em, 80%);
 	color: #fff;
 	background-color: black;
 	border: solid 1px #42474C;
@@ -190,6 +195,7 @@ select {
 	height: -webkit-fit-content;
 	height: -moz-fit-content;
 	height: fit-content;
+	font-size: min(1em, 80%);
 	border: solid 1px #42474C;
 	border-radius: 0.5em;
 	overflow: hidden;
@@ -336,22 +342,13 @@ a > *:hover {
 	}
 }
 
-.introduction h2 {
-	font-family: "Roboto", sans-serif;
-	font-size: 1.5rem;
-	font-weight: 400;
-	margin-bottom: 0.5rem;
-}
-@media (min-width: 768px) {
-	.introduction h2 {
-		font-size: 2rem;
-	}
+.introduction {
+	margin-block: 1.5rem;
 }
 .introduction p {
 	font-family: "Roboto", sans-serif;
 	font-size: 1rem;
 	font-weight: 300;
-	margin-bottom: 1rem;
 }
 
 .project-grid {
@@ -361,6 +358,7 @@ a > *:hover {
 	-ms-flex-pack: distribute;
 	    justify-content: space-around;
 	gap: min(2rem, 5vw);
+	margin-block: 2rem;
 }
 @media screen and (min-width: 768px) {
 	.project-grid {
@@ -494,9 +492,5 @@ main .block {
 		-ms-grid-column-align: end;
 		    justify-self: end;
 	}
-}
-
-body {
-	background-color: #42474C;
 }
 /*# sourceMappingURL=style.css.map */

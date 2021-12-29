@@ -1,21 +1,12 @@
 @use '../abstracts' as *;
 
 .introduction {
-	h2 {
-		font-family: $subtitle-ff;
-		font-size: 1.5rem;
-		font-weight: $subtitle-fw;
-		margin-bottom: .5rem;
 
-		@media (min-width: $md) {
-			font-size: $subtitle-f2;
-		}
-	}
+	margin-block: 1.5rem;
 
 	p {
 		font-family: $paragraph-ff;
 		font-size: $paragraph-fs;
 		font-weight: $paragraph-fw;
-		margin-bottom: 1rem;
 	}
 }
