@@ -1,6 +1,7 @@
 @use '../abstracts' as *;
 
 a {
+	cursor: pointer;
 	text-decoration: none;
 
 	> * {

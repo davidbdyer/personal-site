@@ -6,6 +6,7 @@
 	color: $font-clr;
 	background: $block;
 
+
 }
 
 button,
@@ -15,6 +16,7 @@ button,
 	font-family: $robo;
 	font-size: 1em;
 	transition: opacity 200ms ease-in-out;
+	cursor: pointer;
 
 	&:hover {
 		opacity: .8;

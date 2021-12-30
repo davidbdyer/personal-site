@@ -210,13 +210,14 @@ body {
 	vertical-align: middle;
 	text-decoration: none;
 }
-.btn-group button a svg {
+.btn-group button svg {
 	margin-bottom: 0.2em;
 	vertical-align: middle;
 }
 .btn-group > button:not(:last-child) {
 	border-right: solid 1px #42474C;
 }
+
 .html {
 	color: #E34F26;
 }
@@ -282,6 +283,7 @@ button,
 	font-size: 1em;
 	-webkit-transition: opacity 200ms ease-in-out;
 	transition: opacity 200ms ease-in-out;
+	cursor: pointer;
 }
 button:hover,
 .btn:hover {
@@ -289,6 +291,7 @@ button:hover,
 }
 
 a {
+	cursor: pointer;
 	text-decoration: none;
 }
 a > * {

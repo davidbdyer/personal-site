@@ -1,4 +1,4 @@
-@use '../abstracts' as *;
+@use '../abstracts'as *;
 
 .card {
 	aspect-ratio: 1;
@@ -55,16 +55,15 @@
 			vertical-align: middle;
 			text-decoration: none;
 
-			svg {
-				margin-bottom: .2em;
-				vertical-align: middle;
-			}
+		}
+
+		svg {
+			margin-bottom: .2em;
+			vertical-align: middle;
 		}
 	}
 
 	> button:not(:last-child) {
 		border-right: solid 1px $base;
 	}
-
-	> .btn-git {}
 }
