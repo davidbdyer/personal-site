@@ -225,7 +225,8 @@ body {
 	color: #264DE4;
 }
 
-.javascript {
+.javascript,
+.json {
 	color: #F0DB4F;
 }
 
@@ -253,19 +254,12 @@ body {
 	color: #bf4080;
 }
 
-.html,
-.css,
-.javascript,
-.node,
-.express,
-.ejs,
-.mongo,
-.php,
-.sass {
-	font-family: "Roboto", sans-serif;
-	font-size: 1rem;
-	font-weight: 500;
-	text-transform: uppercase;
+.bootstrap {
+	color: #8b12fb;
+}
+
+.cloudinary {
+	color: #3448c5;
 }
 
 .close-ctrl {
@@ -394,7 +388,7 @@ svg {
 	    flex-basis: 40%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
 	#container--project-details {
 		position: fixed;
 		top: 50%;
@@ -471,6 +465,10 @@ main .block {
 	width: 100%;
 }
 .project-details .detail-body li {
+	font-family: "Roboto", sans-serif;
+	font-size: 1rem;
+	font-weight: 500;
+	text-transform: uppercase;
 	margin-right: 1em;
 	list-style: none;
 }

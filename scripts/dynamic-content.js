@@ -1,10 +1,9 @@
 const projectList = document.querySelector('#container--project-list');
 const detailList = document.querySelector('#container--project-details')
 
-const portfolioData = [
-	{
+const portfolioData = [{
 		title: 'Score Keeper',
-		discription: 'Web app for keeping score of a ping pong game, I designed and implemented.',
+		discription: "Web App for keeping score of a ping pong game. The goal was to keep track of the score for the current game and a set of games. I also wanted the winner list to persist between site loads. The winner list is stored as a JSON array in the browser's local storage.",
 		date: 'Dec 2021',
 		siteUrl: 'https://davidbdeath.github.io/ping-pong_score_keeper/',
 		gitUrl: 'https://github.com/davidbdeath/ping-pong_score_keeper',
@@ -14,12 +13,13 @@ const portfolioData = [
 		lang_lib: [
 			'html',
 			'sass',
-			'javascript'
+			'javascript',
+			'json'
 		]
 	},
 	{
 		title: 'Space Tourism',
-		discription: 'Website, implemented by me, designed by Frontend Mentor.',
+		discription: "I approached implementing this site using Javascript to toggle content visibility instead of creating a new HTML document for sub-page content. The content change controls for each page are done using the ARIA tablist. As a result, the page is screen reader-friendly. Site design by Frontend Mentor.",
 		date: 'Dec 2021',
 		siteUrl: 'https://davidbdeath.github.io/space-tourism-website/',
 		gitUrl: 'https://github.com/davidbdeath/space-tourism-website',
@@ -34,7 +34,7 @@ const portfolioData = [
 	},
 	{
 		title: 'Tip Calculator',
-		discription: 'Web app for splitting the bill and calculating the tip, implemented by me, designed by Frontend Mentor.',
+		discription: "Web app for splitting calculating the tip and splitting the bill with your group. Tip Amount and Total never output NaN, null, or Infinity. The inputs only accept numbers. The tip selected is highlighted, including the custom tip.",
 		date: 'Oct 2021',
 		siteUrl: 'https://davidbdeath.github.io/tip-calculator-app/',
 		imgUrl: 'images/site-thumbs/tip_calculator.jpg',
@@ -49,7 +49,7 @@ const portfolioData = [
 	},
 	{
 		title: 'Yelp Camp',
-		discription: 'Campground rating web app. I implemented the frontend and backend. Design based on a project from <a href="https://www.udemy.com/share/101W923@0AHFLcM1tVaGQceAH4TxemyQ-r5T4YPxJg1AW3GjmKdmgXhCa0JxOIeAvNWLXTZ6/">Colt Steele Web Developer Bootcamp</a> project.',
+		discription: 'Web App for finding, rating, and reviewing campgrounds. The site is dynamically generated using EJS, EJS Mate, and MongoDB. Flash is used for error and success messages. User input is validated using Joi, sanitize-html, and express-mongo-sanitize. Helmet is used for added security. User logins are implemented using passport and express-session for session data. Cloudinary is used for image storage and manipulations. Mapbox is used for custom interactive maps. The design is based on a project from <a href="https://www.udemy.com/share/101W923@0AHFLcM1tVaGQceAH4TxemyQ-r5T4YPxJg1AW3GjmKdmgXhCa0JxOIeAvNWLXTZ6/">Colt Steele Web Developer Bootcamp</a>.',
 		date: 'Sept 2021',
 		siteUrl: 'https://damp-sierra-93991.herokuapp.com/',
 		imgUrl: 'images/site-thumbs/yelpcamp.jpg',
@@ -58,16 +58,26 @@ const portfolioData = [
 		lang_lib: [
 			'html',
 			'css',
+			'bootstrap',
 			'javascript',
 			'node',
 			'express',
 			'ejs',
-			'mongo'
+			'ejs-mate',
+			'mongodb',
+			'flash',
+			'joi',
+			'sanitize-html',
+			'express-mongo-sanitize',
+			'passport',
+			'express-sessions',
+			'mapbox',
+			'cloudinary'
 		]
 	},
 	{
 		title: 'Pray Up',
-		discription: 'Website I designed and implemented for Pray Up ministries. Precursor for a much bigger social media app we are designing.',
+		discription: 'A Website I designed and implemented for Pray Up ministries. This site is a precursor for a much bigger social media platform.',
 		date: 'Jan 2021',
 		siteUrl: 'https://prayuplife.com',
 		imgUrl: 'images/site-thumbs/prayup.jpg',
@@ -168,7 +178,7 @@ const createProjectList = () => {
 
 		const siteUrl = document.createElement('a');
 		siteUrl.href = portfolioData[site].siteUrl;
-		siteUrl.textContent = 'Link';
+		siteUrl.textContent = 'View';
 		siteUrl.target = '_blank';
 		siteUrl.rel = 'noreferrer noopener';
 
@@ -249,7 +259,8 @@ const createDetailList = () => {
 		for (let langLib in portfolioData[site].lang_lib) {
 			const listItem = document.createElement('li');
 
-			listItem.innerHTML = portfolioData[site].lang_lib[langLib]
+			// listItem.innerHTML = portfolioData[site].lang_lib[langLib];
+			listItem.textContent = portfolioData[site].lang_lib[langLib];
 			listItem.classList.add(portfolioData[site].lang_lib[langLib]);
 			detailLangList.appendChild(listItem);
 		}
