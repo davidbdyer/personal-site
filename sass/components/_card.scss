@@ -41,29 +41,33 @@
 	width: fit-content;
 	height: fit-content;
 	font-size: min(1em, 80%);
+	background-color: $block;
 	border: solid 1px $base;
 	border-radius: .5em;
 	overflow: hidden;
 
-	button {
-		border: unset;
+
+	a {
 		color: $font-clr;
-		background: $block;
+		vertical-align: middle;
+		text-decoration: none;
 
-		a {
+
+		button {
+			border: unset;
 			color: $font-clr;
-			vertical-align: middle;
-			text-decoration: none;
+			background: none;
 
+			svg {
+				margin-bottom: .2em;
+				vertical-align: middle;
+			}
 		}
 
-		svg {
-			margin-bottom: .2em;
-			vertical-align: middle;
-		}
 	}
 
-	> button:not(:last-child) {
+	a:not(:last-child) {
 		border-right: solid 1px $base;
 	}
+
 }

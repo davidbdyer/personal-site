@@ -196,25 +196,26 @@ body {
 	height: -moz-fit-content;
 	height: fit-content;
 	font-size: min(1em, 80%);
+	background-color: black;
 	border: solid 1px #42474C;
 	border-radius: 0.5em;
 	overflow: hidden;
 }
-.btn-group button {
-	border: unset;
-	color: #fff;
-	background: black;
-}
-.btn-group button a {
+.btn-group a {
 	color: #fff;
 	vertical-align: middle;
 	text-decoration: none;
 }
-.btn-group button svg {
+.btn-group a button {
+	border: unset;
+	color: #fff;
+	background: none;
+}
+.btn-group a button svg {
 	margin-bottom: 0.2em;
 	vertical-align: middle;
 }
-.btn-group > button:not(:last-child) {
+.btn-group a:not(:last-child) {
 	border-right: solid 1px #42474C;
 }
 
@@ -279,6 +280,7 @@ button,
 .btn {
 	padding-inline: 1em;
 	padding-block: 0.2em;
+	height: 100%;
 	font-family: "Roboto", sans-serif;
 	font-size: 1em;
 	-webkit-transition: opacity 200ms ease-in-out;
