@@ -180,7 +180,6 @@ body {
 	height: -webkit-fit-content;
 	height: -moz-fit-content;
 	height: fit-content;
-	font-size: min(1em, 80%);
 	color: #fff;
 	background-color: black;
 	border: solid 1px #42474C;
@@ -195,7 +194,7 @@ body {
 	height: -webkit-fit-content;
 	height: -moz-fit-content;
 	height: fit-content;
-	font-size: min(1em, 80%);
+	font-size: 1rem;
 	background-color: black;
 	border: solid 1px #42474C;
 	border-radius: 0.5em;
@@ -280,9 +279,8 @@ button,
 .btn {
 	padding-inline: 1em;
 	padding-block: 0.2em;
-	height: 100%;
 	font-family: "Roboto", sans-serif;
-	font-size: 1em;
+	font-size: 1rem;
 	-webkit-transition: opacity 200ms ease-in-out;
 	transition: opacity 200ms ease-in-out;
 	cursor: pointer;

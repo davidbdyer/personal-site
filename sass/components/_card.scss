@@ -28,7 +28,6 @@
 	&-title {
 		width: fit-content;
 		height: fit-content;
-		font-size: min(1em, 80%);
 		color: $font-clr;
 		background-color: $block;
 		border: solid 1px $base;
@@ -40,7 +39,7 @@
 .btn-group {
 	width: fit-content;
 	height: fit-content;
-	font-size: min(1em, 80%);
+	font-size: 1rem;
 	background-color: $block;
 	border: solid 1px $base;
 	border-radius: .5em;
