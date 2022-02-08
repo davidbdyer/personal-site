@@ -137,7 +137,7 @@ const portfolioData = [{
 		title: 'Game Pad',
 		discription: 'Website I implemented and designed for an app I designed for UX class.',
 		date: 'Nov 2017',
-		siteUrl: 'portfolio_sites/GamePad/index.html',
+		siteUrl: 'https://davidbdeath.github.io/GamePad/',
 		imgUrl: 'images/site-thumbs/gamepad.jpg',
 		imgAlt: 'gamepad thumbnail',
 		gitUrl: 'https://github.com/davidbdeath/GamePad',
@@ -175,7 +175,7 @@ const createProjectList = () => {
 		btnGroup.classList.add('btn-group');
 
 		const btnLink = document.createElement('button');
-		btnLink.textContent = 'Link';
+		btnLink.textContent = 'View';
 
 		const siteUrl = document.createElement('a');
 		siteUrl.href = portfolioData[site].siteUrl;

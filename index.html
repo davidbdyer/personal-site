@@ -16,17 +16,23 @@
 
 	<!-- CSS only -->
 	<link rel="stylesheet" href="css/style.css">
+
+	<!-- scripts -->
+	<script src="scripts/dynamic-content.js" defer></script>
+	<script src="scripts/info-panel-control.js" defer></script>
+	<script type="module" src="scripts/orb.js" defer></script>
+
 </head>
 
 <body>
-<!-- 		<canvas class="orb-canvas"></canvas> -->
+	<canvas class="orb-canvas"></canvas>
 
 	<div class="block">
 		<header class="primary-header">
 			<h1>David Dyer</h1>
 
 			<div>
-<!-- 				<a href="#" target="_blank" rel="noreferrer noopener">
+				<!-- 				<a href="#" target="_blank" rel="noreferrer noopener">
 					<svg class="header-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
 						<path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
 						<path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
@@ -86,14 +92,10 @@
 		</section>
 	</main>
 	<footer id="copyright">
-		David Dyer &copy; <script>document.write(new Date().getFullYear())</script>
+		David Dyer &copy; <script>
+			document.write(new Date().getFullYear())
+		</script>
 	</footer>
-
-
-	<!-- scripts -->
-	<script type="module" src="scripts/orb.js"></script>
-	<script src="scripts/dynamic-content.js"></script>
-	<script src="scripts/info-panel-control.js"></script>
 </body>
 
 </html>
