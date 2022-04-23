@@ -175,7 +175,7 @@ const createProjectList = () => {
 		btnGroup.classList.add('btn-group');
 
 		const btnLink = document.createElement('button');
-		btnLink.textContent = 'View';
+		btnLink.textContent = 'Site';
 
 		const siteUrl = document.createElement('a');
 		siteUrl.href = portfolioData[site].siteUrl;
