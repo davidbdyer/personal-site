@@ -94,7 +94,7 @@ const portfolioData = [
 		discription:
 			'A simple responsive single-page website I implemented. Design based on a project from <a href="https://www.udemy.com/share/101W923@0AHFLcM1tVaGQceAH4TxemyQ-r5T4YPxJg1AW3GjmKdmgXhCa0JxOIeAvNWLXTZ6/">Colt Steele Web Developer Bootcamp</a> project.',
 		date: 'May 2021',
-		siteUrl: 'portfolio_sites/museum_of_candy/index.html',
+		siteUrl: 'portfolio-sites/museum-of-candy/index.html',
 		imgUrl: 'images/site-thumbs/museum-of-candy.jpg',
 		imgAlt: 'museum of candy',
 		aria: 'museum-of-candy--tab',
