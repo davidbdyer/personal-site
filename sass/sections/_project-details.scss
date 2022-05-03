@@ -48,6 +48,16 @@ main {
 			font-size: $subtitle-f2;
 			font-weight: $subtitle-fw;
 			margin-bottom: .5rem;
+
+			a {
+				color: $font-clr;
+				text-decoration: underline;
+				transition: color 250ms;
+			}
+
+			a:hover {
+				color: mix($font-clr, black, 75%);
+			}
 		}
 
 		date {

@@ -4,7 +4,7 @@ const detailList = document.querySelector('#container--project-details');
 const portfolioData = [
 	{
 		title: 'Score Keeper',
-		discription:
+		description:
 			"Web App for keeping score of a ping pong game. The goal was to keep track of the score for the current game and a set of games. I also wanted the winner list to persist between site loads. The winner list is stored as a JSON array in the browser's local storage.",
 		date: 'Dec 2021',
 		siteUrl: 'https://davidbdeath.github.io/ping-pong_score_keeper/',
@@ -16,7 +16,7 @@ const portfolioData = [
 	},
 	{
 		title: 'Space Tourism',
-		discription:
+		description:
 			'I approached implementing this site using Javascript to toggle content visibility instead of creating a new HTML document for sub-page content. The content change controls for each page are done using the ARIA tablist. As a result, the page is screen reader-friendly. Site design by Frontend Mentor.',
 		date: 'Dec 2021',
 		siteUrl: 'https://davidbdeath.github.io/space-tourism-website/',
@@ -28,7 +28,7 @@ const portfolioData = [
 	},
 	{
 		title: 'Tip Calculator',
-		discription:
+		description:
 			'Web app for splitting calculating the tip and splitting the bill with your group. Tip Amount and Total never output NaN, null, or Infinity. The inputs only accept numbers. The tip selected is highlighted, including the custom tip.',
 		date: 'Oct 2021',
 		siteUrl: 'https://davidbdeath.github.io/tip-calculator-app/',
@@ -40,7 +40,7 @@ const portfolioData = [
 	},
 	{
 		title: 'Yelp Camp',
-		discription:
+		description:
 			'Web App for finding, rating, and reviewing campgrounds. The site is dynamically generated using EJS, EJS Mate, and MongoDB. Flash is used for error and success messages. User input is validated using Joi, sanitize-html, and express-mongo-sanitize. Helmet is used for added security. User logins are implemented using passport and express-session for session data. Cloudinary is used for image storage and manipulations. Mapbox is used for custom interactive maps. The design is based on a project from <a href="https://www.udemy.com/share/101W923@0AHFLcM1tVaGQceAH4TxemyQ-r5T4YPxJg1AW3GjmKdmgXhCa0JxOIeAvNWLXTZ6/">Colt Steele Web Developer Bootcamp</a>.',
 		date: 'Sept 2021',
 		siteUrl: 'https://damp-sierra-93991.herokuapp.com/',
@@ -69,7 +69,7 @@ const portfolioData = [
 	},
 	{
 		title: 'Pray Up',
-		discription: 'A Website I designed and implemented for Pray Up ministries. This site is a precursor for a much bigger social media platform.',
+		description: 'A Website I designed and implemented for Pray Up ministries. This site is a precursor for a much bigger social media platform.',
 		date: 'Jan 2021',
 		siteUrl: 'https://prayuplife.com',
 		imgUrl: 'images/site-thumbs/prayup.jpg',
@@ -80,7 +80,7 @@ const portfolioData = [
 	},
 	{
 		title: 'Calculator',
-		discription: 'Web app, implemented by me, designed by Frontend Mentor.',
+		description: 'Web app, implemented by me, designed by Frontend Mentor.',
 		date: 'May 2021',
 		siteUrl: 'https://davidbdeath.github.io/calculator-app-main/',
 		imgUrl: 'images/site-thumbs/calculator.jpg',
@@ -91,7 +91,7 @@ const portfolioData = [
 	},
 	{
 		title: 'Museum of Candy',
-		discription:
+		description:
 			'A simple responsive single-page website I implemented. Design based on a project from <a href="https://www.udemy.com/share/101W923@0AHFLcM1tVaGQceAH4TxemyQ-r5T4YPxJg1AW3GjmKdmgXhCa0JxOIeAvNWLXTZ6/">Colt Steele Web Developer Bootcamp</a> project.',
 		date: 'May 2021',
 		siteUrl: 'portfolio-sites/museum-of-candy/index.html',
@@ -102,17 +102,17 @@ const portfolioData = [
 	},
 	{
 		title: 'Derek Ancil Designs',
-		discription: 'Website I implemented for desiger Derek Ancil.',
+		description: 'Website I implemented for desiger Derek Ancil.',
 		date: '2018',
 		siteUrl: 'http://derekancildesign.com/index.html',
-		imgUrl: 'images/site-thumbs/derek_ancil_design.jpg',
+		imgUrl: 'images/site-thumbs/derek-ancil-design.jpg',
 		imgAlt: 'derek ancil design thumbnail',
 		aria: 'derek-ancil-designs--tab',
 		lang_lib: ['html', 'css', 'javascript', 'php'],
 	},
 	{
 		title: 'Game Pad',
-		discription: 'Website I implemented and designed for an app I designed for UX class.',
+		description: 'Website I implemented and designed for an app I designed for UX class.',
 		date: 'Nov 2017',
 		siteUrl: 'https://davidbdeath.github.io/GamePad/',
 		imgUrl: 'images/site-thumbs/gamepad.jpg',
@@ -120,6 +120,16 @@ const portfolioData = [
 		gitUrl: 'https://github.com/davidbdeath/GamePad',
 		aria: 'game-pad--tab',
 		lang_lib: ['html', 'css'],
+	},
+	{
+		title: 'Animated Nav',
+		description: 'Part of a "50 Projects In 50 Days" Udemy course.',
+		date: 'Jan 2022',
+		siteUrl: 'https://www.daviddyer.me/portfolio-sites/fifty-projects/animated-navigation/',
+		imgUrl: 'images/site-thumbs/animated-nav.png',
+		imgAlt: 'Animated Nav',
+		aria: 'animated-nav--tab',
+		lang_lib: ['html', 'css', 'javascript'],
 	},
 ];
 
@@ -203,7 +213,11 @@ const createDetailList = () => {
 		titleGrp.classList.add('title-group');
 
 		const detailTitle = document.createElement('h2');
-		detailTitle.textContent = portfolioData[site].title;
+		const detailTitleLink = document.createElement('a');
+		detailTitleLink.textContent = portfolioData[site].title;
+		detailTitleLink.href = portfolioData[site].siteUrl;
+		detailTitleLink.target = '_blank';
+		detailTitleLink.rel = 'noreferrer noopener';
 
 		const detailDate = document.createElement('date');
 		detailDate.textContent = portfolioData[site].date;
@@ -211,19 +225,20 @@ const createDetailList = () => {
 		const detailBody = document.createElement('div');
 		detailBody.classList.add('detail-body');
 
-		const detailDiscription = document.createElement('p');
-		detailDiscription.innerHTML = portfolioData[site].discription;
+		const detailDescription = document.createElement('p');
+		detailDescription.innerHTML = portfolioData[site].description;
 
 		const detailLangList = document.createElement('ul');
 
 		detailList.appendChild(projectDetail);
 		projectDetail.appendChild(titleGrp);
 		titleGrp.appendChild(detailTitle);
+		detailTitle.appendChild(detailTitleLink);
 		titleGrp.appendChild(detailDate);
 
 		projectDetail.appendChild(detailBody);
 
-		detailBody.appendChild(detailDiscription);
+		detailBody.appendChild(detailDescription);
 		detailBody.appendChild(detailLangList);
 
 		for (let langLib in portfolioData[site].lang_lib) {

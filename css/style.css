@@ -435,6 +435,15 @@ main .block {
 	font-weight: 400;
 	margin-bottom: 0.5rem;
 }
+.project-details .title-group h2 a {
+	color: #fff;
+	text-decoration: underline;
+	-webkit-transition: color 250ms;
+	transition: color 250ms;
+}
+.project-details .title-group h2 a:hover {
+	color: #bfbfbf;
+}
 .project-details .title-group date {
 	font-family: "Roboto", sans-serif;
 	font-size: 1rem;
