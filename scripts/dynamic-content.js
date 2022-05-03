@@ -143,12 +143,22 @@ const portfolioData = [
 	},
 	{
 		title: 'Drink Water',
-		description: 'Based on a project from the "50 Projects In 50 Days" Udemy course.',
+		description: 'Based on a project from the "50 Projects In 50 Days" Udemy course. A fun, fully responsive web app for tracking daily water consumption goals. How many cups drank are stored in local storage, making it persistent between site reloads.',
 		date: 'March 2022',
 		siteUrl: 'https://www.daviddyer.me/portfolio-sites/fifty-projects/drink-water/',
 		imgUrl: 'images/site-thumbs/drink-water.png',
 		imgAlt: 'drink water',
 		aria: 'drink-water--tab',
+		lang_lib: ['html', 'css', 'javascript'],
+	},
+	{
+		title: 'KeyCode',
+		description: 'Based on a project from the "50 Projects In 50 Days" Udemy course. A simple web app for displaying useful data from a keypress event. The input field is necessary to bring up the keyboard on mobile devices',
+		date: 'Feb 2022',
+		siteUrl: 'https://www.daviddyer.me/portfolio-sites/fifty-projects/keycode/',
+		imgUrl: 'images/site-thumbs/keycode.png',
+		imgAlt: 'keycode',
+		aria: 'keycode--tab',
 		lang_lib: ['html', 'css', 'javascript'],
 	}
 ];
