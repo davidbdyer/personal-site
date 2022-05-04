@@ -14,6 +14,7 @@
 		left: 50%;
 		width: 95vw;
 		height: 50vh;
+		overflow: scroll;
 		transform: translate(-50%, -50%);
 		border: 1px solid $base;
 		background-image: linear-gradient(to bottom right, rgba($block, 0.9), rgba($block, 1));
@@ -74,19 +75,15 @@ main {
 			font-weight: $paragraph-fw;
 			font-size: $paragraph-fs;
 			font-family: $paragraph-ff;
+		}
 
-			a {
-				color: $font-clr;
-				text-decoration: underline;
+		.btn-group {
+			margin-block: 2em;
+		}
 
-				&:link {
-					color: $font-clr;
-				}
-
-				&:visited {
-					color: $font-clr;
-				}
-			}
+		a {
+			color: $font-clr;
+			text-decoration: underline;
 		}
 
 		ul {

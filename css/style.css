@@ -89,7 +89,7 @@ select {
 	right: 2rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
 	.body-mute {
 		position: fixed;
 		top: 0;
@@ -273,19 +273,19 @@ body {
 .btn {
 	border: solid 1px #42474C;
 	border-radius: 0.5em;
-	color: #fff;
 	background: black;
+	color: #fff;
 }
 
 button,
 .btn {
 	padding-inline: 1em;
 	padding-block: 0.2em;
-	font-family: "Roboto", sans-serif;
 	font-size: 1rem;
+	font-family: "Roboto", sans-serif;
+	cursor: pointer;
 	-webkit-transition: opacity 200ms ease-in-out;
 	transition: opacity 200ms ease-in-out;
-	cursor: pointer;
 }
 button:hover,
 .btn:hover {
@@ -402,6 +402,7 @@ svg {
 		left: 50%;
 		width: 95vw;
 		height: 50vh;
+		overflow: scroll;
 		-webkit-transform: translate(-50%, -50%);
 		        transform: translate(-50%, -50%);
 		border: 1px solid #42474C;
@@ -460,15 +461,12 @@ main .block {
 	font-size: 1rem;
 	font-family: "Roboto", sans-serif;
 }
-.project-details .detail-body p a {
+.project-details .detail-body .btn-group {
+	margin-block: 2em;
+}
+.project-details .detail-body a {
 	color: #fff;
 	text-decoration: underline;
-}
-.project-details .detail-body p a:link {
-	color: #fff;
-}
-.project-details .detail-body p a:visited {
-	color: #fff;
 }
 .project-details .detail-body ul {
 	display: -webkit-box;

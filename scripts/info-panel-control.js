@@ -35,11 +35,6 @@ const changeTabPane = (e) => {
 	showContent(main, '#container--project-details');
 };
 
-// event listeners
-// cardTitleArray.forEach((elm) => {
-// 	elm.addEventListener('click', changeTabPane);
-// });
-
 // Select Project Details Content
 cardArray.forEach((elm) => {
 	elm.addEventListener('click', changeTabPane);
@@ -47,7 +42,8 @@ cardArray.forEach((elm) => {
 
 cardArray.forEach((elm) => {
 	elm.addEventListener('keypress', (e) => {
-		changeTabPane(e)
+		e.preventDefault;
+		changeTabPane(e);
 	});
 });
 
@@ -65,6 +61,7 @@ projectGrid.addEventListener('mouseenter', () => {
 		changeOpacity(elm, 0.6);
 	});
 });
+
 projectGrid.addEventListener('mouseleave', () => {
 	cardArray.forEach((elm) => {
 		changeOpacity(elm, 1);

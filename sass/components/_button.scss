@@ -2,23 +2,21 @@
 
 .btn {
 	border: solid 1px $base;
-	border-radius: .5em;
-	color: $font-clr;
+	border-radius: 0.5em;
 	background: $block;
-
-
+	color: $font-clr;
 }
 
 button,
 .btn {
 	padding-inline: 1em;
-	padding-block: .2em;
-	font-family: $robo;
+	padding-block: 0.2em;
 	font-size: 1rem;
-	transition: opacity 200ms ease-in-out;
+	font-family: $robo;
 	cursor: pointer;
+	transition: opacity 200ms ease-in-out;
 
 	&:hover {
-		opacity: .8;
+		opacity: 0.8;
 	}
 }

@@ -197,50 +197,16 @@ const createProjectList = () => {
 		title.setAttribute('role', 'tab');
 		title.textContent = portfolioData[site].title;
 
-		// Create Card Info Button Group
-		const btnGroup = document.createElement('div');
-		btnGroup.classList.add('btn-group');
-
-		// Create Button
-		const btnLink = document.createElement('button');
-		btnLink.textContent = 'Site';
-
-		// Create site href
-		const siteUrl = document.createElement('a');
-		siteUrl.href = portfolioData[site].siteUrl;
-		siteUrl.target = '_blank';
-		siteUrl.rel = 'noreferrer noopener';
-
-		// Create GitHub Button
-		const btnGit = document.createElement('button');
-
-		const gitLink = document.createElement('a');
-		gitLink.href = portfolioData[site].gitUrl;
-		gitLink.classList.add('btn-git');
-		btnGit.innerHTML = `<svg class="github-svg" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-			  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-			</svg>`;
-		gitLink.target = '_blank';
-		gitLink.rel = 'noreferrer noopener';
-
 		// Add Items to DOM
 		projectList.appendChild(card);
 		card.appendChild(image);
-		// card.appendChild(cardInfo);
-		cardInfo.appendChild(title);
-		cardInfo.appendChild(btnGroup);
-		btnGroup.appendChild(siteUrl);
-		siteUrl.appendChild(btnLink);
-		if (portfolioData[site].gitUrl) {
-			btnGroup.appendChild(gitLink);
-			gitLink.appendChild(btnGit);
-		}
 	}
 };
 
 // dynamically generate details section
 const createDetailList = () => {
 	for (let site in portfolioData) {
+		// Create Project Details
 		const projectDetail = document.createElement('article');
 		projectDetail.classList.add('project-details');
 		projectDetail.id = portfolioData[site].aria;
@@ -253,42 +219,82 @@ const createDetailList = () => {
 			</g>
 		</svg>`;
 
+		// Create Title Container
 		const titleGrp = document.createElement('div');
 		titleGrp.classList.add('title-group');
 
+		// Create Title
 		const detailTitle = document.createElement('h2');
-		const detailTitleLink = document.createElement('a');
-		detailTitleLink.textContent = portfolioData[site].title;
-		detailTitleLink.href = portfolioData[site].siteUrl;
-		detailTitleLink.target = '_blank';
-		detailTitleLink.rel = 'noreferrer noopener';
+		detailTitle.textContent = portfolioData[site].title;
 
+		// Create Project Date
 		const detailDate = document.createElement('date');
 		detailDate.textContent = portfolioData[site].date;
 
+		// Create Project Body Container
 		const detailBody = document.createElement('div');
 		detailBody.classList.add('detail-body');
 
+		// Create Project Description Paragraph
 		const detailDescription = document.createElement('p');
 		detailDescription.innerHTML = portfolioData[site].description;
 
+		// Create Card Info Button Group
+		const btnGroup = document.createElement('div');
+		btnGroup.classList.add('btn-group');
+
+		// Create Button
+		const btnLink = document.createElement('button');
+		btnLink.textContent = 'Site';
+
+		// Create site URL
+		const siteUrl = document.createElement('a');
+		siteUrl.href = portfolioData[site].siteUrl;
+		siteUrl.target = '_blank';
+		siteUrl.rel = 'noreferrer noopener';
+
+		// Create GitHub Button
+		const btnGit = document.createElement('button');
+
+		const gitLink = document.createElement('a');
+		gitLink.href = portfolioData[site].gitUrl;
+		gitLink.classList.add('btn-git');
+		btnGit.innerHTML = `<svg class="github-svg" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+				<path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+			</svg>`;
+		gitLink.target = '_blank';
+		gitLink.rel = 'noreferrer noopener';
+
+		// Create Language List
 		const detailLangList = document.createElement('ul');
 
+		// Add Elements to Project Details
 		detailList.appendChild(projectDetail);
 		projectDetail.appendChild(titleGrp);
+
+		// Add Title Group
 		titleGrp.appendChild(detailTitle);
-		detailTitle.appendChild(detailTitleLink);
 		titleGrp.appendChild(detailDate);
 
+		// Add Project detail Section
 		projectDetail.appendChild(detailBody);
-
 		detailBody.appendChild(detailDescription);
+
+		// Add Links
+		detailBody.appendChild(btnGroup);
+		if (portfolioData[site].gitUrl) {
+			btnGroup.appendChild(gitLink);
+			gitLink.appendChild(btnGit);
+		}
+		btnGroup.appendChild(siteUrl);
+		siteUrl.appendChild(btnLink);
+
+		// Add Lang List
 		detailBody.appendChild(detailLangList);
 
 		for (let langLib in portfolioData[site].lang_lib) {
 			const listItem = document.createElement('li');
 
-			// listItem.innerHTML = portfolioData[site].lang_lib[langLib];
 			listItem.textContent = portfolioData[site].lang_lib[langLib];
 			listItem.classList.add(portfolioData[site].lang_lib[langLib]);
 			detailLangList.appendChild(listItem);
