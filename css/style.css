@@ -146,32 +146,34 @@ body {
 
 .card {
 	aspect-ratio: 1;
-	border-radius: 0.5em;
 	overflow: hidden;
+	border-radius: 0.5em;
+	-webkit-transition: opacity 250ms ease-in-out;
+	transition: opacity 250ms ease-in-out;
 }
 .card-img {
 	width: 100%;
 }
 .card-info {
-	position: relative;
-	top: -3em;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
+	position: relative;
+	top: -3em;
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
-	padding-inline: 0.5em;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	height: 3em;
-	font-family: "Roboto", sans-serif;
-	background-color: rgba(0, 0, 0, 0.7);
-	-webkit-backdrop-filter: blur(2px);
-	        backdrop-filter: blur(2px);
+	padding-inline: 0.5em;
 	border: 1px solid #42474C;
 	border-radius: 0 0 0.5em 0.5em;
+	-webkit-backdrop-filter: blur(2px);
+	        backdrop-filter: blur(2px);
+	background-color: rgba(0, 0, 0, 0.7);
+	font-family: "Roboto", sans-serif;
 }
 .card-title {
 	width: -webkit-fit-content;
@@ -180,10 +182,10 @@ body {
 	height: -webkit-fit-content;
 	height: -moz-fit-content;
 	height: fit-content;
-	color: #fff;
-	background-color: black;
 	border: solid 1px #42474C;
 	border-radius: 0.5em;
+	background-color: black;
+	color: #fff;
 	cursor: pointer;
 }
 
@@ -194,21 +196,21 @@ body {
 	height: -webkit-fit-content;
 	height: -moz-fit-content;
 	height: fit-content;
-	font-size: 1rem;
-	background-color: black;
+	overflow: hidden;
 	border: solid 1px #42474C;
 	border-radius: 0.5em;
-	overflow: hidden;
+	background-color: black;
+	font-size: 1rem;
 }
 .btn-group a {
 	color: #fff;
-	vertical-align: middle;
 	text-decoration: none;
+	vertical-align: middle;
 }
 .btn-group a button {
 	border: unset;
-	color: #fff;
 	background: none;
+	color: #fff;
 }
 .btn-group a button svg {
 	margin-bottom: 0.2em;
@@ -366,8 +368,8 @@ svg {
 	grid-template-columns: repeat(auto-fill, 100%);
 	-ms-flex-pack: distribute;
 	    justify-content: space-around;
-	gap: min(2rem, 5vw);
 	margin-block: 2rem;
+	gap: min(2rem, 5vw);
 }
 @media screen and (min-width: 768px) {
 	.project-grid {
@@ -386,8 +388,11 @@ svg {
 }
 
 #container--project-details {
+	position: sticky;
+	top: 2rem;
 	-ms-flex-preferred-size: 40%;
 	    flex-basis: 40%;
+	height: 100%;
 }
 
 @media (max-width: 992px) {
@@ -395,13 +400,13 @@ svg {
 		position: fixed;
 		top: 50%;
 		left: 50%;
-		-webkit-transform: translate(-50%, -50%);
-		        transform: translate(-50%, -50%);
 		width: 95vw;
 		height: 50vh;
+		-webkit-transform: translate(-50%, -50%);
+		        transform: translate(-50%, -50%);
+		border: 1px solid #42474C;
 		background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 0, 0, 0.9)), to(black));
 		background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.9), black);
-		border: 1px solid #42474C;
 	}
 }
 main {
@@ -411,9 +416,9 @@ main {
 	-webkit-box-flex: 0;
 	    -ms-flex: 0 1 100%;
 	        flex: 0 1 100%;
-	gap: min(1rem, 5vw);
 	width: 96vw;
 	margin-inline: auto;
+	gap: min(1rem, 5vw);
 }
 main .block {
 	margin-top: 0;
@@ -430,10 +435,10 @@ main .block {
 	}
 }
 .project-details .title-group h2 {
-	font-family: "Roboto", sans-serif;
-	font-size: 2rem;
-	font-weight: 400;
 	margin-bottom: 0.5rem;
+	font-weight: 400;
+	font-size: 2rem;
+	font-family: "Roboto", sans-serif;
 }
 .project-details .title-group h2 a {
 	color: #fff;
@@ -445,15 +450,15 @@ main .block {
 	color: #bfbfbf;
 }
 .project-details .title-group date {
-	font-family: "Roboto", sans-serif;
-	font-size: 1rem;
 	font-weight: 300;
+	font-size: 1rem;
+	font-family: "Roboto", sans-serif;
 }
 .project-details .detail-body p {
 	margin-block: 2em;
-	font-family: "Roboto", sans-serif;
-	font-size: 1rem;
 	font-weight: 300;
+	font-size: 1rem;
+	font-family: "Roboto", sans-serif;
 }
 .project-details .detail-body p a {
 	color: #fff;
@@ -471,17 +476,17 @@ main .block {
 	display: flex;
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
+	width: 100%;
 	margin: 0;
 	padding: 0;
-	width: 100%;
 }
 .project-details .detail-body li {
-	font-family: "Roboto", sans-serif;
-	font-size: 1rem;
-	font-weight: 500;
-	text-transform: uppercase;
 	margin-right: 1em;
+	font-weight: 500;
+	font-size: 1rem;
+	font-family: "Roboto", sans-serif;
 	list-style: none;
+	text-transform: uppercase;
 }
 @media screen and (min-width: 768px) {
 	.project-details {

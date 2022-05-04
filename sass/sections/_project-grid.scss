@@ -4,12 +4,11 @@
 	display: grid;
 	grid-template-columns: repeat(auto-fill, 100%);
 	justify-content: space-around;
+	margin-block: 2rem;
 	gap: min(2rem, 5vw);
 
-	margin-block: 2rem;
-
 	@media screen and (min-width: $md) {
-			grid-template-columns: repeat(auto-fill, 45%);
+		grid-template-columns: repeat(auto-fill, 45%);
 	}
 
 	@media (min-width: $xl) {

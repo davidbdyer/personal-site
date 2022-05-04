@@ -1,9 +1,10 @@
-@use '../abstracts'as *;
+@use '../abstracts' as *;
 
 .card {
 	aspect-ratio: 1;
-	border-radius: .5em;
 	overflow: hidden;
+	border-radius: 0.5em;
+	transition: opacity 250ms ease-in-out;
 
 	&-img {
 		width: 100%;
@@ -11,27 +12,27 @@
 
 	&-info {
 		$info-height: 3em;
+		display: flex;
 		position: relative;
 		top: -$info-height;
-		display: flex;
-		justify-content: space-between;
 		align-items: center;
-		padding-inline: .5em;
+		justify-content: space-between;
 		height: $info-height;
-		font-family: $subtitle-ff;
-		background-color: rgba($block, .7);
-		backdrop-filter: blur(2px);
+		padding-inline: 0.5em;
 		border: 1px solid $base;
-		border-radius: 0 0 .5em .5em;
+		border-radius: 0 0 0.5em 0.5em;
+		backdrop-filter: blur(2px);
+		background-color: rgba($block, 0.7);
+		font-family: $subtitle-ff;
 	}
 
 	&-title {
 		width: fit-content;
 		height: fit-content;
-		color: $font-clr;
-		background-color: $block;
 		border: solid 1px $base;
-		border-radius: .5em;
+		border-radius: 0.5em;
+		background-color: $block;
+		color: $font-clr;
 		cursor: pointer;
 	}
 }
@@ -39,34 +40,30 @@
 .btn-group {
 	width: fit-content;
 	height: fit-content;
-	font-size: 1rem;
-	background-color: $block;
-	border: solid 1px $base;
-	border-radius: .5em;
 	overflow: hidden;
-
+	border: solid 1px $base;
+	border-radius: 0.5em;
+	background-color: $block;
+	font-size: 1rem;
 
 	a {
 		color: $font-clr;
-		vertical-align: middle;
 		text-decoration: none;
-
+		vertical-align: middle;
 
 		button {
 			border: unset;
-			color: $font-clr;
 			background: none;
+			color: $font-clr;
 
 			svg {
-				margin-bottom: .2em;
+				margin-bottom: 0.2em;
 				vertical-align: middle;
 			}
 		}
-
 	}
 
 	a:not(:last-child) {
 		border-right: solid 1px $base;
 	}
-
 }

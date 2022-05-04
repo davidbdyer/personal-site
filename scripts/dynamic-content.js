@@ -12,7 +12,7 @@ const portfolioData = [
 		imgUrl: 'images/site-thumbs/ping-pong-score-keeper.jpg',
 		imgAlt: 'ping pong score keeper',
 		aria: 'score-keeper--tab',
-		lang_lib: ['html', 'sass', 'javascript', 'json'],
+		lang_lib: ['html', 'sass', 'javascript'],
 	},
 	{
 		title: 'Space Tourism',
@@ -123,7 +123,8 @@ const portfolioData = [
 	},
 	{
 		title: 'Animated Nav',
-		description: 'Based on a project from the "50 Projects In 50 Days" Udemy course. The animation is done with CSS, and javascript is used to toggle an active class on the nav element. The site is fully responsive, including iOS icon.',
+		description:
+			'Based on a project from the "50 Projects In 50 Days" Udemy course. The animation is done with CSS, and javascript is used to toggle an active class on the nav element. The site is fully responsive, including iOS icon.',
 		date: 'Jan 2022',
 		siteUrl: 'https://www.daviddyer.me/portfolio-sites/fifty-projects/animated-navigation/',
 		imgUrl: 'images/site-thumbs/animated-nav.png',
@@ -133,7 +134,8 @@ const portfolioData = [
 	},
 	{
 		title: 'Dad Jokes',
-		description: 'Based on a project from the "50 Projects In 50 Days" Udemy course. I\'m using the Javascript Fetch API to get dad jokes from icanhazdadjoke. The web app is fully responsive, with iOS icon. If the returned text exceeds the available space, the text size automatically reduces.',
+		description:
+			'Based on a project from the "50 Projects In 50 Days" Udemy course. I\'m using the Javascript Fetch API to get dad jokes from icanhazdadjoke. The web app is fully responsive, with iOS icon. If the returned text exceeds the available space, the text size automatically reduces.',
 		date: 'Feb 2022',
 		siteUrl: 'https://www.daviddyer.me/portfolio-sites/fifty-projects/dad-jokes/',
 		imgUrl: 'images/site-thumbs/dad-jokes.png',
@@ -143,7 +145,8 @@ const portfolioData = [
 	},
 	{
 		title: 'Drink Water',
-		description: 'Based on a project from the "50 Projects In 50 Days" Udemy course. A fun, fully responsive web app for tracking daily water consumption goals. How many cups drank are stored in local storage, making it persistent between site reloads.',
+		description:
+			'Based on a project from the "50 Projects In 50 Days" Udemy course. A fun, fully responsive web app for tracking daily water consumption goals. How many cups drank are stored in local storage, making it persistent between site reloads.',
 		date: 'March 2022',
 		siteUrl: 'https://www.daviddyer.me/portfolio-sites/fifty-projects/drink-water/',
 		imgUrl: 'images/site-thumbs/drink-water.png',
@@ -153,47 +156,62 @@ const portfolioData = [
 	},
 	{
 		title: 'KeyCode',
-		description: 'Based on a project from the "50 Projects In 50 Days" Udemy course. A simple web app for displaying useful data from a keypress event. The input field is necessary to bring up the keyboard on mobile devices',
+		description:
+			'Based on a project from the "50 Projects In 50 Days" Udemy course. A simple web app for displaying useful data from a keypress event. The input field is necessary to bring up the keyboard on mobile devices',
 		date: 'Feb 2022',
 		siteUrl: 'https://www.daviddyer.me/portfolio-sites/fifty-projects/keycode/',
 		imgUrl: 'images/site-thumbs/keycode.png',
 		imgAlt: 'keycode',
 		aria: 'keycode--tab',
 		lang_lib: ['html', 'css', 'javascript'],
-	}
+	},
 ];
 
 // dynamically generate project section
 
 const createProjectList = () => {
 	for (let site in portfolioData) {
+		// Create Card
 		const card = document.createElement('div');
+		// card.classList.add('card', 'd-block');
 		card.classList.add('card');
+		// test relocation of aria
+		card.setAttribute('aria-controls', portfolioData[site].aria);
+		card.setAttribute('role', 'tab');
+		card.setAttribute('tabindex', '0');
 
+		// Create Card Image
 		const image = document.createElement('img');
 		image.classList.add('card-img');
 		image.src = portfolioData[site].imgUrl;
+		image.setAttribute('aria-controls', portfolioData[site].aria);
 
+		// Create Card Info Section
 		const cardInfo = document.createElement('div');
 		cardInfo.classList.add('card-info');
 
+		// Create Care Title
 		const title = document.createElement('button');
 		title.classList.add('card-title');
 		title.setAttribute('aria-controls', portfolioData[site].aria);
 		title.setAttribute('role', 'tab');
 		title.textContent = portfolioData[site].title;
 
+		// Create Card Info Button Group
 		const btnGroup = document.createElement('div');
 		btnGroup.classList.add('btn-group');
 
+		// Create Button
 		const btnLink = document.createElement('button');
 		btnLink.textContent = 'Site';
 
+		// Create site href
 		const siteUrl = document.createElement('a');
 		siteUrl.href = portfolioData[site].siteUrl;
 		siteUrl.target = '_blank';
 		siteUrl.rel = 'noreferrer noopener';
 
+		// Create GitHub Button
 		const btnGit = document.createElement('button');
 
 		const gitLink = document.createElement('a');
@@ -205,13 +223,10 @@ const createProjectList = () => {
 		gitLink.target = '_blank';
 		gitLink.rel = 'noreferrer noopener';
 
-		// const date = document.createElement('div');
-		// date.classList.add('text-muted');
-		// date.textContent = portfolioData[site].date;
-
+		// Add Items to DOM
 		projectList.appendChild(card);
 		card.appendChild(image);
-		card.appendChild(cardInfo);
+		// card.appendChild(cardInfo);
 		cardInfo.appendChild(title);
 		cardInfo.appendChild(btnGroup);
 		btnGroup.appendChild(siteUrl);
@@ -224,7 +239,6 @@ const createProjectList = () => {
 };
 
 // dynamically generate details section
-
 const createDetailList = () => {
 	for (let site in portfolioData) {
 		const projectDetail = document.createElement('article');
