@@ -125,7 +125,7 @@ select {
 }
 
 body {
-	background-color: #42474C;
+	background-color: #304050;
 }
 
 .block {
@@ -168,7 +168,7 @@ body {
 	        justify-content: space-between;
 	height: 3em;
 	padding-inline: 0.5em;
-	border: 1px solid #42474C;
+	border: 1px solid #304050;
 	border-radius: 0 0 0.5em 0.5em;
 	-webkit-backdrop-filter: blur(2px);
 	        backdrop-filter: blur(2px);
@@ -182,7 +182,7 @@ body {
 	height: -webkit-fit-content;
 	height: -moz-fit-content;
 	height: fit-content;
-	border: solid 1px #42474C;
+	border: solid 1px #304050;
 	border-radius: 0.5em;
 	background-color: black;
 	color: #fff;
@@ -197,7 +197,7 @@ body {
 	height: -moz-fit-content;
 	height: fit-content;
 	overflow: hidden;
-	border: solid 1px #42474C;
+	border: solid 1px #304050;
 	border-radius: 0.5em;
 	background-color: black;
 	font-size: 1rem;
@@ -217,7 +217,7 @@ body {
 	vertical-align: middle;
 }
 .btn-group a:not(:last-child) {
-	border-right: solid 1px #42474C;
+	border-right: solid 1px #304050;
 }
 
 .html {
@@ -271,7 +271,7 @@ body {
 }
 
 .btn {
-	border: solid 1px #42474C;
+	border: solid 1px #304050;
 	border-radius: 0.5em;
 	background: black;
 	color: #fff;
@@ -405,7 +405,7 @@ svg {
 		overflow: scroll;
 		-webkit-transform: translate(-50%, -50%);
 		        transform: translate(-50%, -50%);
-		border: 1px solid #42474C;
+		border: 1px solid #304050;
 		background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 0, 0, 0.9)), to(black));
 		background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.9), black);
 	}
@@ -508,7 +508,7 @@ main .block {
 	margin-bottom: 1em;
 }
 .contact-form .btn {
-	background: #212426;
+	background: #182028;
 	border: solid 1px rgba(255, 255, 255, 0.2);
 }
 @media (min-width: 768px) {
