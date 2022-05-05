@@ -35,10 +35,18 @@ const changeTabPane = (e) => {
 	showContent(main, '#container--project-details');
 };
 
+<<<<<<< HEAD
+=======
+//Change Opacity of Elm
+>>>>>>> 6bc2fd8880a6485d5dc25195d8270729c80aeddf
 const changeOpacity = (elm, amount) => {
 	elm.style.opacity = amount;
 };
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6bc2fd8880a6485d5dc25195d8270729c80aeddf
 // Select Project Details Content
 
 // Add Event Listners to Cards
@@ -63,13 +71,15 @@ detailsCloseCtrl.forEach((elm) => {
 	elm.addEventListener('click', closeCtrl);
 });
 
+<<<<<<< HEAD
+=======
+// Add Event Listener to Projects Grid
+>>>>>>> 6bc2fd8880a6485d5dc25195d8270729c80aeddf
 projectGrid.addEventListener('mouseenter', () => {
 	cardArray.forEach((elm) => {
 		changeOpacity(elm, 0.8);
 	});
-});
 
-projectGrid.addEventListener('mouseleave', () => {
 	cardArray.forEach((elm) => {
 		changeOpacity(elm, 1);
 	});
