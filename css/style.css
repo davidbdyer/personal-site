@@ -148,6 +148,7 @@ body {
 	aspect-ratio: 1;
 	overflow: hidden;
 	border-radius: 0.5em;
+	cursor: pointer;
 	-webkit-transition: opacity 250ms ease-in-out;
 	transition: opacity 250ms ease-in-out;
 }
