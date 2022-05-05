@@ -392,7 +392,6 @@ svg {
 	top: 2rem;
 	-ms-flex-preferred-size: 40%;
 	    flex-basis: 40%;
-	height: 100%;
 }
 
 @media (max-width: 992px) {
@@ -401,7 +400,7 @@ svg {
 		top: 50%;
 		left: 50%;
 		width: 95vw;
-		height: 50vh;
+		height: 70vh;
 		overflow: scroll;
 		-webkit-transform: translate(-50%, -50%);
 		        transform: translate(-50%, -50%);
