@@ -39,12 +39,19 @@ const changeOpacity = (elm, amount) => {
 	elm.style.opacity = amount;
 };
 
-// Add Event Listners to Cards
+const selectedElm = (elm, amount) => {
+	const selected = document.activeElement;
+	changeOpacity(elm, amount);
+};
+
+// Interactive Hover Effects
+
+const reducedOpacAmt = 0.8;
+
 cardArray.forEach((elm) => {
 	elm.addEventListener('click', changeTabPane);
 
 	elm.addEventListener('keypress', (e) => {
-		e.preventDefault;
 		changeTabPane(e);
 	});
 
@@ -53,7 +60,7 @@ cardArray.forEach((elm) => {
 	});
 
 	elm.addEventListener('mouseleave', () => {
-		changeOpacity(elm, 0.4);
+		changeOpacity(elm, reducedOpacAmt);
 	});
 });
 
@@ -63,7 +70,7 @@ detailsCloseCtrl.forEach((elm) => {
 
 projectGrid.addEventListener('mouseenter', () => {
 	cardArray.forEach((elm) => {
-		changeOpacity(elm, 0.8);
+		changeOpacity(elm, reducedOpacAmt);
 	});
 
 	cardArray.forEach((elm) => {
@@ -73,7 +80,7 @@ projectGrid.addEventListener('mouseenter', () => {
 
 projectGrid.addEventListener('mouseenter', () => {
 	cardArray.forEach((elm) => {
-		changeOpacity(elm, 0.8);
+		changeOpacity(elm, reducedOpacAmt);
 	});
 });
 

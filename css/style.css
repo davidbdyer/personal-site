@@ -149,8 +149,8 @@ body {
 	overflow: hidden;
 	border-radius: 0.5em;
 	cursor: pointer;
-	-webkit-transition: opacity 250ms ease-in-out;
-	transition: opacity 250ms ease-in-out;
+	-webkit-transition: opacity 500ms ease-in;
+	transition: opacity 500ms ease-in;
 }
 .card-img {
 	width: 100%;

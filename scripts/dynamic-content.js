@@ -157,13 +157,23 @@ const portfolioData = [
 	{
 		title: 'KeyCode',
 		description:
-			'Based on a project from the "50 Projects In 50 Days" Udemy course. A simple web app for displaying useful data from a keypress event. The input field is necessary to bring up the keyboard on mobile devices',
+			'Based on a project from the "50 Projects In 50 Days" Udemy course. A simple web app for displaying useful data from a keypress event. The input field is necessary to bring up the keyboard on mobile devices.',
 		date: 'Feb 2022',
 		siteUrl: 'https://www.daviddyer.me/portfolio-sites/fifty-projects/keycode/',
 		imgUrl: 'images/site-thumbs/keycode.png',
 		imgAlt: 'keycode',
 		aria: 'keycode--tab',
 		lang_lib: ['html', 'css', 'javascript'],
+	},
+	{
+		title: 'Expanding Cards',
+		description: 'Based on a project from the "50 Projects In 50 Days" Udemy course. A simple expanding card-based menu.',
+		date: 'Feb 2022',
+		siteUrl: 'https://www.daviddyer.me/portfolio-sites/fifty-projects/expanding-cards/',
+		imgUrl: 'https://www.daviddyer.me/portfolio-sites/fifty-projects/expanding-cards/assets/icon.jpg',
+		imgAlt: 'expanding cards',
+		aria: 'expanding-cards--tab',
+		lang_lib: ['html', 'sass', 'javascript'],
 	},
 ];
 
@@ -173,7 +183,6 @@ const createProjectList = () => {
 	for (let site in portfolioData) {
 		// Create Card
 		const card = document.createElement('div');
-		// card.classList.add('card', 'd-block');
 		card.classList.add('card');
 		// test relocation of aria
 		card.setAttribute('aria-controls', portfolioData[site].aria);
