@@ -35,15 +35,27 @@ const changeTabPane = (e) => {
 	showContent(main, '#container--project-details');
 };
 
+const changeOpacity = (elm, amount) => {
+	elm.style.opacity = amount;
+};
+
 // Select Project Details Content
+
+// Add Event Listners to Cards
 cardArray.forEach((elm) => {
 	elm.addEventListener('click', changeTabPane);
-});
 
-cardArray.forEach((elm) => {
 	elm.addEventListener('keypress', (e) => {
 		e.preventDefault;
 		changeTabPane(e);
+	});
+
+	elm.addEventListener('mouseenter', () => {
+		changeOpacity(elm, 1);
+	});
+
+	elm.addEventListener('mouseleave', () => {
+		changeOpacity(elm, 0.4);
 	});
 });
 
@@ -51,31 +63,14 @@ detailsCloseCtrl.forEach((elm) => {
 	elm.addEventListener('click', closeCtrl);
 });
 
-//hover opacity animation
-const changeOpacity = (elm, amount) => {
-	elm.style.opacity = amount;
-};
-
 projectGrid.addEventListener('mouseenter', () => {
 	cardArray.forEach((elm) => {
-		changeOpacity(elm, 0.6);
+		changeOpacity(elm, 0.8);
 	});
 });
 
 projectGrid.addEventListener('mouseleave', () => {
 	cardArray.forEach((elm) => {
 		changeOpacity(elm, 1);
-	});
-});
-
-cardArray.forEach((elm) => {
-	elm.addEventListener('mouseenter', () => {
-		changeOpacity(elm, 1);
-	});
-});
-
-cardArray.forEach((elm) => {
-	elm.addEventListener('mouseleave', () => {
-		changeOpacity(elm, 0.4);
 	});
 });
