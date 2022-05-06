@@ -7,7 +7,7 @@ const cardTitleArray = main.querySelectorAll('.card-title');
 const mobileBodyMute = main.querySelector('#mobile-body-mute');
 const projectGrid = main.querySelector('.project-grid');
 
-// utility functions
+// Detail Panel Controls
 const hideContent = (parent, query) => {
 	parent.querySelectorAll(query).forEach((item) => item.setAttribute('hidden', true));
 };
@@ -35,19 +35,18 @@ const changeTabPane = (e) => {
 	showContent(main, '#container--project-details');
 };
 
-const changeOpacity = (elm, amount) => {
-	elm.style.opacity = amount;
-};
-
-const selectedElm = (elm, amount) => {
-	const selected = document.activeElement;
-	changeOpacity(elm, amount);
-};
-
 // Interactive Hover Effects
+const reducedOpacAmt = 0.5;
 
-const reducedOpacAmt = 0.6;
+const arrayOpacity = (array, target, amount = 1) => {
+	for (let item of array) {
+		if (item !== target) {
+			item.style.opacity = amount;
+		}
+	}
+};
 
+// Event Listeners
 cardArray.forEach((elm) => {
 	elm.addEventListener('click', changeTabPane);
 
@@ -55,37 +54,16 @@ cardArray.forEach((elm) => {
 		changeTabPane(e);
 	});
 
-	elm.addEventListener('mouseenter', () => {
-		changeOpacity(elm, 1);
+	elm.addEventListener('mouseenter', (e) => {
+		arrayOpacity(cardArray, e.target, reducedOpacAmt);
+		console.log(e.target);
 	});
 
-	elm.addEventListener('mouseleave', () => {
-		changeOpacity(elm, reducedOpacAmt);
+	elm.addEventListener('mouseleave', (e) => {
+		arrayOpacity(cardArray, e.target, 1);
 	});
 });
 
 detailsCloseCtrl.forEach((elm) => {
 	elm.addEventListener('click', closeCtrl);
-});
-
-projectGrid.addEventListener('mouseenter', () => {
-	cardArray.forEach((elm) => {
-		changeOpacity(elm, reducedOpacAmt);
-	});
-
-	cardArray.forEach((elm) => {
-		changeOpacity(elm, 1);
-	});
-});
-
-projectGrid.addEventListener('mouseenter', () => {
-	cardArray.forEach((elm) => {
-		changeOpacity(elm, reducedOpacAmt);
-	});
-});
-
-projectGrid.addEventListener('mouseleave', () => {
-	cardArray.forEach((elm) => {
-		changeOpacity(elm, 1);
-	});
 });

@@ -38,8 +38,10 @@ main {
 		right: -1rem;
 
 		@media (max-width: $md) {
-			position: absolute;
-			right: 1rem;
+			// position: absolute;
+			position: sticky;
+			top: 1rem;
+			left: 80vw;
 		}
 	}
 
@@ -106,5 +108,18 @@ main {
 	@media screen and (min-width: $md) {
 		position: sticky;
 		top: 2rem;
+	}
+}
+
+@media (max-width: $lg) {
+	.body-mute {
+		display: none;
+		position: fixed;
+		top: 0;
+		left: 0;
+		// z-index: 100;
+		background: rgba($block, 0.5);
+		width: 100vw;
+		height: 100vh;
 	}
 }
