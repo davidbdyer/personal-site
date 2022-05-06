@@ -1,24 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Montserrat:wght@300;400;500&display=swap');
+
 //heading
-$title-ff: 'Roboto', sans-serif;
+$title-ff: 'Montserrat', sans-serif;
 $title-fs: 3rem;
-$title-fw: 400;
+$title-fw: 500;
 
 //sub heading
-$subtitle-ff: 'Roboto', sans-serif;
+$subtitle-ff: 'Montserrat', sans-serif;
 $subtitle-f2: 2rem;
-$subtitle-fw: 400;
+$subtitle-fw: 500;
 
 // paragraph
-$paragraph-ff: 'Roboto', sans-serif;
-$paragraph-fs: 1rem;
+// $paragraph-ff: 'Roboto', sans-serif;
+$paragraph-ff: 'Abel', sans-serif;
+$paragraph-fs: 1.5rem;
+$paragraph-fs-sm: 1rem;
 $paragraph-fw: 300;
 
 
-$robo: 'Roboto', sans-serif;
+$default-type: 'Montserrat', sans-serif;
 $light: 300;
 $regular: 400;
 $bold: 500;
-
-
-
-
