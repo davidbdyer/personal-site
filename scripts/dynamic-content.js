@@ -6,7 +6,7 @@ const portfolioData = [
 		title: 'Score Keeper',
 		description:
 			"Web App for keeping score of a ping pong game. The goal was to keep track of the score for the current game and a set of games. I also wanted the winner list to persist between site loads. The winner list is stored as a JSON array in the browser's local storage.",
-		date: 'Dec 2021',
+		date: 'December 2021',
 		siteUrl: 'https://davidbdeath.github.io/ping-pong_score_keeper/',
 		gitUrl: 'https://github.com/davidbdeath/ping-pong_score_keeper',
 		imgUrl: 'images/site-thumbs/ping-pong-score-keeper.jpg',
@@ -18,7 +18,7 @@ const portfolioData = [
 		title: 'Space Tourism',
 		description:
 			'I approached implementing this site using Javascript to toggle content visibility instead of creating a new HTML document for sub-page content. The content change controls for each page are done using the ARIA tablist. As a result, the page is screen reader-friendly. Site design by Frontend Mentor.',
-		date: 'Dec 2021',
+		date: 'December 2021',
 		siteUrl: 'https://davidbdeath.github.io/space-tourism-website/',
 		gitUrl: 'https://github.com/davidbdeath/space-tourism-website',
 		imgUrl: 'images/site-thumbs/space-tourism.jpg',
@@ -30,7 +30,7 @@ const portfolioData = [
 		title: 'Tip Calculator',
 		description:
 			'Web app for splitting calculating the tip and splitting the bill with your group. Tip Amount and Total never output NaN, null, or Infinity. The inputs only accept numbers. The tip selected is highlighted, including the custom tip.',
-		date: 'Oct 2021',
+		date: 'October 2021',
 		siteUrl: 'https://davidbdeath.github.io/tip-calculator-app/',
 		imgUrl: 'images/site-thumbs/tip_calculator.jpg',
 		imgAlt: 'Tip Calculator App',
@@ -42,7 +42,7 @@ const portfolioData = [
 		title: 'Yelp Camp',
 		description:
 			'Web App for finding, rating, and reviewing campgrounds. The site is dynamically generated using EJS, EJS Mate, and MongoDB. Flash is used for error and success messages. User input is validated using Joi, sanitize-html, and express-mongo-sanitize. Helmet is used for added security. User logins are implemented using passport and express-session for session data. Cloudinary is used for image storage and manipulations. Mapbox is used for custom interactive maps. The design is based on a project from <a href="https://www.udemy.com/share/101W923@0AHFLcM1tVaGQceAH4TxemyQ-r5T4YPxJg1AW3GjmKdmgXhCa0JxOIeAvNWLXTZ6/">Colt Steele Web Developer Bootcamp</a>.',
-		date: 'Sept 2021',
+		date: 'September 2021',
 		siteUrl: 'https://damp-sierra-93991.herokuapp.com/',
 		imgUrl: 'images/site-thumbs/yelpcamp.jpg',
 		imgAlt: 'Yelp Camp',
@@ -70,7 +70,7 @@ const portfolioData = [
 	{
 		title: 'Pray Up',
 		description: 'A Website I designed and implemented for Pray Up ministries. This site is a precursor for a much bigger social media platform.',
-		date: 'Jan 2021',
+		date: 'January 2021',
 		siteUrl: 'https://prayuplife.com',
 		imgUrl: 'images/site-thumbs/prayup.jpg',
 		imgAlt: 'pray up site',
@@ -113,7 +113,7 @@ const portfolioData = [
 	{
 		title: 'Game Pad',
 		description: 'Website I implemented and designed for an app I designed for UX class.',
-		date: 'Nov 2017',
+		date: 'November 2017',
 		siteUrl: 'https://davidbdeath.github.io/GamePad/',
 		imgUrl: 'images/site-thumbs/gamepad.jpg',
 		imgAlt: 'gamepad',
@@ -125,7 +125,7 @@ const portfolioData = [
 		title: 'Animated Nav',
 		description:
 			'Based on a project from the "50 Projects In 50 Days" Udemy course. The animation is done with CSS, and javascript is used to toggle an active class on the nav element. The site is fully responsive, including iOS icon.',
-		date: 'Jan 2022',
+		date: 'January 2022',
 		siteUrl: 'https://www.daviddyer.me/portfolio-sites/fifty-projects/animated-navigation/',
 		imgUrl: 'images/site-thumbs/animated-nav.png',
 		imgAlt: 'animated nav',
@@ -136,7 +136,7 @@ const portfolioData = [
 		title: 'Dad Jokes',
 		description:
 			'Based on a project from the "50 Projects In 50 Days" Udemy course. I\'m using the Javascript Fetch API to get dad jokes from icanhazdadjoke. The web app is fully responsive, with iOS icon. If the returned text exceeds the available space, the text size automatically reduces.',
-		date: 'Feb 2022',
+		date: 'February 2022',
 		siteUrl: 'https://www.daviddyer.me/portfolio-sites/fifty-projects/dad-jokes/',
 		imgUrl: 'images/site-thumbs/dad-jokes.png',
 		imgAlt: 'dad jokes',
@@ -158,7 +158,7 @@ const portfolioData = [
 		title: 'KeyCode',
 		description:
 			'Based on a project from the "50 Projects In 50 Days" Udemy course. A simple web app for displaying useful data from a keypress event. The input field is necessary to bring up the keyboard on mobile devices.',
-		date: 'Feb 2022',
+		date: 'February 2022',
 		siteUrl: 'https://www.daviddyer.me/portfolio-sites/fifty-projects/keycode/',
 		imgUrl: 'images/site-thumbs/keycode.png',
 		imgAlt: 'keycode',
@@ -168,11 +168,21 @@ const portfolioData = [
 	{
 		title: 'Expanding Cards',
 		description: 'Based on a project from the "50 Projects In 50 Days" Udemy course. A simple expanding card-based menu.',
-		date: 'Feb 2022',
+		date: 'January 2022',
 		siteUrl: 'https://www.daviddyer.me/portfolio-sites/fifty-projects/expanding-cards/',
 		imgUrl: 'https://www.daviddyer.me/portfolio-sites/fifty-projects/expanding-cards/assets/icon.jpg',
 		imgAlt: 'expanding cards',
 		aria: 'expanding-cards--tab',
+		lang_lib: ['html', 'sass', 'javascript'],
+	},
+	{
+		title: 'Movie App',
+		description: 'Based on a project from the "50 Projects In 50 Days" Udemy course. A simple movie lookup app.',
+		date: 'March 2022',
+		siteUrl: 'https://www.daviddyer.me/portfolio-sites/fifty-projects/movie-app/',
+		imgUrl: 'images/site-thumbs/movie-app.jpg',
+		imgAlt: 'Movie App',
+		aria: 'movie-app--tab',
 		lang_lib: ['html', 'sass', 'javascript'],
 	},
 ];
