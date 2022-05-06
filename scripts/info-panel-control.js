@@ -46,7 +46,7 @@ const selectedElm = (elm, amount) => {
 
 // Interactive Hover Effects
 
-const reducedOpacAmt = 0.8;
+const reducedOpacAmt = 0.6;
 
 cardArray.forEach((elm) => {
 	elm.addEventListener('click', changeTabPane);
