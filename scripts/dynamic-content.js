@@ -17,7 +17,7 @@ const portfolioData = [
 	{
 		title: 'Space Tourism',
 		description:
-			'I approached implementing this site using Javascript to toggle content visibility instead of creating a new HTML document for sub-page content. The content change controls for each page are done using the ARIA tablist. As a result, the page is screen reader-friendly. Site design by Frontend Mentor.',
+			'I approached implementing this site using Javascript to toggle content visibility instead of creating a new HTML document for sub-page content. The content change controls for each page are done using the ARIA tablist. As a result, the page is screen reader-friendly. Based on a design by Frontend Mentor.',
 		date: 'December 2021',
 		siteUrl: 'https://davidbdeath.github.io/space-tourism-website/',
 		gitUrl: 'https://github.com/davidbdeath/space-tourism-website',
@@ -29,7 +29,7 @@ const portfolioData = [
 	{
 		title: 'Tip Calculator',
 		description:
-			'Web app for splitting calculating the tip and splitting the bill with your group. Tip Amount and Total never output NaN, null, or Infinity. The inputs only accept numbers. The tip selected is highlighted, including the custom tip.',
+			'Web app for calculating the tip and splitting the bill with your group. Tip Amount and Total never output NaN, null, or Infinity. The inputs only accept numbers. The tip selected is highlighted, including the custom tip. Based on a design by Frontend Mentor.',
 		date: 'October 2021',
 		siteUrl: 'https://davidbdeath.github.io/tip-calculator-app/',
 		imgUrl: 'images/site-thumbs/tip_calculator.jpg',
@@ -69,7 +69,7 @@ const portfolioData = [
 	},
 	{
 		title: 'Pray Up',
-		description: 'A Website I designed and implemented for Pray Up ministries. This site is a precursor for a much bigger social media platform.',
+		description: 'A Website I designed and implemented for Pray Up ministries. The site is fully responsive and includes Facebook metadata.',
 		date: 'January 2021',
 		siteUrl: 'https://prayuplife.com',
 		imgUrl: 'images/site-thumbs/prayup.jpg',
@@ -80,7 +80,7 @@ const portfolioData = [
 	},
 	{
 		title: 'Calculator',
-		description: 'Web app, implemented by me, designed by Frontend Mentor.',
+		description: 'A Calculator web app. The site is fully responsive and includes an iOS icon. Based on a design by Frontend Mentor.',
 		date: 'May 2021',
 		siteUrl: 'https://davidbdeath.github.io/calculator-app-main/',
 		imgUrl: 'images/site-thumbs/calculator.jpg',
@@ -112,7 +112,7 @@ const portfolioData = [
 	},
 	{
 		title: 'Game Pad',
-		description: 'Website I implemented and designed for an app I designed for UX class.',
+		description: 'A website I implemented and designed to showcase an app I designed for a UX class.',
 		date: 'November 2017',
 		siteUrl: 'https://davidbdeath.github.io/GamePad/',
 		imgUrl: 'images/site-thumbs/gamepad.jpg',
@@ -124,7 +124,7 @@ const portfolioData = [
 	{
 		title: 'Animated Nav',
 		description:
-			'Based on a project from the "50 Projects In 50 Days" Udemy course. The animation is done with CSS, and javascript is used to toggle an active class on the nav element. The site is fully responsive, including iOS icon.',
+			'The animation is done with CSS, and Javascript is used to toggle an active class on the nav element. The site is fully responsive, including an iOS icon. Based on a project from the "50 Projects In 50 Days" Udemy course.',
 		date: 'January 2022',
 		siteUrl: 'https://www.daviddyer.me/portfolio-sites/fifty-projects/animated-navigation/',
 		imgUrl: 'images/site-thumbs/animated-nav.png',
@@ -134,8 +134,7 @@ const portfolioData = [
 	},
 	{
 		title: 'Dad Jokes',
-		description:
-			'Based on a project from the "50 Projects In 50 Days" Udemy course. I\'m using the Javascript Fetch API to get dad jokes from icanhazdadjoke. The web app is fully responsive, with iOS icon. If the returned text exceeds the available space, the text size automatically reduces.',
+		description: `I'm using the Javascript Fetch API to get dad jokes from icanhazdadjoke. The web app is fully responsive, has Facebook metadata, iOS theme, and iOS icon. If the returned text exceeds the available space, the text size automatically reduces. Based on a project from the "50 Projects In 50 Days" Udemy course.`,
 		date: 'February 2022',
 		siteUrl: 'https://www.daviddyer.me/portfolio-sites/fifty-projects/dad-jokes/',
 		imgUrl: 'images/site-thumbs/dad-jokes.png',
@@ -146,7 +145,7 @@ const portfolioData = [
 	{
 		title: 'Drink Water',
 		description:
-			'Based on a project from the "50 Projects In 50 Days" Udemy course. A fun, fully responsive web app for tracking daily water consumption goals. How many cups drank are stored in local storage, making it persistent between site reloads.',
+			'A fun, web app for tracking daily water consumption goals. How many cups drank are stored in local storage, making it persistent between site reloads. The web app is fully responsive, has Facebook metadata, iOS theme, and iOS icon. Based on a project from the "50 Projects In 50 Days" Udemy course.',
 		date: 'March 2022',
 		siteUrl: 'https://www.daviddyer.me/portfolio-sites/fifty-projects/drink-water/',
 		imgUrl: 'images/site-thumbs/drink-water.png',
@@ -157,7 +156,7 @@ const portfolioData = [
 	{
 		title: 'KeyCode',
 		description:
-			'Based on a project from the "50 Projects In 50 Days" Udemy course. A simple web app for displaying useful data from a keypress event. The input field is necessary to bring up the keyboard on mobile devices.',
+			'A simple web app for displaying useful data from a keypress event. The input field is necessary to bring up the keyboard on mobile devices. The web app is fully responsive, has Facebook metadata, iOS theme, and iOS icon. Based on a project from the "50 Projects In 50 Days" Udemy course.',
 		date: 'February 2022',
 		siteUrl: 'https://www.daviddyer.me/portfolio-sites/fifty-projects/keycode/',
 		imgUrl: 'images/site-thumbs/keycode.png',
@@ -167,7 +166,7 @@ const portfolioData = [
 	},
 	{
 		title: 'Expanding Cards',
-		description: 'Based on a project from the "50 Projects In 50 Days" Udemy course. A simple expanding card-based menu.',
+		description: 'A simple expanding card-based menu. The site is fully responsive, has Facebook and Twitter metadata, iOS theme, and iOS icon. Based on a project from the "50 Projects In 50 Days" Udemy course.',
 		date: 'January 2022',
 		siteUrl: 'https://www.daviddyer.me/portfolio-sites/fifty-projects/expanding-cards/',
 		imgUrl: 'https://www.daviddyer.me/portfolio-sites/fifty-projects/expanding-cards/assets/icon.jpg',
@@ -177,13 +176,24 @@ const portfolioData = [
 	},
 	{
 		title: 'Movie App',
-		description: 'Based on a project from the "50 Projects In 50 Days" Udemy course. A simple movie lookup app.',
+		description: `A simple movie lookup web app. I'm using the Javascript fetch API to get popular movies from themoviedb and display them. Search is also implemented. The web app is fully responsive, has Facebook metadata, iOS theme, and iOS icon.Based on a project from the "50 Projects In 50 Days" Udemy course.`,
 		date: 'March 2022',
 		siteUrl: 'https://www.daviddyer.me/portfolio-sites/fifty-projects/movie-app/',
 		imgUrl: 'images/site-thumbs/movie-app.jpg',
 		imgAlt: 'Movie App',
 		aria: 'movie-app--tab',
 		lang_lib: ['html', 'sass', 'javascript'],
+	},
+	{
+		title: 'Random Choice',
+		description: 'Randomly picks a value from a comma-separated list entered into a textarea element. Based on a project from the "50 Projects In 50 Days" Udemy course.',
+		date: 'February 2022',
+		siteUrl: 'https://davidbdeath.github.io/random-choice/',
+		imgUrl: 'images/site-thumbs/random-choice.png',
+		imgAlt: 'random choice',
+		gitUrl: 'https://github.com/davidbdeath/random-choice',
+		aria: 'random-choice--tab',
+		lang_lib: ['html', 'css', 'javascript'],
 	},
 ];
 
