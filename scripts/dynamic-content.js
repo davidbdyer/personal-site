@@ -166,7 +166,8 @@ const portfolioData = [
 	},
 	{
 		title: 'Expanding Cards',
-		description: 'A simple expanding card-based menu. The site is fully responsive, has Facebook and Twitter metadata, iOS theme, and iOS icon. Based on a project from the "50 Projects In 50 Days" Udemy course.',
+		description:
+			'A simple expanding card-based menu. The site is fully responsive, has Facebook and Twitter metadata, iOS theme, and iOS icon. Based on a project from the "50 Projects In 50 Days" Udemy course.',
 		date: 'January 2022',
 		siteUrl: 'https://www.daviddyer.me/portfolio-sites/fifty-projects/expanding-cards/',
 		imgUrl: 'https://www.daviddyer.me/portfolio-sites/fifty-projects/expanding-cards/assets/icon.jpg',
@@ -296,6 +297,10 @@ const createDetailList = () => {
 
 		// Create Language List
 		const detailLangList = document.createElement('ul');
+
+		// ---------------------------
+		// ADD SECTION
+		// ---------------------------
 
 		// Add Elements to Project Details
 		detailList.appendChild(projectDetail);

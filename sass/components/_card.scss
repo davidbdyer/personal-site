@@ -1,11 +1,11 @@
 @use '../abstracts' as *;
 
 .card {
+	transition: all 500ms ease-in;
+	cursor: pointer;
+	border-radius: 0.5em;
 	aspect-ratio: 1;
 	overflow: hidden;
-	border-radius: 0.5em;
-	cursor: pointer;
-	transition: opacity 500ms ease;
 
 	&-img {
 		width: 100%;
@@ -16,41 +16,41 @@
 		display: flex;
 		position: relative;
 		top: -$info-height;
-		align-items: center;
 		justify-content: space-between;
-		height: $info-height;
-		padding-inline: 0.5em;
+		align-items: center;
+		backdrop-filter: blur(2px);
 		border: 1px solid $base;
 		border-radius: 0 0 0.5em 0.5em;
-		backdrop-filter: blur(2px);
 		background-color: rgba($block, 0.7);
+		padding-inline: 0.5em;
+		height: $info-height;
 		font-family: $subtitle-ff;
 	}
 
 	&-title {
-		width: fit-content;
-		height: fit-content;
+		cursor: pointer;
 		border: solid 1px $base;
 		border-radius: 0.5em;
 		background-color: $block;
+		width: fit-content;
+		height: fit-content;
 		color: $font-clr;
-		cursor: pointer;
 	}
 }
 
 .btn-group {
-	width: fit-content;
-	height: fit-content;
-	overflow: hidden;
 	border: solid 1px $base;
 	border-radius: 0.5em;
 	background-color: $block;
+	width: fit-content;
+	height: fit-content;
+	overflow: hidden;
 	font-size: 1rem;
 
 	a {
+		vertical-align: middle;
 		color: $font-clr;
 		text-decoration: none;
-		vertical-align: middle;
 
 		button {
 			border: unset;
@@ -58,8 +58,8 @@
 			color: $font-clr;
 
 			svg {
-				margin-bottom: 0.2em;
 				vertical-align: middle;
+				margin-bottom: 0.2em;
 			}
 		}
 	}
@@ -67,4 +67,9 @@
 	a:not(:last-child) {
 		border-right: solid 1px $base;
 	}
+}
+
+.card-dim {
+	opacity: 0.7;
+	transform: scale(.9);
 }

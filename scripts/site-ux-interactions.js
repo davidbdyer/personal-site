@@ -36,12 +36,10 @@ const changeTabPane = (e) => {
 };
 
 // Interactive Hover Effects
-const reducedOpacAmt = 0.5;
-
-const arrayOpacity = (array, target, amount = 1) => {
+const arrayHoverEffect = (array, target) => {
 	for (let item of array) {
 		if (item !== target) {
-			item.style.opacity = amount;
+			item.classList.toggle('card-dim')
 		}
 	}
 };
@@ -55,12 +53,12 @@ cardArray.forEach((elm) => {
 	});
 
 	elm.addEventListener('mouseenter', (e) => {
-		arrayOpacity(cardArray, e.target, reducedOpacAmt);
+		arrayHoverEffect(cardArray, e.target);
 		console.log(e.target);
 	});
 
 	elm.addEventListener('mouseleave', (e) => {
-		arrayOpacity(cardArray, e.target, 1);
+		arrayHoverEffect(cardArray, e.target);
 	});
 });
 
