@@ -2,8 +2,7 @@
 	$errors = '';
 	if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-		$from = "form@daviddyer.me";
-		$to = "form@daviddyer.me";
+		include 'email-address.php';
 
 		if(
 			empty($_POST['name']) ||
@@ -13,10 +12,14 @@
 		){
 			$errors .= "\n Error: all fields are required";
 		} else {
-			$name = $_POST['name'];
-			$email = $_POST['email'];
-			$subject = $_POST['subject'];
-			$message = $_POST['message'];
+			// $name = $_POST['name'];
+			$name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+			// $email = $_POST['email'];
+			$email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
+			// $subject = $_POST['subject'];
+			$subject = filter_input(INPUT_POST, 'subject', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+			// $message = $_POST['message'];
+			$message = filter_input(INPUT_POST, 'message', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 
 			// header
 			$headers = "From: form@daviddyer.me\r\n";
@@ -28,7 +31,6 @@
 
 			mail($to, $subject, $formcontent, $headers);
 
-			header('Location: https://daviddyer.me')
+			header('Location: https://daviddyer.me');
 		}
 	}
-?>
