@@ -2,7 +2,7 @@
 	$errors = '';
 	if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-		include 'email-address.php';
+		include 'address.php';
 
 		if(
 			empty($_POST['name']) ||
@@ -22,8 +22,8 @@
 			$message = filter_input(INPUT_POST, 'message', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 
 			// header
-			$headers = "From: form@daviddyer.me\r\n";
-			$headers .= "Reply-To: form@daviddyer.me\r\n";
+			$headers = "From: $from\r\n";
+			$headers .= "Reply-To: $email\r\n";
 			$headers .= "X-Mailer: PHP/".phpversion();
 
 			// message

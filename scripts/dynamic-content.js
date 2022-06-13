@@ -177,7 +177,7 @@ const portfolioData = [
 	},
 	{
 		title: 'Movie App',
-		description: `A simple movie lookup web app. I'm using the Javascript fetch API to get popular movies from themoviedb and display them. Search is also implemented. The web app is fully responsive, has Facebook metadata, iOS theme, and iOS icon.Based on a project from the "50 Projects In 50 Days" Udemy course.`,
+		description: `A simple movie lookup web app. I'm using the Javascript fetch API to get popular movies from themoviedb and display them. Search is also implemented. The web app is fully responsive and has Facebook metadata, an iOS theme, and an iOS icon. Based on a project from the "50 Projects In 50 Days" Udemy course. Instead of using display flex, I'm using display grid. I prefer grid to flex because the last row stays consistent with the rest of the rows.`,
 		date: 'March 2022',
 		siteUrl: 'https://www.daviddyer.me/portfolio-sites/fifty-projects/movie-app/',
 		imgUrl: 'images/site-thumbs/movie-app.jpg',
