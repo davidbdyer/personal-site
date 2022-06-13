@@ -1,5 +1,4 @@
 <?php
-	$errors = '';
 	if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 		include 'address.php';
@@ -8,21 +7,22 @@
 			empty($_POST['name']) ||
 			empty($_POST['email']) ||
 			empty($_POST['subject']) ||
-			empty($_POST['message'])
+			empty($_POST['message']) ||
+			!empty($_POST['website'])
 		){
-			$errors .= "\n Error: all fields are required";
+			echo "Error: all fields are required";
+		} elseif (
+			preg_match('/http|www/i',$_POST['message'])
+		){
+			echo "Error: URLS not allowed";
 		} else {
-			// $name = $_POST['name'];
 			$name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
-			// $email = $_POST['email'];
 			$email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
-			// $subject = $_POST['subject'];
 			$subject = filter_input(INPUT_POST, 'subject', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
-			// $message = $_POST['message'];
 			$message = filter_input(INPUT_POST, 'message', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 
 			// header
-			$headers = "From: $from\r\n";
+			$headers = "From: $email\r\n";
 			$headers .= "Reply-To: $email\r\n";
 			$headers .= "X-Mailer: PHP/".phpversion();
 

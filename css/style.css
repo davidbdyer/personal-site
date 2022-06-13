@@ -550,4 +550,8 @@ main .block {
 		    justify-self: end;
 	}
 }
+
+#website {
+	display: none;
+}
 /*# sourceMappingURL=style.css.map */
