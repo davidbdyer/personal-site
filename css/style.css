@@ -337,7 +337,7 @@ svg {
 	font-weight: 500;
 	color: #fff;
 }
-@media (min-width: 768px) {
+@media (min-width: 48em) {
 	.primary-header h1 {
 		font-size: 3rem;
 	}
@@ -350,7 +350,7 @@ svg {
 	width: 1.5em;
 	vertical-align: middle;
 }
-@media (min-width: 768px) {
+@media (min-width: 48em) {
 	.primary-header .header-icon {
 		width: 3em;
 		margin-left: 1rem;
@@ -365,7 +365,7 @@ svg {
 	font-size: 1.5rem;
 	font-family: "Abel", sans-serif;
 }
-@media (max-width: 768px) {
+@media (max-width: 48em) {
 	.introduction p {
 		font-size: 1rem;
 	}
@@ -397,12 +397,12 @@ svg {
 	margin-block: 2rem;
 	gap: min(2rem, 5vw);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 48em) {
 	.project-grid {
 		grid-template-columns: repeat(auto-fill, 20%);
 	}
 }
-@media (min-width: 1200px) {
+@media (min-width: 75em) {
 	.project-grid {
 		grid-template-columns: repeat(auto-fill, 15%);
 	}
@@ -415,7 +415,7 @@ svg {
 	    flex-basis: 40%;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 62em) {
 	#container--project-details {
 		position: fixed;
 		top: 50%;
@@ -449,7 +449,7 @@ main .block {
 	position: absolute;
 	right: -1rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 48em) {
 	.project-details .close-ctrl {
 		position: sticky;
 		top: 1rem;
@@ -507,14 +507,14 @@ main .block {
 	list-style: none;
 	text-transform: uppercase;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 48em) {
 	.project-details {
 		position: sticky;
 		top: 2rem;
 	}
 }
 
-@media (max-width: 992px) {
+@media (max-width: 62em) {
 	.body-mute {
 		display: none;
 		position: fixed;
@@ -543,7 +543,7 @@ main .block {
 	background: #182028;
 	border: solid 1px rgba(255, 255, 255, 0.2);
 }
-@media (min-width: 768px) {
+@media (min-width: 48em) {
 	.contact-form .btn {
 		width: 10em;
 		-ms-grid-column-align: end;
