@@ -117,6 +117,14 @@ body {
 	background-color: #304050;
 }
 
+@media (max-width: 48em) {
+	.scroll-fixed {
+		position: fixed;
+		width: 100vw;
+		margin: auto;
+	}
+}
+
 .block {
 	padding-inline: 2rem;
 	padding-block: 1rem;

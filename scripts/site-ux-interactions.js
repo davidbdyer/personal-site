@@ -6,6 +6,7 @@ const detailsCloseCtrl = detailsSection.querySelectorAll('.detail-close-ctrl');
 const cardTitleArray = main.querySelectorAll('.card-title');
 const mobileBodyMute = main.querySelector('#mobile-body-mute');
 const projectGrid = main.querySelector('.project-grid');
+const body = document.body;
 
 // Detail Panel Controls
 const hideContent = (parent, query) => {
@@ -18,11 +19,13 @@ const showContent = (parent, query) => {
 
 const enableBodyMute = () => {
 	mobileBodyMute.style.display = 'unset';
+	body.classList.add('scroll-fixed')
 };
 
 const closeCtrl = () => {
 	detailsSection.setAttribute('hidden', true);
 	mobileBodyMute.style.display = 'none';
+	body.classList.remove('scroll-fixed')
 };
 
 const changeTabPane = (e) => {

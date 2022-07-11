@@ -3,3 +3,11 @@
 body {
 	background-color: $base;
 }
+
+.scroll-fixed {
+	@media (max-width: $md) {
+		position: fixed;
+		width: 100vw;
+		margin: auto;
+	}
+}
