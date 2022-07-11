@@ -27,6 +27,7 @@ const closeCtrl = () => {
 
 const changeTabPane = (e) => {
 	const targetTab = e.target;
+	targetTab.focus();
 	const targetPanel = targetTab.getAttribute('aria-controls');
 
 	hideContent(main, '.project-details');
@@ -39,7 +40,7 @@ const changeTabPane = (e) => {
 const arrayHoverEffect = (array, target) => {
 	for (let item of array) {
 		if (item !== target) {
-			item.classList.toggle('card-dim')
+			item.classList.toggle('card-dim');
 		}
 	}
 };
@@ -48,17 +49,8 @@ const arrayHoverEffect = (array, target) => {
 cardArray.forEach((elm) => {
 	elm.addEventListener('click', changeTabPane);
 
-	elm.addEventListener('keypress', (e) => {
+	elm.addEventListener('focus', (e) => {
 		changeTabPane(e);
-	});
-
-	elm.addEventListener('mouseenter', (e) => {
-		arrayHoverEffect(cardArray, e.target);
-		console.log(e.target);
-	});
-
-	elm.addEventListener('mouseleave', (e) => {
-		arrayHoverEffect(cardArray, e.target);
 	});
 });
 

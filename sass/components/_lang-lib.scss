@@ -4,8 +4,20 @@
 	color: $html;
 }
 
+.php {
+	color: $php;
+}
+
 .css {
 	color: $css;
+}
+
+.sass {
+	color: $sass;
+}
+
+.bootstrap {
+	color: $bootstrap;
 }
 
 .javascript,
@@ -18,7 +30,7 @@
 }
 
 .express {
-	color: $express;
+	color: $nodejs;
 }
 
 .ejs {
@@ -29,26 +41,14 @@
 	color: $mongodb;
 }
 
-.php {
-	color: $php;
-}
-
-.sass {
-	color: #bf4080;
-}
-
-.bootstrap {
-	color: #8b12fb;
-}
-
-.cloudinary {
-	color: #3448c5;
-}
-
 .postgre {
-	color: #326791;
+	color: $postgre;
 }
 
 .mysql {
-	color: #00758f;
+	color: $mysql;
+}
+
+.cloudinary {
+	color: $cloudinary;
 }

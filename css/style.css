@@ -141,6 +141,10 @@ body {
 	aspect-ratio: 1;
 	overflow: hidden;
 }
+.card:focus, .card:hover {
+	-webkit-transform: scale(1.1);
+	        transform: scale(1.1);
+}
 .card-img {
 	width: 100%;
 }
@@ -179,6 +183,91 @@ body {
 	color: #fff;
 }
 
+.card-grow {
+	-webkit-transform: scale(1.1);
+	        transform: scale(1.1);
+}
+
+.html {
+	color: #E34F26;
+}
+
+.php {
+	color: #8892bf;
+}
+
+.css {
+	color: #264DE4;
+}
+
+.sass {
+	color: #bf4080;
+}
+
+.bootstrap {
+	color: #8b12fb;
+}
+
+.javascript,
+.json {
+	color: #F0DB4F;
+}
+
+.node {
+	color: #689F63;
+}
+
+.express {
+	color: #689F63;
+}
+
+.ejs {
+	color: #A91E50;
+}
+
+.mongo {
+	color: #01684A;
+}
+
+.postgre {
+	color: #326791;
+}
+
+.mysql {
+	color: #00758f;
+}
+
+.cloudinary {
+	color: #3448c5;
+}
+
+.close-ctrl {
+	width: 1.5em;
+	aspect-ratio: 1;
+}
+
+.btn {
+	border: solid 1px #304050;
+	border-radius: 0.5em;
+	background: black;
+	color: #fff;
+}
+
+button,
+.btn {
+	padding-inline: 1em;
+	padding-block: 0.2em;
+	font-size: 1rem;
+	font-family: "Montserrat", sans-serif;
+	cursor: pointer;
+	-webkit-transition: opacity 200ms ease-in-out;
+	transition: opacity 200ms ease-in-out;
+}
+button:hover,
+.btn:hover {
+	opacity: 0.8;
+}
+
 .btn-group {
 	border: solid 1px #304050;
 	border-radius: 0.5em;
@@ -208,92 +297,6 @@ body {
 }
 .btn-group a:not(:last-child) {
 	border-right: solid 1px #304050;
-}
-
-.card-dim {
-	opacity: 0.7;
-	-webkit-transform: scale(0.9);
-	        transform: scale(0.9);
-}
-
-.html {
-	color: #E34F26;
-}
-
-.css {
-	color: #264DE4;
-}
-
-.javascript,
-.json {
-	color: #F0DB4F;
-}
-
-.node {
-	color: #689F63;
-}
-
-.express {
-	color: #FFFFFF;
-}
-
-.ejs {
-	color: #A91E50;
-}
-
-.mongo {
-	color: #01684A;
-}
-
-.php {
-	color: #8892bf;
-}
-
-.sass {
-	color: #bf4080;
-}
-
-.bootstrap {
-	color: #8b12fb;
-}
-
-.cloudinary {
-	color: #3448c5;
-}
-
-.postgre {
-	color: #326791;
-}
-
-.mysql {
-	color: #00758f;
-}
-
-.close-ctrl {
-	width: 1.5em;
-	aspect-ratio: 1;
-}
-
-.btn {
-	border: solid 1px #304050;
-	border-radius: 0.5em;
-	background: black;
-	color: #fff;
-}
-
-button,
-.btn {
-	padding-inline: 1em;
-	padding-block: 0.2em;
-	font-size: 1rem;
-	font-family: "Montserrat", sans-serif;
-	cursor: pointer;
-	-webkit-transition: opacity 200ms ease-in-out;
-	transition: opacity 200ms ease-in-out;
-}
-button:hover,
-.btn:hover {
-	opacity: 0.8;
 }
 
 a {

@@ -7,6 +7,11 @@
 	aspect-ratio: 1;
 	overflow: hidden;
 
+	&:focus,
+	&:hover {
+		transform: scale(1.1);
+	}
+
 	&-img {
 		width: 100%;
 	}
@@ -38,38 +43,11 @@
 	}
 }
 
-.btn-group {
-	border: solid 1px $base;
-	border-radius: 0.5em;
-	background-color: $block;
-	width: fit-content;
-	height: fit-content;
-	overflow: hidden;
-	font-size: 1rem;
+// .card-dim {
+// 	opacity: 0.7;
+// 	transform: scale(.9);
+// }
 
-	a {
-		vertical-align: middle;
-		color: $font-clr;
-		text-decoration: none;
-
-		button {
-			border: unset;
-			background: none;
-			color: $font-clr;
-
-			svg {
-				vertical-align: middle;
-				margin-bottom: 0.2em;
-			}
-		}
-	}
-
-	a:not(:last-child) {
-		border-right: solid 1px $base;
-	}
-}
-
-.card-dim {
-	opacity: 0.7;
-	transform: scale(.9);
+.card-grow {
+	transform: scale(1.1);
 }
