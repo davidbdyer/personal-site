@@ -134,16 +134,18 @@ body {
 }
 
 .card {
-	-webkit-transition: all 500ms ease-in;
-	transition: all 500ms ease-in;
-	cursor: pointer;
-	border-radius: 0.5em;
 	aspect-ratio: 1;
 	overflow: hidden;
+	border-radius: 0.5em;
+	cursor: pointer;
+	-webkit-transition: all 500ms ease-in;
+	transition: all 500ms ease-in;
 }
-.card:focus, .card:hover {
-	-webkit-transform: scale(1.1);
-	        transform: scale(1.1);
+@media (min-width: 48em) {
+	.card:focus, .card:hover {
+		-webkit-transform: scale(1.1);
+		        transform: scale(1.1);
+	}
 }
 .card-img {
 	width: 100%;
@@ -154,38 +156,56 @@ body {
 	display: flex;
 	position: relative;
 	top: -3em;
-	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
-	-webkit-backdrop-filter: blur(2px);
-	        backdrop-filter: blur(2px);
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	height: 3em;
+	padding-inline: 0.5em;
 	border: 1px solid #304050;
 	border-radius: 0 0 0.5em 0.5em;
+	-webkit-backdrop-filter: blur(2px);
+	        backdrop-filter: blur(2px);
 	background-color: rgba(0, 0, 0, 0.7);
-	padding-inline: 0.5em;
-	height: 3em;
 	font-family: "Montserrat", sans-serif;
 }
 .card-title {
-	cursor: pointer;
-	border: solid 1px #304050;
-	border-radius: 0.5em;
-	background-color: black;
 	width: -webkit-fit-content;
 	width: -moz-fit-content;
 	width: fit-content;
 	height: -webkit-fit-content;
 	height: -moz-fit-content;
 	height: fit-content;
+	border: solid 1px #304050;
+	border-radius: 0.5em;
+	background-color: black;
 	color: #fff;
+	cursor: pointer;
 }
 
 .card-grow {
 	-webkit-transform: scale(1.1);
 	        transform: scale(1.1);
+}
+
+.lang-lib {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	padding: 0;
+	width: 100%;
+}
+.lang-lib li {
+	margin-right: 1em;
+	font-weight: 500;
+	font-size: clamp(1rem, 1.5vw, 2.9rem);
+	font-family: "Abel", sans-serif;
+	list-style: none;
+	text-transform: uppercase;
 }
 
 .html {
@@ -323,7 +343,7 @@ svg {
 	fill: white;
 }
 
-.primary-header {
+.nav-primary {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -334,27 +354,27 @@ svg {
 	    -ms-flex-align: center;
 	        align-items: center;
 }
-.primary-header h1 {
+.nav-primary h1 {
 	font-family: "Montserrat", sans-serif;
-	font-size: 2rem;
+	font-size: clamp(2rem, 3.5vw, 5rem);
 	font-weight: 500;
 	color: #fff;
 }
 @media (min-width: 48em) {
-	.primary-header h1 {
-		font-size: 3rem;
+	.nav-primary h1 {
+		font-size: clamp(2rem, 3.5vw, 5rem);
 	}
 }
-.primary-header .github-icon {
+.nav-primary .github-icon {
 	fill: white;
 }
-.primary-header .header-icon {
+.nav-primary .header-icon {
 	margin-left: 0.5em;
 	width: 1.5em;
 	vertical-align: middle;
 }
 @media (min-width: 48em) {
-	.primary-header .header-icon {
+	.nav-primary .header-icon {
 		width: 3em;
 		margin-left: 1rem;
 	}
@@ -365,30 +385,8 @@ svg {
 }
 .introduction p {
 	font-weight: 300;
-	font-size: 1.5rem;
+	font-size: clamp(1rem, 1.5vw, 2.9rem);
 	font-family: "Abel", sans-serif;
-}
-@media (max-width: 48em) {
-	.introduction p {
-		font-size: 1rem;
-	}
-}
-.introduction ul {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-wrap: wrap;
-	    flex-wrap: wrap;
-	padding: 0;
-	width: 100%;
-}
-.introduction li {
-	margin-right: 1em;
-	font-weight: 500;
-	font-size: 1rem;
-	font-family: "Abel", sans-serif;
-	list-style: none;
-	text-transform: uppercase;
 }
 
 .project-grid {
@@ -476,13 +474,13 @@ main .block {
 }
 .project-details .title-group date {
 	font-weight: 300;
-	font-size: 1.5rem;
+	font-size: clamp(1rem, 1.5vw, 2.9rem);
 	font-family: "Abel", sans-serif;
 }
 .project-details .detail-body p {
 	margin-block: 2em;
 	font-weight: 300;
-	font-size: 1.5rem;
+	font-size: clamp(1rem, 1.5vw, 2.9rem);
 	font-family: "Abel", sans-serif;
 }
 .project-details .detail-body .btn-group {
@@ -510,7 +508,7 @@ main .block {
 	list-style: none;
 	text-transform: uppercase;
 }
-@media screen and (min-width: 48em) {
+@media (min-width: 48em) {
 	.project-details {
 		position: sticky;
 		top: 2rem;

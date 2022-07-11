@@ -1,13 +1,13 @@
 @use '../abstracts' as *;
 
-.primary-header {
+.nav-primary {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 
 	h1 {
 		font-family: $title-ff;
-		font-size: 2rem;
+		font-size: $title-fs;
 		font-weight: $title-fw;
 		color: $font-clr;
 
@@ -30,5 +30,14 @@
 			margin-left: 1rem;
 		}
 	}
+}
 
+.introduction {
+	margin-block: 1.5em;
+
+	p {
+		font-weight: $paragraph-fw;
+		font-size: $paragraph-fs;
+		font-family: $paragraph-ff;
+	}
 }

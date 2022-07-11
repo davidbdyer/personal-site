@@ -2,7 +2,7 @@
 
 //heading
 $title-ff: 'Montserrat', sans-serif;
-$title-fs: 3rem;
+$title-fs: clamp(2rem, 3.5vw, 5rem);
 $title-fw: 500;
 
 //sub heading
@@ -11,12 +11,9 @@ $subtitle-f2: 2rem;
 $subtitle-fw: 500;
 
 // paragraph
-// $paragraph-ff: 'Roboto', sans-serif;
 $paragraph-ff: 'Abel', sans-serif;
-$paragraph-fs: 1.5rem;
-$paragraph-fs-sm: 1rem;
+$paragraph-fs: clamp(1rem, 1.5vw, 2.9rem);
 $paragraph-fw: 300;
-
 
 $default-type: 'Montserrat', sans-serif;
 $light: 300;
