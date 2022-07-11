@@ -1,21 +1,5 @@
 @use '../abstracts'as *;
 
-.lang-lib {
-	display: flex;
-	flex-wrap: wrap;
-	padding: 0;
-	width: 100%;
-
-	li {
-		margin-right: 1em;
-		font-weight: 500;
-		font-size: $paragraph-fs;
-		font-family: $paragraph-ff;
-		list-style: none;
-		text-transform: uppercase;
-	}
-}
-
 .html {
 	color: $html;
 }

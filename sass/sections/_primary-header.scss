@@ -41,3 +41,23 @@
 		font-family: $paragraph-ff;
 	}
 }
+
+.lang-lib {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+	width: 100%;
+
+	li {
+		margin-right: 1em;
+		font-weight: 500;
+		font-size: $paragraph-fs;
+		font-family: $paragraph-ff;
+		list-style: none;
+		text-transform: uppercase;
+	}
+
+	@media (min-width: $xl) {
+		margin-top: 2rem;
+	}
+}

@@ -4,10 +4,8 @@
 	position: sticky;
 	top: 2rem;
 	flex-basis: 40%;
-}
 
-@media (max-width: $lg) {
-	#container--project-details {
+	@media (max-width: $lg) {
 		position: fixed;
 		top: 50%;
 		left: 50%;
@@ -117,9 +115,9 @@ main {
 		position: fixed;
 		top: 0;
 		left: 0;
-		// z-index: 100;
-		background: rgba($block, 0.5);
 		width: 100vw;
 		height: 100vh;
+		// z-index: 100;
+		background: rgba($block, 0.5);
 	}
 }
