@@ -1,6 +1,6 @@
 @use '../abstracts' as *;
 
-.flex-100 {
+.flexb-100 {
 	flex-basis: 100%;
 }
 
@@ -21,4 +21,17 @@
 	height: 1px;
 	overflow: hidden;
 	white-space: nowrap;
+}
+
+.block {
+	max-width: $block-width;
+	margin-inline: auto;
+	margin-block: 2vw;
+	padding-inline: max(2vw, 2rem);
+	padding-block: max(2vw, 2rem);
+	border-radius: 6px;
+	backdrop-filter: blur(2px);
+	background-image: linear-gradient(to bottom right, rgba($block, 0.5), rgba($block, 1));
+	box-shadow: 0.5rem 0.5rem 1rem rgba($block, 0.2);
+	color: $font-clr;
 }

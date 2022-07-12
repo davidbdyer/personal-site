@@ -9,7 +9,7 @@
 
 button,
 .btn {
-	padding-inline: 1em;
+	padding-inline: .75em;
 	padding-block: 0.2em;
 	font-size: 1rem;
 	font-family: $default-type;
@@ -39,9 +39,9 @@ button,
 			border: unset;
 			background: none;
 			color: $font-clr;
+			vertical-align: middle;
 
 			svg {
-				vertical-align: middle;
 				margin-bottom: 0.2em;
 			}
 		}

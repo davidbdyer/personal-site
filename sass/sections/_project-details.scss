@@ -1,8 +1,18 @@
 @use '../abstracts' as *;
 
+main {
+	display: flex;
+	flex: 0 1 100%;
+	width: $block-width;
+	margin-inline: auto;
+	gap: 1rem;
+
+	.block {
+		margin-top: 0;
+	}
+}
+
 #container--project-details {
-	position: sticky;
-	top: 2rem;
 	flex-basis: 40%;
 
 	@media (max-width: $lg) {
@@ -18,25 +28,12 @@
 	}
 }
 
-main {
-	display: flex;
-	flex: 0 1 100%;
-	width: $block-width;
-	margin-inline: auto;
-	gap: min(1rem, 5vw);
-
-	.block {
-		margin-top: 0;
-	}
-}
-
 .project-details {
 	.close-ctrl {
 		position: absolute;
 		right: -1rem;
 
 		@media (max-width: $md) {
-			// position: absolute;
 			position: sticky;
 			top: 1rem;
 			left: 80vw;
@@ -109,15 +106,14 @@ main {
 	}
 }
 
-@media (max-width: $lg) {
-	.body-mute {
+.body-mute {
+	@media (max-width: $lg) {
 		display: none;
 		position: fixed;
 		top: 0;
 		left: 0;
 		width: 100vw;
 		height: 100vh;
-		// z-index: 100;
-		background: rgba($block, 0.5);
+		background: rgba(0, 0, 0, 0.5);
 	}
 }
