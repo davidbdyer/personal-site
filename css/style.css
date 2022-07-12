@@ -137,40 +137,6 @@ body {
 .card-img {
 	width: 100%;
 }
-.card-info {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	position: relative;
-	top: -3em;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
-	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
-	height: 3em;
-	padding-inline: 0.5em;
-	border: 1px solid #304050;
-	border-radius: 0 0 0.5em 0.5em;
-	-webkit-backdrop-filter: blur(2px);
-	        backdrop-filter: blur(2px);
-	background-color: rgba(0, 0, 0, 0.7);
-	font-family: "Montserrat", sans-serif;
-}
-.card-title {
-	width: -webkit-fit-content;
-	width: -moz-fit-content;
-	width: fit-content;
-	height: -webkit-fit-content;
-	height: -moz-fit-content;
-	height: fit-content;
-	border: solid 1px #304050;
-	border-radius: 0.5em;
-	background-color: black;
-	color: #fff;
-	cursor: pointer;
-}
 
 .card-grow {
 	-webkit-transform: scale(1.1);
@@ -376,19 +342,22 @@ a > *:hover {
 .project-grid {
 	display: -ms-grid;
 	display: grid;
-	grid-template-columns: repeat(auto-fill, 100%);
-	-ms-flex-pack: distribute;
-	    justify-content: space-around;
+	-ms-grid-columns: auto;
+	grid-template-columns: repeat(1, auto);
+	-webkit-box-pack: space-evenly;
+	    -ms-flex-pack: space-evenly;
+	        justify-content: space-evenly;
 	gap: max(2vw, 2rem);
 }
 @media screen and (min-width: 36em) {
 	.project-grid {
-		grid-template-columns: repeat(auto-fill, 20%);
+		-ms-grid-columns: (auto)[4];
+		grid-template-columns: repeat(4, auto);
 	}
 }
 @media (min-width: 75em) {
 	.project-grid {
-		grid-template-columns: repeat(auto-fill, 15%);
+		grid-template-columns: repeat(auto-fill, 14%);
 	}
 }
 

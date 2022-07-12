@@ -17,38 +17,7 @@
 	&-img {
 		width: 100%;
 	}
-
-	&-info {
-		$info-height: 3em;
-		display: flex;
-		position: relative;
-		top: -$info-height;
-		align-items: center;
-		justify-content: space-between;
-		height: $info-height;
-		padding-inline: 0.5em;
-		border: 1px solid $base;
-		border-radius: 0 0 0.5em 0.5em;
-		backdrop-filter: blur(2px);
-		background-color: rgba($block, 0.7);
-		font-family: $subtitle-ff;
-	}
-
-	&-title {
-		width: fit-content;
-		height: fit-content;
-		border: solid 1px $base;
-		border-radius: 0.5em;
-		background-color: $block;
-		color: $font-clr;
-		cursor: pointer;
-	}
 }
-
-// .card-dim {
-// 	opacity: 0.7;
-// 	transform: scale(.9);
-// }
 
 .card-grow {
 	transform: scale(1.1);
