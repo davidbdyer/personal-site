@@ -4,18 +4,14 @@
 	display: grid;
 	grid-template-columns: repeat(auto-fill, 100%);
 	justify-content: space-around;
-	margin-block: 2rem;
-	gap: min(2rem, 5vw);
+	gap: max(2vw, 2rem);
+	// gap: 2rem;
 
-	@media screen and (min-width: $md) {
+	@media screen and (min-width: $sm) {
 		grid-template-columns: repeat(auto-fill, 20%);
 	}
 
 	@media (min-width: $xl) {
 		grid-template-columns: repeat(auto-fill, 15%);
 	}
-
-	// @media (min-width: $xxl) {
-	// 	grid-template-columns: repeat(auto-fill, 400px);
-	// }
 }

@@ -1,14 +1,15 @@
 @use '../abstracts' as *;
 
 .block {
-	padding-inline: 2rem;
-	padding-block: 1rem;
-	margin-inline: auto;
-	margin-block: 2rem;
 	max-width: $block-width;
-	color: $font-clr;
-	box-shadow: .5rem .5rem 1rem rgba($block, .2);
+	margin-inline: auto;
+	margin-block: 2vw;
+	padding-inline: max(2vw, 2rem);
+	padding-block: max(2vw, 2rem);
+	// padding-block: 2rem;
 	border-radius: 6px;
-	background-image: linear-gradient(to bottom right, rgba($block, .5), rgba($block, 1));
 	backdrop-filter: blur(2px);
+	background-image: linear-gradient(to bottom right, rgba($block, 0.5), rgba($block, 1));
+	box-shadow: 0.5rem 0.5rem 1rem rgba($block, 0.2);
+	color: $font-clr;
 }
