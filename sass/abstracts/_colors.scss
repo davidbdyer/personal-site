@@ -1,15 +1,9 @@
 @use "sass:color";
 
 // dark scheme
-// $base: #304050;
-// $block: black;
-// $font-clr: #fff;
-
-// blue scheme
-$base: #3AB0FF;
-$block: #F9F2ED;
-$font-clr: black;
-
+$base: #304050;
+$block: black;
+$font-clr: #fff;
 
 // specific elements
 $html: #E34F26;
@@ -19,6 +13,7 @@ $css: #264DE4;
 $sass: #bf4080;
 $bootstrap: #8b12fb;
 // javascript
+// $javascript: #F0DB4F;
 $javascript: color.scale(#F0DB4F, $saturation: 100%, $lightness: -40%);
 $nodejs: #689F63;
 $ejs: #A91E50;

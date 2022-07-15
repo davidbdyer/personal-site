@@ -102,7 +102,15 @@ svg {
 	}
 }
 body {
-	background-color: #3AB0FF;
+	background-color: #304050;
+}
+
+@media (max-width: 48em) {
+	.scroll-fixed {
+		position: fixed;
+		width: 100vw;
+		margin: auto;
+	}
 }
 
 .container, .container--project-grid, .primary-header, .container--project-details {
@@ -113,9 +121,9 @@ body {
 	padding-block: max(2vw, 2rem);
 	border-radius: 6px;
 	backdrop-filter: blur(2px);
-	background-image: linear-gradient(to bottom right, rgba(249, 242, 237, 0.5), #f9f2ed);
-	box-shadow: 0.5rem 0.5rem 1rem rgba(249, 242, 237, 0.2);
-	color: black;
+	background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), black);
+	box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
+	color: #fff;
 }
 
 [class^=flex] {
@@ -142,7 +150,7 @@ body {
 	align-items: center;
 }
 .nav-primary h1 {
-	color: black;
+	color: #fff;
 	font-weight: 500;
 	font-size: clamp(1.75rem, 4vw, 4rem);
 	font-family: "Montserrat", sans-serif;
@@ -156,7 +164,7 @@ body {
 	display: flex;
 }
 .nav-primary .header-icon {
-	--svg-color: black;
+	--svg-color: #fff;
 	fill: var(--svg-color);
 	stroke: var(--svg-color);
 	vertical-align: middle;
@@ -206,8 +214,8 @@ body {
 	margin-bottom: 1em;
 }
 .contact-form .btn {
-	background: #9ad1f6;
-	border: solid 1px rgba(0, 0, 0, 0.2);
+	background: #182028;
+	border: solid 1px rgba(255, 255, 255, 0.2);
 }
 @media (min-width: 48em) {
 	.contact-form .btn {
@@ -248,8 +256,8 @@ body {
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-		border: 1px solid #3AB0FF;
-		background-image: linear-gradient(to bottom right, rgba(249, 242, 237, 0.9), #f9f2ed);
+		border: 1px solid #304050;
+		background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.9), black);
 		width: 95vw;
 		max-height: 70vh;
 		overflow: scroll;
@@ -259,7 +267,7 @@ body {
 .project-details .close-ctrl {
 	position: absolute;
 	right: -1rem;
-	fill: black;
+	fill: #fff;
 }
 @media (max-width: 48em) {
 	.project-details .close-ctrl {
@@ -275,11 +283,11 @@ body {
 }
 .project-details .title-group h2 a {
 	transition: color 250ms;
-	color: black;
+	color: #fff;
 	text-decoration: underline;
 }
 .project-details .title-group h2 a:hover {
-	color: black;
+	color: #bfbfbf;
 }
 .project-details .title-group date {
 	font-weight: 300;
@@ -293,7 +301,7 @@ body {
 	font-family: "Abel", sans-serif;
 }
 .project-details .detail-body p a {
-	color: black;
+	color: #fff;
 	text-decoration: underline;
 }
 .project-details .detail-body .btn-group {
@@ -427,10 +435,10 @@ a > *:hover {
 }
 
 .btn {
-	border: solid 1px #3AB0FF;
+	border: solid 1px #304050;
 	border-radius: 0.5em;
-	background: #F9F2ED;
-	color: black;
+	background: black;
+	color: #fff;
 }
 
 button,
@@ -454,30 +462,30 @@ button:hover,
 	width: fit-content;
 	height: fit-content;
 	overflow: hidden;
-	border: solid 1px #3AB0FF;
+	border: solid 1px #304050;
 	border-radius: 0.5em;
-	background-color: #F9F2ED;
+	background-color: black;
 	font-size: 1rem;
 	font-family: "Montserrat", sans-serif;
 }
 .btn-group > a {
 	padding-inline: 0.75em;
 	padding-block: 0.2em;
-	color: black;
+	color: #fff;
 	text-decoration: none;
 	vertical-align: middle;
 	cursor: pointer;
 	transition: color 1s;
 }
 .btn-group > a:hover {
-	color: #3AB0FF;
+	color: #304050;
 }
 .btn-group a:not(:last-child) {
-	border-right: solid 1px #3AB0FF;
+	border-right: solid 1px #304050;
 }
 
 #copyright {
-	color: black;
+	color: #fff;
 	font-family: "Abel", sans-serif;
 	text-align: right;
 	margin-inline: auto;
