@@ -1,9 +1,16 @@
+@use "sass:color";
 @use '../abstracts' as *;
+@use '../layouts/container' as *;
+
+.primary-header {
+	@extend .container;
+	// margin-bottom: 0;
+}
 
 .nav-primary {
 	display: flex;
-	align-items: center;
 	justify-content: space-between;
+	align-items: center;
 
 	h1 {
 		color: $font-clr;
@@ -21,14 +28,16 @@
 	}
 
 	.header-icon {
-		fill: white;
-		width: 1.5em;
-		margin-left: 0.5em;
+		--svg-color: #{$font-clr};
+		fill: var(--svg-color);
+		stroke: var(--svg-color);
 		vertical-align: middle;
+		margin-left: 0.5em;
+		width: 1.5em;
 
 		@media (min-width: $md) {
-			width: 3em;
 			margin-left: 1rem;
+			width: 3em;
 		}
 	}
 }
@@ -44,17 +53,16 @@
 .lang-lib {
 	display: flex;
 	flex-wrap: wrap;
+	margin-top: 2rem;
+	border-radius: 6px;
 	width: 100%;
-	padding: 0;
 
 	li {
+		margin-right: 1em;
 		font-weight: 500;
 		font-size: $paragraph-fs;
 		font-family: $paragraph-ff;
 		list-style: none;
 		text-transform: uppercase;
-		margin-right: 1em;
 	}
-
-		margin-top: 2rem;
 }

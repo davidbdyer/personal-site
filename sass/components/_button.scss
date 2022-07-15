@@ -9,7 +9,8 @@
 
 button,
 .btn {
-	padding-inline: .75em;
+	// display: flex;
+	padding-inline: 0.75em;
 	padding-block: 0.2em;
 	font-size: 1rem;
 	font-family: $default-type;
@@ -22,28 +23,30 @@ button,
 }
 
 .btn-group {
-	border: solid 1px $base;
-	border-radius: 0.5em;
-	background-color: $block;
+	display: grid;
+	grid-template-columns: 1fr auto;
+	place-items: center;
 	width: fit-content;
 	height: fit-content;
 	overflow: hidden;
+	border: solid 1px $base;
+	border-radius: 0.5em;
+	background-color: $block;
 	font-size: 1rem;
+	font-family: $default-type;
 
-	a {
-		vertical-align: middle;
+	& > a {
+		padding-inline: 0.75em;
+		padding-block: 0.2em;
 		color: $font-clr;
 		text-decoration: none;
+		vertical-align: middle;
+		cursor: pointer;
+		transition: color 1s;
 
-		button {
-			border: unset;
-			background: none;
-			color: $font-clr;
-			vertical-align: middle;
-
-			svg {
-				margin-bottom: 0.2em;
-			}
+		&:hover {
+			color: $base;
+			// fill: $base;
 		}
 	}
 

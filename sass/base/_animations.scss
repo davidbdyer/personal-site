@@ -1,0 +1,37 @@
+@keyframes slide-out {
+	0% {
+		flex: 1;
+		padding: var(--padding-gap);
+		margin-left: var(--padding-gap);
+	}
+
+	90% {
+		padding: var(--padding-gap);
+		margin-left: var(--padding-gap);
+	}
+
+	100% {
+		flex: 0;
+		margin-left: 0;
+		padding: 0;
+	}
+}
+
+@keyframes slide-in {
+	0% {
+		flex: 0;
+		// margin-left: 0;
+		padding: 0;
+	}
+
+	10% {
+		// padding: var(--padding-gap);
+		// margin-left: var(--padding-gap);
+	}
+
+	100% {
+		flex: 1;
+		padding: max(2vw, 2rem);
+		// margin-left: var(--padding-gap);
+	}
+}
