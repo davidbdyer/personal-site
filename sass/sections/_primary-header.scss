@@ -1,68 +1,9 @@
-@use "sass:color";
 @use '../abstracts' as *;
-@use '../layouts/container' as *;
 
-.primary-header {
-	@extend .container;
-	// margin-bottom: 0;
-}
-
-.nav-primary {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-
-	h1 {
-		color: $font-clr;
-		font-weight: $title-fw;
-		font-size: $title-fs;
-		font-family: $title-ff;
-
-		@media (min-width: $md) {
-			font-size: $title-fs;
-		}
-	}
-
-	.icon-group {
-		display: flex;
-	}
-
-	.header-icon {
-		--svg-color: #{$font-clr};
-		fill: var(--svg-color);
-		stroke: var(--svg-color);
-		vertical-align: middle;
-		margin-left: 0.5em;
-		width: 1.5em;
-
-		@media (min-width: $md) {
-			margin-left: 1rem;
-			width: 3em;
-		}
-	}
-}
-
-.introduction {
+// includes style from container
+.primary-header-container {
 	p {
-		font-weight: $paragraph-fw;
 		font-size: $paragraph-fs;
-		font-family: $paragraph-ff;
-	}
-}
-
-.lang-lib {
-	display: flex;
-	flex-wrap: wrap;
-	margin-top: 2rem;
-	border-radius: 6px;
-	width: 100%;
-
-	li {
-		margin-right: 1em;
-		font-weight: 500;
-		font-size: $paragraph-fs;
-		font-family: $paragraph-ff;
-		list-style: none;
-		text-transform: uppercase;
+		margin-bottom: $spacing-01;
 	}
 }

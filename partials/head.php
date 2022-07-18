@@ -3,7 +3,7 @@
 	<title>David Dyer - Web Development Portfolio</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="description" content="Full Stack Developer. I've been building websites for bands, churches, students, and faculty for over a decade." />
-	<meta name="theme-color" content="#304050" />
+	<meta name="theme-color" content="#2D4263" />
 
 	<!-- facebook -->
 	<meta property="og:type" content="website" />
@@ -22,8 +22,3 @@
 
 	<!-- CSS only -->
 	<link rel="stylesheet" href="css/style.css" />
-
-	<!-- scripts -->
-	<script src="scripts/content.js" defer></script>
-	<script src="scripts/controls.js" defer></script>
-</head>

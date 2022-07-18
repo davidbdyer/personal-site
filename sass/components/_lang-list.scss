@@ -1,4 +1,4 @@
-@use '../abstracts'as *;
+@use '../abstracts' as *;
 
 .html {
 	color: $html;
@@ -51,4 +51,16 @@
 
 .cloudinary {
 	color: $cloudinary;
+}
+
+.lang-list {
+	display: flex;
+	flex-wrap: wrap;
+	padding-inline: 0;
+	list-style: none;
+
+	& > li {
+		margin-right: 1em;
+		font-size: $paragraph-fs;
+	}
 }

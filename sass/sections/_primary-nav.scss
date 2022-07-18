@@ -1,0 +1,17 @@
+@use '../abstracts' as *;
+
+.primary-nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: $spacing-01;
+
+	h1 {
+		font-size: $title-fs;
+		font-family: $title-ff;
+	}
+
+	.icon {
+		width: $title-fs;
+	}
+}

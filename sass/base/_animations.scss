@@ -1,13 +1,13 @@
 @keyframes slide-out {
 	0% {
 		flex: 1;
-		padding: var(--padding-gap);
 		margin-left: var(--padding-gap);
+		padding: var(--padding-gap);
 	}
 
 	90% {
-		padding: var(--padding-gap);
 		margin-left: var(--padding-gap);
+		padding: var(--padding-gap);
 	}
 
 	100% {
@@ -33,5 +33,25 @@
 		flex: 1;
 		padding: max(2vw, 2rem);
 		// margin-left: var(--padding-gap);
+	}
+}
+
+@keyframes fade-in {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fade-out {
+	from {
+		opacity: 1;
+	}
+
+	to {
+		opacity: 0;
 	}
 }

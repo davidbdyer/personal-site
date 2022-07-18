@@ -1,0 +1,16 @@
+@use '../abstracts' as *;
+
+.icon {
+	fill: $font-clr;
+	width: 1em;
+	transition: opacity 500ms ease;
+
+	&:hover {
+		opacity: .8;
+	}
+}
+
+.icon-group {
+	display: flex;
+	gap: .5em;
+}

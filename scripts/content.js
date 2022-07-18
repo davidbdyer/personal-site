@@ -1,5 +1,5 @@
-const projectList = document.getElementById('container--project-list');
-const detailList = document.getElementById('container--project-details');
+const projectList = document.getElementById('project-list--container');
+const detailList = document.getElementById('project-details--container');
 
 const portfolioData = [
 	{
@@ -229,17 +229,6 @@ const createProjectList = () => {
 		image.alt = portfolioData[site].title;
 		image.setAttribute('aria-controls', portfolioData[site].aria);
 
-		// Create Card Info Section
-		const cardInfo = document.createElement('div');
-		cardInfo.classList.add('card-info');
-
-		// Create Care Title
-		const title = document.createElement('button');
-		title.classList.add('card-title');
-		title.setAttribute('aria-controls', portfolioData[site].aria);
-		title.setAttribute('role', 'tab');
-		title.textContent = portfolioData[site].title;
-
 		// Add Items to DOM
 		projectList.appendChild(card);
 		card.appendChild(image);
@@ -304,6 +293,8 @@ const createDetailList = () => {
 
 		// Create Language List
 		const detailLangList = document.createElement('ul');
+		detailLangList.classList.add('lang-list');
+		detailLangList.setAttribute('role', 'list');
 
 		// ---------------------------
 		// ADD SECTION

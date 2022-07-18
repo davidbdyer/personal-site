@@ -1,116 +1,37 @@
+@use "sass:color";
 @use '../abstracts' as *;
-@use '../layouts/' as *;
 
-.container--project-details {
-	@extend .container;
-	flex: 1;
-
-	//mobile
-	@media (max-width: $lg) {
-		position: fixed;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		border: 1px solid $base;
-		background-image: linear-gradient(to bottom right, rgba($block, 0.9), rgba($block, 1));
-		width: 95vw;
-		max-height: 70vh;
-		overflow: scroll;
-	}
+.project-details--container {
+	z-index: 2;
+	position: fixed;
+	top: calc(30vh - $spacing-01);
+	left: calc(50vw - $spacing-01);
+	width: 100%;
+	max-height: min(100%, 100vh - $spacing-01);
+	overflow: scroll;
+	transform: translate(-50%, -30%);
+	border: 1px solid $base;
+	background-color: $block;
+	box-shadow: 0 0 0 100vh color.change($block, $alpha: .7);
 }
 
 .project-details {
 	.close-ctrl {
 		position: absolute;
-		right: -1rem;
-		fill: $font-clr;
-
-		@media (max-width: $md) {
-			// position: sticky;
-			top: 1rem;
-			right: 1rem;
-		}
+		right: $spacing-01;
 	}
 
-	.title-group {
-		h2 {
-			margin-bottom: 0.5rem;
-			font-weight: $subtitle-fw;
-			font-size: $subtitle-f2;
-			font-family: $subtitle-ff;
-
-			a {
-				transition: color 250ms;
-				color: $font-clr;
-				text-decoration: underline;
-			}
-
-			a:hover {
-				color: mix($font-clr, black, 75%);
-			}
-		}
-
-		date {
-			font-weight: $paragraph-fw;
-			font-size: $paragraph-fs;
-			font-family: $paragraph-ff;
-		}
+	h2 {
+		font-size: $sub-title-fs;
 	}
 
-	.detail-body {
-		p {
-			margin-block: 2em;
-			font-weight: $paragraph-fw;
-			font-size: $paragraph-fs;
-			font-family: $paragraph-ff;
-
-			a {
-				color: $font-clr;
-				text-decoration: underline;
-			}
-		}
-
-		.btn-group {
-			margin-block: 2em;
-		}
-
-		ul {
-			display: flex;
-			flex-wrap: wrap;
-			margin: 0;
-			padding: 0;
-			width: 100%;
-		}
-
-		li {
-			margin-right: 1em;
-			font-weight: 500;
-			font-size: 1rem;
-			font-family: $paragraph-ff;
-			font-weight: $semibold;
-			list-style: none;
-			text-transform: uppercase;
-		}
+	p,
+	date {
+		font-size: $paragraph-fs;
 	}
-
-	@media (min-width: $md) {
-		position: sticky;
-		top: 2rem;
+	.title-group,
+	p,
+	.btn-group {
+		margin-bottom: $spacing-01;
 	}
-}
-
-.body-mute {
-	@media (max-width: $lg) {
-		display: none;
-		position: fixed;
-		top: 0;
-		left: 0;
-		background: rgba(0, 0, 0, 0.5);
-		width: 100vw;
-		height: 100vh;
-	}
-}
-
-.inactive {
-	animation: slide-out 1s ease-in-out forwards;
 }

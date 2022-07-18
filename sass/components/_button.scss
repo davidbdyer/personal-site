@@ -12,7 +12,7 @@ button,
 	// display: flex;
 	padding-inline: 0.75em;
 	padding-block: 0.2em;
-	font-size: 1rem;
+	font-size: $paragraph-fs;
 	font-family: $default-type;
 	cursor: pointer;
 	transition: opacity 200ms ease-in-out;
@@ -32,7 +32,7 @@ button,
 	border: solid 1px $base;
 	border-radius: 0.5em;
 	background-color: $block;
-	font-size: 1rem;
+	font-size: $paragraph-fs;
 	font-family: $default-type;
 
 	& > a {

@@ -1,13 +1,6 @@
 @use '../abstracts' as *;
 
 a {
-	text-decoration: none;
-
-	> * {
-		transition: opacity 200ms ease-in-out;
-	}
-
-	> *:hover {
-		opacity: .8;
-	}
+	// text-decoration: none;
+	color: inherit;
 }

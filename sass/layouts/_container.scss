@@ -1,12 +1,10 @@
 @use '../abstracts' as *;
 
-.container {
+[class*='-container'] {
 	max-width: $container-width;
-	margin-inline: auto;
-	// margin-block: 2vw;
-	margin-top: 2vw;
-	padding-inline: max(2vw, 2rem);
-	padding-block: max(2vw, 2rem);
+	margin-inline: $spacing-01;
+	margin-top: $spacing-01;
+	padding: $spacing-01;
 	border-radius: 6px;
 	backdrop-filter: blur(2px);
 	background-image: linear-gradient(to bottom right, rgba($block, 0.5), rgba($block, 1));

@@ -1,20 +1,19 @@
 @use '../abstracts' as *;
-@use '../layouts/container' as *;
 
-.container--project-grid {
-	@extend .container;
-	flex: 2;
+.project-grid--container {
 	display: grid;
-	grid-template-columns: repeat(1, auto);
-	justify-content: space-evenly;
-	align-content: start;
-	gap: max(2vw, 2rem);
+	gap: $spacing-01;
 
 	@media (min-width: $sm) {
-		grid-template-columns: repeat(4, auto);
+		grid-template-columns: repeat(3, 1fr);
 	}
-
-	@media (min-width: $xl) {
-		grid-template-columns: repeat(6, auto);
+	@media (min-width: $md) {
+		grid-template-columns: repeat(4, 1fr);
+	}
+	@media (min-width: $lg) {
+		grid-template-columns: repeat(5, 1fr);
+	}
+	@media (min-width: $xxl) {
+		grid-template-columns: repeat(6, 1fr);
 	}
 }

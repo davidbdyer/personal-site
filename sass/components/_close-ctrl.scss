@@ -1,4 +1,6 @@
+@use 'icons';
+
 .close-ctrl {
-	width: 1.5em;
+	@extend .icon;
 	aspect-ratio: 1;
 }
