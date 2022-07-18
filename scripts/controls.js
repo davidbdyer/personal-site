@@ -10,6 +10,7 @@ const detailsArray = detailsSection.querySelectorAll('.project-details');
 
 // controls
 const detailsCloseCtrl = detailsSection.querySelectorAll('.close-ctrl');
+let detailsOpen = false;
 
 // position variable, part of preventing background scrolling
 let scrollPosition;
@@ -38,6 +39,8 @@ const closeCtrl = () => {
 	body.style.position = '';
 	body.style.top = '';
 	window.scrollTo(0, scrollPosition);
+
+	detailsOpen = false;
 };
 
 const changeTabPane = (e) => {
@@ -45,7 +48,7 @@ const changeTabPane = (e) => {
 	const targetPanel = targetTab.getAttribute('aria-controls');
 
 	// sets position fixed and top, sets position variable, part of preventing background scrolling
-	scrollPosition = window.scrollY
+	scrollPosition = window.scrollY;
 	body.style.top = `-${scrollPosition}px`;
 	body.style.position = 'fixed';
 
@@ -57,7 +60,10 @@ const changeTabPane = (e) => {
 // Event Listeners
 cardArray.forEach((elm) => {
 	elm.addEventListener('focus', (e) => {
-		changeTabPane(e);
+		if ((detailsOpen == false)) {
+			changeTabPane(e);
+			detailsOpen = true;
+		}
 	});
 });
 
