@@ -217,6 +217,7 @@ const createProjectList = () => {
 		// Create Card
 		const card = document.createElement('div');
 		card.classList.add('card');
+		card.classList.add('card-grow');
 		// test relocation of aria
 		card.setAttribute('aria-controls', portfolioData[site].aria);
 		card.setAttribute('role', 'tab');

@@ -6,3 +6,5 @@ prepros.config
 .prettierrc
 scripts/address.php
 config.codekit3
+style.css
+style.css.map

@@ -31,6 +31,7 @@ const closeCtrl = () => {
 		detailsSection.setAttribute('hidden', true);
 		detailsSection.removeEventListener('animationend', hide);
 	};
+
 	//adds animation and event listner for animation end.
 	detailsSection.style.animation = 'fade-out 500ms';
 	detailsSection.addEventListener('animationend', hide);
@@ -52,6 +53,7 @@ const changeTabPane = (e) => {
 	body.style.top = `-${scrollPosition}px`;
 	body.style.position = 'fixed';
 
+	// sets hidden on all individual project detail articles.
 	hideContent(main, '.project-details');
 	showContent(main, `#${targetPanel}`);
 	showContent(main, '#project-details--container');
@@ -60,7 +62,7 @@ const changeTabPane = (e) => {
 // Event Listeners
 cardArray.forEach((elm) => {
 	elm.addEventListener('focus', (e) => {
-		if ((detailsOpen == false)) {
+		if (detailsOpen == false) {
 			changeTabPane(e);
 			detailsOpen = true;
 		}

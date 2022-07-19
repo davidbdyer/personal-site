@@ -7,18 +7,16 @@
 	cursor: pointer;
 	transition: all 500ms ease-in;
 
-	@media (min-width: $md) {
-		&:focus,
-		&:hover {
-			transform: scale(1.1);
-		}
-	}
-
 	&-img {
 		width: 100%;
 	}
 }
 
 .card-grow {
-	transform: scale(1.1);
+	@media (min-width: $md) {
+		&:focus,
+		&:hover {
+			transform: scale(1.1);
+		}
+	}
 }
