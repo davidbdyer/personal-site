@@ -41,7 +41,14 @@ const closeCtrl = () => {
 	body.style.top = '';
 	window.scrollTo(0, scrollPosition);
 
+	toggleClassInArrayItems(cardArray, 'card-grow');
 	detailsOpen = false;
+};
+
+const toggleClassInArrayItems = (array, className) => {
+	array.forEach((item) => {
+		item.classList.toggle(className);
+	});
 };
 
 const changeTabPane = (e) => {
@@ -64,6 +71,7 @@ cardArray.forEach((elm) => {
 	elm.addEventListener('focus', (e) => {
 		if (detailsOpen == false) {
 			changeTabPane(e);
+			toggleClassInArrayItems(cardArray, 'card-grow');
 			detailsOpen = true;
 		}
 	});
