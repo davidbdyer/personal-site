@@ -33,7 +33,7 @@ const closeCtrl = () => {
 	};
 
 	//adds animation and event listner for animation end.
-	detailsSection.style.animation = 'fade-out 500ms';
+	detailsSection.style.animation = 'fade-out 1s';
 	detailsSection.addEventListener('animationend', hide);
 
 	// removes position fixed and top, sets scroll to position variable, part of preventing background scrolling
