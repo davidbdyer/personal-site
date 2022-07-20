@@ -69,7 +69,6 @@ const changeTabPane = (e) => {
 // Event Listeners
 cardArray.forEach((elm) => {
 	elm.addEventListener('click', (e) => {
-		e.target.focus();
 		if (detailsOpen == false) {
 			changeTabPane(e);
 			toggleClassInArrayItems(cardArray, 'card-grow');
