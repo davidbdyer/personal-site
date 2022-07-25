@@ -55,6 +55,17 @@ const portfolioData = [
 		lang_lib: ['html', 'css', 'javascript', 'php'],
 	},
 	{
+		title: 'Password Generator',
+		description: `A web app to generate a complex password. Using HTML, SASS, and Javascript. The theme automatically changes based on the computer's dark or light mode.`,
+		date: 'July 2022',
+		siteUrl: 'https://davidbdyer.github.io/password-generator/',
+		gitUrl: 'https://github.com/davidbdyer/password-generator',
+		imgUrl: 'images/site-thumbs/password-generator.png',
+		imgAlt: 'Password Generator',
+		aria: 'password-generator--tab',
+		lang_lib: ['html', 'sass', 'javascript'],
+	},
+	{
 		title: 'Score Keeper',
 		description:
 			"Web App for keeping score of a ping pong game. The goal was to keep track of the score for the current game and a set of games. I also wanted the winner list to persist between site loads. The winner list is stored as a JSON array in the browser's local storage.",
