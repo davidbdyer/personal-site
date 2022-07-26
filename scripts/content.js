@@ -231,6 +231,17 @@ const portfolioData = [
 		aria: 'form-wave-input--tab',
 		lang_lib: ['html', 'css', 'javascript'],
 	},
+	{
+		title: 'Double Verticle Slider',
+		description: 'Fully responsive dual verticle slider, slide show.',
+		date: 'July 2022',
+		siteUrl: 'https://davidbdyer.github.io/double-vertical-slider/',
+		gitUrl: 'https://github.com/davidbdyer/double-vertical-slider',
+		imgUrl: 'images/site-thumbs/double-verticle-slider.jpg',
+		imgAlt: 'double verticle slider',
+		aria: 'double-verticle-slider--tab',
+		lang_lib: ['html', 'css', 'javascript'],
+	},
 ];
 
 // dynamically generate project grid
