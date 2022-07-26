@@ -29,6 +29,7 @@ const closeCtrl = () => {
 	//removes animation end event listener and hides detail section by setting hidden attribute.
 	const hide = () => {
 		detailsSection.setAttribute('hidden', true);
+		detailsSection.style.animation = '';
 		detailsSection.removeEventListener('animationend', hide);
 	};
 
