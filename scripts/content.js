@@ -56,7 +56,7 @@ const portfolioData = [
 	},
 	{
 		title: 'Password Generator',
-		description: `A web app to generate a complex password. Using HTML, SASS, and Javascript. The theme automatically changes based on the computer's dark or light mode.`,
+		description: `A web app to generate a complex password. Using HTML, SASS, and Javascript. The theme automatically changes based on the computer's dark or light mode. Settings are remembered between browser refreshes.`,
 		date: 'July 2022',
 		siteUrl: 'https://davidbdyer.github.io/password-generator/',
 		gitUrl: 'https://github.com/davidbdyer/password-generator',
