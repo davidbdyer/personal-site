@@ -8,7 +8,6 @@
 	left: calc(50vw - $spacing-01);
 	width: 100%;
 	max-height: min(100%, 100vh - $spacing-01);
-	overflow: scroll;
 	transform: translate(-50%, -50%);
 	border: 1px solid $base;
 	background-color: $block;

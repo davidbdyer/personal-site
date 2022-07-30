@@ -21,7 +21,7 @@
 				<label class="sr-only" for="message">message</label>
 				<textarea name="message" id="message" minlength="200" rows="10" placeholder="message" required></textarea>
 
-				<input type="text" id="website" name="website"/>
+				<input type="text" id="website" name="website" hidden/>
 
 				<button class="btn">Send</button>
 			</form>
