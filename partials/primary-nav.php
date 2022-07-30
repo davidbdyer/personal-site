@@ -24,7 +24,7 @@
 
 		<!-- contact icon -->
 		<?php if ($currentPage != 'contact') { ?>
-		<a aria-label="contact me" href="contact.php" target="_blank" rel="noreferrer noopener">
+		<a aria-label="contact" href="#contact-form">
 			<svg class="icon" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
 				<g transform="matrix(.0199601 0 0 .0266134 .026571 0)">
 					<path d="m0 0h800v600h-800z" fill="none" />

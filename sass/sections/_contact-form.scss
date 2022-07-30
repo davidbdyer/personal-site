@@ -1,3 +1,4 @@
+@use 'sass:color';
 @use '../abstracts' as *;
 
 .contact-form-container {
@@ -6,11 +7,41 @@
 		gap: $spacing-01;
 		font-size: $paragraph-fs;
 
+		@media (min-width: $md) {
+			grid-template-areas:
+				'name name email email'
+				'subject subject subject subject'
+				'message message message message'
+				'. . . send';
+
+			input:nth-of-type(1) {
+				grid-area: name;
+			}
+			input:nth-of-type(2) {
+				grid-area: email;
+			}
+			input:nth-of-type(3) {
+				grid-area: subject;
+			}
+			textarea:first-of-type {
+				grid-area: message;
+			}
+			button:first-of-type {
+				grid-area: send;
+			}
+		}
+
 		input,
 		textarea {
 			padding-inline: $input-padding;
 			border: none;
 			border-radius: $borderborder-radius;
+			background-color: $base;
+			color: $font-clr;
+
+			&::placeholder {
+				color: color.adjust($font-clr, $alpha: -0.5);
+			}
 		}
 	}
 }

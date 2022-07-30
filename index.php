@@ -34,7 +34,7 @@
 			<section class="project-details--container" id="project-details--container" aria-label="project-detail-list" hidden></section>
 		</main>
 
-
+		<?php include 'partials/contact-form.php'; ?>
 
 		<footer>
 			<div class="copyright"> David Dyer &copy; <script>
