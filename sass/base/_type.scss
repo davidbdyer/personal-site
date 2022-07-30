@@ -1,0 +1,19 @@
+@use '../abstracts' as *;
+
+h1 {
+	font-size: $title-fs;
+	font-family: $title-ff;
+	font-weight: $title-fw;
+}
+
+h2 {
+	font-size: $sub-title-fs;
+	font-family: $sub-title-ff;
+	font-weight: $sub-title-fw;
+}
+
+p {
+	font-size: $paragraph-fs;
+	font-family: $paragraph-ff;
+	font-weight: $paragraph-fw;
+}

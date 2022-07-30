@@ -8,14 +8,15 @@ $title-fw: 500;
 //sub heading
 $sub-title-ff: 'Montserrat', sans-serif;
 $sub-title-fs: clamp(2rem, 2vw, 3rem);
-// $sub-title-fs: 2rem;
 $sub-title-fw: 500;
 
 // paragraph
 $paragraph-ff: 'Abel', sans-serif;
 $paragraph-fs: clamp(1rem, 1.2vw, 2rem);
 $paragraph-fw: 300;
-$default-type: 'Montserrat', sans-serif;
+
+$button-type: 'Montserrat', sans-serif;
+
 $light: 300;
 $regular: 400;
 $medium: 500;

@@ -13,7 +13,7 @@ button,
 	padding-inline: 0.75em;
 	padding-block: 0.2em;
 	font-size: $paragraph-fs;
-	font-family: $default-type;
+	font-family: $button-type;
 	cursor: pointer;
 	transition: opacity 200ms ease-in-out;
 
@@ -33,7 +33,7 @@ button,
 	border-radius: 0.5em;
 	background-color: $block;
 	font-size: $paragraph-fs;
-	font-family: $default-type;
+	font-family: $button-type;
 
 	& > a {
 		padding-inline: 0.75em;

@@ -2,6 +2,11 @@
 @use '../abstracts' as *;
 
 .contact-form-container {
+	h2 {
+		margin-bottom: $spacing-01;
+	}
+
+
 	form {
 		display: grid;
 		gap: $spacing-01;
