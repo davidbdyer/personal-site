@@ -3,7 +3,7 @@
 	<?php include 'partials/head.php'; ?>
 	</head>
 	<body>
-		<header class="primary-header-container" aria-label="primary-header">
+		<header class="primary-header--container" aria-label="primary-header">
 			<?php include 'partials/primary-nav.php'; ?>
 		</header>
 

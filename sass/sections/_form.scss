@@ -1,7 +1,7 @@
 @use 'sass:color';
 @use '../abstracts' as *;
 
-.contact-form-container {
+.contact-form--container {
 	h2 {
 		margin-bottom: $spacing-01;
 	}
@@ -43,6 +43,7 @@
 			border-radius: $borderborder-radius;
 			background-color: $base;
 			color: $font-clr;
+			box-shadow: inset -0.25rem -0.25rem 1rem rgba($block, 0.2);
 
 			&::placeholder {
 				color: color.adjust($font-clr, $alpha: -0.5);

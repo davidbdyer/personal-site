@@ -7,7 +7,7 @@
 	<script src="scripts/controls.js" defer></script>
 </head>
 <body>
-			<header class="primary-header-container" aria-label="primary-header">
+			<header class="primary-header--container" aria-label="primary-header">
 			<?php include 'partials/primary-nav.php'; ?>
 
 			<section class="introduction" aria-label="introduction">
@@ -30,8 +30,8 @@
 		</header>
 
 		<main>
-			<div class="project-grid--container" id="project-list--container" role="tablist" aria-label="project-list"></div>
 			<h2>Projects and Examples</h2>
+			<div class="project-grid--container" id="project-list--container" role="tablist" aria-label="project-list"></div>
 			<section class="project-details--container" id="project-details--container" aria-label="project-detail-list" hidden></section>
 		</main>
 

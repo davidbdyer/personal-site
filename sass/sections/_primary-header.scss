@@ -1,7 +1,7 @@
 @use '../abstracts' as *;
 
 // includes style from container
-.primary-header-container {
+.primary-header--container {
 	p {
 		font-size: $paragraph-fs;
 		margin-bottom: $spacing-01;
