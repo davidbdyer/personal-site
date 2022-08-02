@@ -52,7 +52,7 @@ const portfolioData = [
 		imgUrl: 'images/site-thumbs/prayup.jpg',
 		imgAlt: 'pray up site',
 		aria: 'pray-up--tab',
-		lang_lib: ['html', 'css', 'javascript', 'php'],
+		lang_lib: ['php', 'css', 'javascript'],
 	},
 	{
 		title: 'Password Generator',

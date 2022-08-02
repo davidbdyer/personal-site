@@ -11,7 +11,7 @@
 	<meta property="og:title" content="David Dyer - Web Development Portfolio" />
 	<meta property="og:description" content="Full Stack Developer. I've been building websites for bands, churches, students, and faculty for over a decade." />
 	<meta property="og:image" content="https://www.daviddyer.me/images/site-thumb.png" />
-	<meta property="og:image:width" content="1600" />
+	<meta property="og:image:width" content="1200" />
 	<meta property="og:image:height" content="630" />
 
 	<!-- Apple Touch Icon -->
