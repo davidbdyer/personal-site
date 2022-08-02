@@ -2,11 +2,11 @@
 @use '../abstracts' as *;
 
 .project-details--container {
-	z-index: 2;
 	position: fixed;
 	top: calc(50vh - $spacing-01);
 	left: calc(50vw - $spacing-01);
 	width: 100%;
+	max-width: calc(100% - $spacing-01 * 2);
 	max-height: min(100%, 100vh - $spacing-01);
 	transform: translate(-50%, -50%);
 	border: 1px solid $base;

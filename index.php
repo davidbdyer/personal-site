@@ -31,6 +31,7 @@
 
 		<main>
 			<div class="project-grid--container" id="project-list--container" role="tablist" aria-label="project-list"></div>
+			<h2>Projects and Examples</h2>
 			<section class="project-details--container" id="project-details--container" aria-label="project-detail-list" hidden></section>
 		</main>
 
