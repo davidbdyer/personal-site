@@ -2,7 +2,7 @@
 	<h2>Hire Me</h2>
 	<form method="POST" action="scripts/mail.php" class="contact-form" name="contact-form" id="contact-form">
 		<label class="sr-only" for="name">name</label>
-		<input type="text" name="name" id="name" minlength="2" maxlength="20" placeholder="name" required autofocus />
+		<input type="text" name="name" id="name" minlength="2" maxlength="20" placeholder="name" required />
 
 		<label class="sr-only" for="email">email</label>
 		<input type="email" name="email" id="email" minlength="5" maxlength="50" placeholder="email" required />

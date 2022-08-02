@@ -4,6 +4,21 @@
 	display: grid;
 	gap: $spacing-01;
 
+	h2 {
+		@media (min-width: $sm) {
+			grid-column: span 3;
+		}
+		@media (min-width: $md) {
+			grid-column: span 4;
+		}
+		@media (min-width: $lg) {
+			grid-column: span 5;
+		}
+		@media (min-width: $xxl) {
+			grid-column: span 7;
+		}
+	}
+
 	@media (min-width: $sm) {
 		grid-template-columns: repeat(3, 1fr);
 	}
