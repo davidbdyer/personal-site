@@ -23,8 +23,8 @@
 					<li class="express">express</li>
 					<li class="ejs">ejs</li>
 					<li class="mongo">mongo</li>
-					<li class="mysql">MySQL</li>
-					<li class="postgre">PostgreSQL</li>
+					<li class="mysql">mysql</li>
+					<li class="postgre">postgresql</li>
 				</ul>
 			</section>
 		</header>
