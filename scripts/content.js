@@ -34,7 +34,7 @@ const portfolioData = [
 	{
 		title: 'Space Tourism',
 		description:
-			'I approached implementing this site using Javascript to toggle content visibility instead of creating a new HTML document for sub-page content. The content change controls for each page are done using the ARIA tablist. As a result, the page is screen reader-friendly. Based on a design by Frontend Mentor.',
+			'I approached implementing this site using Javascript to toggle content visibility instead of creating a new HTML document for sub-page content. The content change controls for each page are done using an ARIA tablist. As a result, the page is screen reader-friendly. Based on a design by Frontend Mentor.',
 		date: 'December 2021',
 		siteUrl: 'https://davidbdyer.github.io/space-tourism-website/',
 		gitUrl: 'https://github.com/davidbdyer/space-tourism-website',
