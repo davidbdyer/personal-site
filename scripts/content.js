@@ -55,6 +55,17 @@ const portfolioData = [
 		lang_lib: ['php', 'css', 'javascript'],
 	},
 	{
+		title: 'Notes',
+		description: `Web App for taking notes. The note data is stored in your browser's local storage and will persist between refreshes if local storage is not cleared. Notes support Markdown for text formatting.`,
+		date: 'Aug 2022',
+		siteUrl: 'https://davidbdyer.github.io/notes-app/',
+		gitUrl: 'https://github.com/davidbdyer/notes-app',
+		imgUrl: 'images/site-thumbs/notes.png',
+		imgAlt: 'Notes',
+		aria: 'notes--tab',
+		lang_lib: ['html', 'css', 'javascript'],
+	},
+	{
 		title: 'Password Generator',
 		description: `A web app to generate a complex password. Using HTML, SASS, and Javascript. The theme automatically changes based on the computer's dark or light mode. Settings are remembered between browser refreshes.`,
 		date: 'July 2022',
