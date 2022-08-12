@@ -253,6 +253,17 @@ const portfolioData = [
 		aria: 'double-verticle-slider--tab',
 		lang_lib: ['html', 'css', 'javascript'],
 	},
+	{
+		title: `David's Little Drawing App`,
+		description: 'Drawing Web App using canvas',
+		date: 'Aug 2022',
+		siteUrl: 'https://davidbdyer.github.io/drawing-app/',
+		gitUrl: 'https://github.com/davidbdyer/drawing-app',
+		imgUrl: 'images/site-thumbs/drawing-app.png',
+		imgAlt: 'drawing app',
+		aria: 'drawing-app--tab',
+		lang_lib: ['html', 'css', 'javascript'],
+	},
 ];
 
 // dynamically generate project grid

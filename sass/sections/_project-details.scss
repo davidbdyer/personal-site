@@ -11,7 +11,8 @@
 	transform: translate(-50%, -50%);
 	border: 1px solid $base;
 	background-color: $block;
-	box-shadow: 0 0 0 100vh color.change($block, $alpha: .7);
+	box-shadow: 0 0 0 100vh color.change($block, $alpha: .8);
+	z-index: 1;
 }
 
 .project-details {
