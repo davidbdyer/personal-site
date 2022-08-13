@@ -266,7 +266,7 @@ const portfolioData = [
 	},
 	{
 		title: `The Checker`,
-		description: 'Web App for checking for words in a body of text from a word bank',
+		description: 'Web App for checking for words in a body of text from a word bank.',
 		date: 'Aug 2022',
 		siteUrl: 'https://davidbdyer.github.io/does-it-contain/',
 		gitUrl: 'https://github.com/davidbdyer/does-it-contain',
