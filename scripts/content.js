@@ -45,9 +45,10 @@ const portfolioData = [
 	},
 	{
 		title: 'Pray Up',
-		description: 'A Website I designed and implemented for Pray Up ministries. The site is fully responsive and includes Facebook metadata.',
+		description: 'A website I designed and implemented for Pray Up ministries. The site is fully responsive and includes Facebook metadata.',
 		date: 'January 2021',
 		siteUrl: 'https://prayuplife.com',
+		figmaUrl: 'https://www.figma.com/file/hcTLtoG9YgN2dYTZcZ3gIh/PrayUp-Revision-2?node-id=0%3A1',
 		gitUrl: 'https://github.com/davidbdyer/prayup_website',
 		imgUrl: 'images/site-thumbs/prayup.jpg',
 		imgAlt: 'pray up site',
@@ -81,8 +82,8 @@ const portfolioData = [
 		description:
 			"Web App for keeping score of a ping pong game. The goal was to keep track of the score for the current game and a set of games. I also wanted the winner list to persist between site loads. The winner list is stored as a JSON array in the browser's local storage.",
 		date: 'December 2021',
-		siteUrl: 'https://davidbdyer.github.io/ping-pong_score_keeper/',
-		gitUrl: 'https://github.com/davidbdyer/ping-pong_score_keeper',
+		siteUrl: 'https://davidbdyer.github.io/ping-pong-score-keeper/',
+		gitUrl: 'https://github.com/davidbdyer/ping-pong-score-keeper',
 		imgUrl: 'images/site-thumbs/ping-pong-score-keeper.jpg',
 		imgAlt: 'ping pong score keeper',
 		aria: 'score-keeper--tab',
