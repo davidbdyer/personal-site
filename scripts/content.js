@@ -7,7 +7,8 @@ const portfolioData = [
 		description:
 			'Web App for finding, rating, and reviewing campgrounds. The site is dynamically generated using EJS, EJS Mate, and MongoDB. Flash is used for error and success messages. User input is validated using Joi, sanitize-html, and express-mongo-sanitize. Helmet is used for added security. User logins are implemented using passport and express-session for session data. Cloudinary is used for image storage and manipulations. Mapbox is used for custom interactive maps. The design is based on a project from <a href="https://www.udemy.com/share/101W923@0AHFLcM1tVaGQceAH4TxemyQ-r5T4YPxJg1AW3GjmKdmgXhCa0JxOIeAvNWLXTZ6/">Colt Steele Web Developer Bootcamp</a>.',
 		date: 'September 2021',
-		siteUrl: 'https://damp-sierra-93991.herokuapp.com/',
+		siteUrl: 'https://yelpcamp.daviddyer.me',
+		gitUrl: 'https://github.com/davidbdyer/YelpCamp',
 		imgUrl: 'images/site-thumbs/yelpcamp.jpg',
 		imgAlt: 'Yelp Camp',
 		aria: 'yelp-camp--tab',
