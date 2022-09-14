@@ -3,10 +3,10 @@
 .icon {
 	fill: $font-clr;
 	width: 1em;
-	transition: opacity 500ms ease;
+	transition: filter 500ms ease;
 
 	&:hover {
-		opacity: .8;
+		filter: opacity(.5);
 	}
 }
 
