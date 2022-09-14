@@ -12,7 +12,7 @@
 
 			<section class="introduction" aria-label="introduction">
 				<h2 class="sr-only">Introduction</h2>
-				<p>Hi, I'm a Full Stack Developer. I like to code things and problem solve. I've been gifted with a higher-than-average IQ, meaning I learn quickly and understand things more deeply. I've been building websites for bands, churches, college students, and faculty for over a decade. I enjoy it. It's like playing a video game that never gets old. I started as an IT professional and teaching assistant, administering multiple labs and servers for the art department of a university. That experience of being emersed in art has gifted me with a solid understanding of visual and user experience design principles.</p>
+				<p>Hi, I'm a Full Stack Developer. I like to code things and problem solve. I've been gifted with a higher-than-average IQ, meaning I learn quickly and understand things more deeply. I've built websites for bands, churches, college students, and faculty for over a decade. I enjoy it. It's like playing a video game that never gets old. I started as an IT professional and teaching assistant, administering multiple labs and servers for the art department of a university. That experience of being emersed in art has gifted me with a solid understanding of visual and user experience design principles.</p>
 				<ul class="lang-list" role="list">
 					<li class="html">html</li>
 					<li class="css">css</li>
