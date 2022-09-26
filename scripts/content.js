@@ -1,6 +1,3 @@
-const projectList = document.getElementById('project-list--container');
-const detailList = document.getElementById('project-details--container');
-
 const portfolioData = [
 	{
 		title: 'Yelp Camp',
@@ -46,7 +43,8 @@ const portfolioData = [
 	},
 	{
 		title: 'Pray Up',
-		description: 'A website I designed and implemented for Pray Up ministries. The site is fully responsive and includes Facebook metadata.',
+		description:
+			'A website I designed and implemented for Pray Up ministries. The site is fully responsive and includes Facebook metadata.',
 		date: 'January 2021',
 		siteUrl: 'https://prayuplife.com',
 		figmaUrl: 'https://www.figma.com/file/hcTLtoG9YgN2dYTZcZ3gIh/PrayUp-Revision-2?node-id=0%3A1',
@@ -115,7 +113,8 @@ const portfolioData = [
 	},
 	{
 		title: 'Calculator',
-		description: 'A Calculator web app. The site is fully responsive and includes an iOS icon. Based on a design by Frontend Mentor.',
+		description:
+			'A Calculator web app. The site is fully responsive and includes an iOS icon. Based on a design by Frontend Mentor.',
 		date: 'May 2021',
 		siteUrl: 'https://davidbdyer.github.io/calculator-app-main/',
 		gitUrl: 'https://github.com/davidbdyer/calculator-app-main',
@@ -147,7 +146,8 @@ const portfolioData = [
 	},
 	{
 		title: 'Github Profile Search',
-		description: 'Search Github for a user and display their bio, stats, and 10 most recent repos. Based on a project from the "50 Projects In 50 Days" Udemy course.',
+		description:
+			'Search Github for a user and display their bio, stats, and 10 most recent repos. Based on a project from the "50 Projects In 50 Days" Udemy course.',
 		date: 'July 2022',
 		siteUrl: 'https://davidbdyer.github.io/github-profile-search/',
 		gitUrl: 'https://github.com/davidbdyer/github-profile-search',
@@ -179,7 +179,8 @@ const portfolioData = [
 	// },
 	{
 		title: 'Game Pad',
-		description: 'A website I implemented and designed to showcase an app I designed for a UX class.',
+		description:
+			'A website I implemented and designed to showcase an app I designed for a UX class.',
 		date: 'November 2017',
 		siteUrl: 'https://davidbdyer.github.io/GamePad/',
 		gitUrl: 'https://github.com/davidbdyer/GamePad',
@@ -228,14 +229,16 @@ const portfolioData = [
 			'A simple expanding card-based menu. The site is fully responsive, has Facebook and Twitter metadata, iOS theme, and iOS icon. Based on a project from the "50 Projects In 50 Days" Udemy course.',
 		date: 'January 2022',
 		siteUrl: 'https://www.daviddyer.me/portfolio-sites/fifty-projects/expanding-cards/',
-		imgUrl: 'https://www.daviddyer.me/portfolio-sites/fifty-projects/expanding-cards/assets/icon.jpg',
+		imgUrl:
+			'https://www.daviddyer.me/portfolio-sites/fifty-projects/expanding-cards/assets/icon.jpg',
 		imgAlt: 'expanding cards',
 		aria: 'expanding-cards--tab',
 		lang_lib: ['html', 'sass', 'javascript'],
 	},
 	{
 		title: 'Random Choice',
-		description: 'Randomly picks a value from a comma-separated list entered into a textarea element. Based on a project from the "50 Projects In 50 Days" Udemy course.',
+		description:
+			'Randomly picks a value from a comma-separated list entered into a textarea element. Based on a project from the "50 Projects In 50 Days" Udemy course.',
 		date: 'February 2022',
 		siteUrl: 'https://davidbdyer.github.io/random-choice/',
 		gitUrl: 'https://github.com/davidbdyer/random-choice',
@@ -291,6 +294,8 @@ const portfolioData = [
 ];
 
 // dynamically generate project grid
+const projectList = document.getElementById('project-list--container');
+const detailList = document.getElementById('project-details--container');
 
 const createProjectList = () => {
 	for (let site in portfolioData) {

@@ -1,18 +1,18 @@
-@use "sass:color";
+@use 'sass:color';
 @use '../abstracts' as *;
 
 .project-details--container {
 	position: fixed;
 	top: calc(50vh - $spacing-01);
 	left: calc(50vw - $spacing-01);
+	transform: translate(-50%, -50%);
+	z-index: 1;
+	box-shadow: 0 0 0 100vh color.change($block, $alpha: 0.8);
+	border: 1px solid $base;
+	background-color: $block;
 	width: 100%;
 	max-width: calc(100% - $spacing-01 * 2);
 	max-height: min(100%, 100vh - $spacing-01);
-	transform: translate(-50%, -50%);
-	border: 1px solid $base;
-	background-color: $block;
-	box-shadow: 0 0 0 100vh color.change($block, $alpha: .8);
-	z-index: 1;
 }
 
 .project-details {

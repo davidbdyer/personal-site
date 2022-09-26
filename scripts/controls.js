@@ -16,13 +16,15 @@ let detailsOpen = false;
 let scrollPosition;
 
 // Detail Panel Controls
+const transitionTime = '250ms';
+
 const hideContent = (parent, query) => {
-	parent.querySelectorAll(query).forEach((item) => item.setAttribute('hidden', true));
+	parent.querySelectorAll(query).forEach(item => item.setAttribute('hidden', true));
 };
 
 const showContent = (parent, query) => {
 	parent.querySelector(query).removeAttribute('hidden');
-	parent.querySelector(query).style.animation = 'fade-in 500ms';
+	parent.querySelector(query).style.animation = `fade-in ${transitionTime}`;
 };
 
 const closeCtrl = () => {
@@ -34,7 +36,7 @@ const closeCtrl = () => {
 	};
 
 	//adds animation and event listner for animation end.
-	detailsSection.style.animation = 'fade-out 1s';
+	detailsSection.style.animation = `fade-out ${transitionTime}`;
 	detailsSection.addEventListener('animationend', hide);
 
 	// removes position fixed and top, sets scroll to position variable, part of preventing background scrolling
@@ -47,12 +49,12 @@ const closeCtrl = () => {
 };
 
 const toggleClassInArrayItems = (array, className) => {
-	array.forEach((item) => {
+	array.forEach(item => {
 		item.classList.toggle(className);
 	});
 };
 
-const changeTabPane = (e) => {
+const changeTabPane = e => {
 	const targetTab = e.target;
 	const targetPanel = targetTab.getAttribute('aria-controls');
 
@@ -68,8 +70,8 @@ const changeTabPane = (e) => {
 };
 
 // Event Listeners
-cardArray.forEach((elm) => {
-	elm.addEventListener('click', (e) => {
+cardArray.forEach(elm => {
+	elm.addEventListener('click', e => {
 		if (detailsOpen == false) {
 			changeTabPane(e);
 			toggleClassInArrayItems(cardArray, 'card-grow');
@@ -78,8 +80,8 @@ cardArray.forEach((elm) => {
 	});
 });
 
-cardArray.forEach((elm) => {
-	elm.addEventListener('keydown', (e) => {
+cardArray.forEach(elm => {
+	elm.addEventListener('keydown', e => {
 		if (e.code === 'Space') {
 			if (detailsOpen == false) {
 				changeTabPane(e);
@@ -90,6 +92,6 @@ cardArray.forEach((elm) => {
 	});
 });
 
-detailsCloseCtrl.forEach((elm) => {
+detailsCloseCtrl.forEach(elm => {
 	elm.addEventListener('click', closeCtrl);
 });
