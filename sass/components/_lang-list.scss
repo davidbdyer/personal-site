@@ -25,7 +25,9 @@
 	color: $javascript;
 }
 
-.node {
+.node,
+.chalk,
+.jsdom {
 	color: $nodejs;
 }
 
@@ -51,6 +53,10 @@
 
 .cloudinary {
 	color: $cloudinary;
+}
+
+.mocha {
+	color: $mocha;
 }
 
 .lang-list {
