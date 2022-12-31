@@ -4,6 +4,7 @@
 
 	<!-- scripts -->
 	<script src="scripts/content.js" defer></script>
+	<script src="scripts/content-builder.js" defer></script>
 	<script src="scripts/controls.js" defer></script>
 </head>
 <body>
@@ -12,8 +13,9 @@
 
 			<section class="introduction" aria-label="introduction">
 				<h2 class="sr-only">Introduction</h2>
-				<p>Hi, I'm a Full Stack Developer. I like to code things, and problem solve. I enjoy it. It's like playing a video game that never gets old. I've been gifted with a higher-than-average IQ, meaning I learn quickly and understand things more deeply. I also possess a solid understanding of visual and user experience design but lack the passion to author well-researched visual designs. I will catch and correct design errors and enjoy collaborating in the design research process.</p>
-				<p>I started as an IT professional and teaching assistant, administering multiple labs and servers for the art department of a university. I've built websites for bands, churches, college students, and faculty for over a decade.</p>
+				<p>Hi,<br> I am a Full Stack Developer. My favorite language and primary focus currently is Javascript, both Front-End in the browser and Back-End using Node. I am well-versed in CSS/SASS, Javascript, and HTML and I regularly use PHP, MySQL, and Java. Along with version control systems like git, various build systems, and development patterns commonly used with those languages.<p>
+
+				<p>I have worked with computer systems and technology my entire adult life, and due to my highly analytical and creative nature, I excel at problem solving. Sixteen years of my career were spent working with and helping teach artists and designers in the Division of Art + Design at a university. I studied Computer Science and Media Design while working at the university. I have a solid understanding of UX and Visual Design principles alongside my technical abilities. </p>
 				<ul class="lang-list" role="list">
 					<li class="html">html</li>
 					<li class="css">css</li>
