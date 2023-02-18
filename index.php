@@ -13,9 +13,10 @@
 
 			<section class="introduction" aria-label="introduction">
 				<h2 class="sr-only">Introduction</h2>
-				<p>Hi,<br> I am a Full Stack Developer. My favorite language and primary focus currently is Javascript, both Front-End in the browser and Back-End using Node. I am well-versed in CSS/SASS, Javascript, and HTML and I regularly use PHP, MySQL, and Java. Along with version control systems like git, various build systems, and development patterns commonly used with those languages.<p>
+				<p>Hi, I am a Full Stack Developer well-versed in CSS/SASS, Javascript, HTML, PHP, and SQL, alongside version control systems like git, build systems, and development patterns. I am a highly analytical, creative problem solver passionate about crafting intuitive, enjoyable user experiences for everyone, including those with disabilities. I possess a solid understanding of UX/UI and visual design principles and have over 20yrs of experience working with technology and creating solutions for user needs.<p>
 
-				<p>I have worked with computer systems and technology my entire adult life, and due to my highly analytical and creative nature, I excel at problem solving. Sixteen years of my career were spent working with and helping teach artists and designers in the Division of Art + Design at a university. I studied Computer Science and Media Design while working at the university. I have a solid understanding of UX and Visual Design principles alongside my technical abilities. </p>
+				<p>Furthermore, I have worked with computer systems and technology my entire adult life, and due to my highly analytical and creative nature, I excel at problem solving. Sixteen years of my career were spent working with and helping teach artists and designers in the Division of Art + Design at Indiana Wesleyan University. I studied Computer Science and Media Design while working at Indiana Wesleyan University. I have a solid understanding of UX and Visual Design principles alongside my technical abilities.</p>
+
 				<ul class="lang-list" role="list">
 					<li class="html">html</li>
 					<li class="css">css</li>

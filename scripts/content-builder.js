@@ -18,6 +18,7 @@ const createProjectList = () => {
 		image.classList.add('card-img');
 		image.src = portfolioData[project].imgUrl;
 		image.alt = portfolioData[project].title;
+		image.loading = 'lazy';
 		image.setAttribute('aria-controls', portfolioData[project].aria);
 
 		// Add Items to DOM
