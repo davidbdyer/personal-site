@@ -280,4 +280,14 @@ const portfolioData = [{
 		aria: 'the-checker--tab',
 		lang_lib: ['html', 'css', 'javascript'],
 	},
+	{
+		title: `Testimonial Switcher`,
+		description: 'Testimonial Switcher Widget. Based on a project from the "50 Projects In 50 Days" Udemy course.',
+		date: 'Aug 2022',
+		siteUrl: 'https://www.daviddyer.me/portfolio-sites/testimonial-box-switcher/',
+		imgUrl: 'images/site-thumbs/testimonial-box-switcher.png',
+		imgAlt: 'testimonial switcher',
+		aria: 'testimonial-switcher--tab',
+		lang_lib: ['html', 'css', 'javascript'],
+	},
 ];
