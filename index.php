@@ -39,7 +39,7 @@
 				<h2>Projects and Examples</h2>
 				<div class="project-grid--container" id="project-list--container" role="tablist" aria-label="project-list"></div>
 			</div>
-			<section class="project-details--container" id="project-details--container" aria-label="project-detail-list" hidden></section>
+			<section class="project-details--container container" id="project-details--container" aria-label="project-detail-list" hidden></section>
 
 			<?php include 'partials/contact-form.php'; ?>
 		</main>

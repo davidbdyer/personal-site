@@ -31,7 +31,7 @@ const createProjectList = () => {
 const createDetailList = () => {
 	for (const project in portfolioData) {
 		// Create Project Details
-		const projectDetail = document.createElement('article');
+		const projectDetail = document.createElement('div');
 		projectDetail.classList.add('project-details');
 		projectDetail.id = portfolioData[project].aria;
 		// projectDetail.setAttribute('role', 'tab');

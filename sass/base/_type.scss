@@ -10,7 +10,7 @@ h2 {
 	font-size: $sub-title-fs;
 	font-family: $sub-title-ff;
 	font-weight: $sub-title-fw;
-	margin-bottom: $spacing-01;
+	margin-bottom: var(--mb, $spacing-01);
 }
 
 p {
