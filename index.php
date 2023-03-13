@@ -8,7 +8,7 @@
 	<script src="scripts/controls.js" defer></script>
 </head>
 <body>
-			<header class="primary-header--container" aria-label="primary-header">
+			<header class="primary-header--container container" aria-label="primary-header">
 			<?php include 'partials/primary-nav.php'; ?>
 
 			<section class="introduction" aria-label="introduction">
@@ -17,7 +17,7 @@
 
 				<p>Furthermore, I have worked with computer systems and technology my entire adult life, and due to my highly analytical and creative nature, I excel at problem solving. Sixteen years of my career were spent working with and helping teach artists and designers in the Division of Art + Design at Indiana Wesleyan University. I studied Computer Science and Media Design while working at Indiana Wesleyan University. I have a solid understanding of UX and Visual Design principles alongside my technical abilities.</p>
 
-				<ul class="lang-list" role="list">
+				<ul class="lang-list">
 					<li class="html">html</li>
 					<li class="css">css</li>
 					<li class="sass">sass</li>
@@ -35,13 +35,14 @@
 		</header>
 
 		<main>
-				<div class="project-grid--container" id="project-list--container" role="tablist" aria-label="project-list">
-					<h2>Projects and Examples</h2>
-				</div>
+			<div class="container">
+				<h2>Projects and Examples</h2>
+				<div class="project-grid--container" id="project-list--container" role="tablist" aria-label="project-list"></div>
+			</div>
 			<section class="project-details--container" id="project-details--container" aria-label="project-detail-list" hidden></section>
-		</main>
 
-		<?php include 'partials/contact-form.php'; ?>
+			<?php include 'partials/contact-form.php'; ?>
+		</main>
 
 		<footer>
 			<div class="copyright"> David Dyer &copy; <script>

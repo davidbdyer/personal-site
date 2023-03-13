@@ -1,6 +1,6 @@
 <?php $currentPage =	basename($_SERVER['PHP_SELF'], ".php"); ?>
 
-<nav class="primary-nav" role="navigation" aria-label="primary">
+<nav class="primary-nav" aria-label="primary">
 	<h1>David Dyer</h1>
 
 	<div class="icon-group">

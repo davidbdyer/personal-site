@@ -1,6 +1,6 @@
 @use '../abstracts' as *;
 
-[class*='-container'] {
+.container {
 	max-width: $container-width;
 	margin-inline: $spacing-01;
 	margin-top: $spacing-01;

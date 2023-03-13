@@ -34,7 +34,7 @@ const createDetailList = () => {
 		const projectDetail = document.createElement('article');
 		projectDetail.classList.add('project-details');
 		projectDetail.id = portfolioData[project].aria;
-		projectDetail.setAttribute('role', 'tabpanel');
+		// projectDetail.setAttribute('role', 'tab');
 		projectDetail.setAttribute('hidden', true);
 		projectDetail.innerHTML = `<svg class="close-ctrl" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
 			<g>
@@ -52,7 +52,7 @@ const createDetailList = () => {
 		detailTitle.textContent = portfolioData[project].title;
 
 		// Create Project Date
-		const detailDate = document.createElement('date');
+		const detailDate = document.createElement('time');
 		detailDate.textContent = portfolioData[project].date;
 
 		// Create Project Body Container
@@ -86,7 +86,6 @@ const createDetailList = () => {
 		// Create Language List
 		const detailLangList = document.createElement('ul');
 		detailLangList.classList.add('lang-list');
-		detailLangList.setAttribute('role', 'list');
 
 		// ---------------------------
 		// ADD SECTION
