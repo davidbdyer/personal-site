@@ -10,11 +10,7 @@
 			empty($_POST['message']) ||
 			!empty($_POST['website'])
 		){
-			echo "Error: all fields are required";
-		} elseif (
-			preg_match('/http|www/i',$_POST['message'])
-		){
-			echo "Error: URLS not allowed";
+			header('Location: https://daviddyer.me');
 		} else {
 			$name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 			$email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);

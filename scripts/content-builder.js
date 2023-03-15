@@ -34,7 +34,6 @@ const createDetailList = () => {
 		const projectDetail = document.createElement('div');
 		projectDetail.classList.add('project-details');
 		projectDetail.id = portfolioData[project].aria;
-		// projectDetail.setAttribute('role', 'tab');
 		projectDetail.setAttribute('hidden', true);
 		projectDetail.innerHTML = `<svg class="close-ctrl" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
 			<g>

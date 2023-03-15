@@ -1,5 +1,5 @@
 const body = document.body;
-const main = document.querySelector('main');
+const main = body.querySelector('main');
 // project grid
 const cardArray = main.querySelectorAll('.card');
 const projectGrid = main.querySelector('.project-grid');

@@ -15,6 +15,6 @@
 
 		<input type="text" id="website" name="website" hidden/>
 
-		<button class="btn">Send</button>
+		<button type="submit" class="btn">Send</button>
 	</form>
 </div>
