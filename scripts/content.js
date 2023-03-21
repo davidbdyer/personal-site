@@ -51,6 +51,16 @@ const portfolioData = [{
 		lang_lib: ['php', 'css', 'javascript'],
 	},
 	{
+		title: `Results Summary Component`,
+		description: 'Web Component that displays results from a test. For this example the data is fetched from a JSON file using Fetch API.',
+		date: 'March 2023',
+		siteUrl: 'https://www.daviddyer.me/portfolio-sites/results-summary/',
+		imgUrl: 'images/site-thumbs/results-summary.png',
+		imgAlt: 'result summary',
+		aria: 'results-summary--tab',
+		lang_lib: ['html', 'css', 'javascript', 'fetch'],
+	},
+	{
 		title: `Creative Section Shapes`,
 		description: 'Creative section shapes using CSS. The Spike section is done using a mask-image and svg file. The wavy section uses a radial gradient as the mask.',
 		date: 'March 2023',
