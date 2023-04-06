@@ -51,6 +51,16 @@ const portfolioData = [{
 		lang_lib: ['php', 'css', 'javascript'],
 	},
 	{
+		title: `Accordion Demo`,
+		description: 'A demo of an accessibility friendly accordion.',
+		date: 'April 2023',
+		siteUrl: 'https://www.daviddyer.me/portfolio-sites/accordion/',
+		imgUrl: 'images/site-thumbs/accordion-demo.png',
+		imgAlt: 'accordion demo',
+		aria: 'accordion--tab',
+		lang_lib: ['html', 'sass', 'javascript'],
+	},
+	{
 		title: `Results Summary Component`,
 		description: 'Web Component that displays results from a test. For this example the data is fetched from a JSON file using Fetch API.',
 		date: 'March 2023',
