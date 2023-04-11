@@ -51,6 +51,17 @@ const portfolioData = [{
 		lang_lib: ['php', 'css', 'javascript'],
 	},
 	{
+		title: `Exchange Rate Calculator`,
+		description: `The website pulls the current exchange rate using fetch from "open.exchangerate-api". I based this on a project from "20 Web Projects With Vanilla JavaScript", Udemy course. The original project doesn't follow best accessibility practices by removing outlines, insufficient contrast on text, and no labels on inputs. I used the async await syntax with fetch instead of .then and textContent instead of innerText for updating element text. I used SASS instead of CSS and took a mobile-first approach. Recreated the logo as an SVG, then created a sprit with all SVGs.`,
+		date: 'April 2023',
+		siteUrl: 'https://www.daviddyer.me/portfolio-sites/exchange-rate-calculator/',
+		gitUrl: 'https://github.com/davidbdyer/exchange-rate-calculator',
+		imgUrl: 'images/site-thumbs/exchange-rate-calculator.png',
+		imgAlt: 'Exchange Rate Calculator',
+		aria: 'exchange-rate-calculator--tab',
+		lang_lib: ['html', 'sass', 'javascript', 'fetch'],
+	},
+	{
 		title: `Accordion Demo`,
 		description: 'A demo of an accessibility friendly accordion.',
 		date: 'April 2023',
