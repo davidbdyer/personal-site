@@ -51,6 +51,16 @@ const portfolioData = [{
 		lang_lib: ['php', 'css', 'javascript'],
 	},
 	{
+		title: `PX to REM Extension for Nova`,
+		description: `PX to REM makes it easy to convert PX to REM in CSS and SASS files.`,
+		date: 'April 2023',
+		gitUrl: 'https://github.com/davidbdyer/PX-to-REM-nova-extension',
+		imgUrl: 'images/site-thumbs/px-to-rem.png',
+		imgAlt: 'PX to REM',
+		aria: 'px-to-rem--tab',
+		lang_lib: ['javascript'],
+	},
+	{
 		title: `Hangman`,
 		description: `The classic game Hangman. The words are pulled from random-word-api.herokuapp.com. So far I've not encoutered a repeated of a word.`,
 		date: 'April 2023',
