@@ -54,6 +54,7 @@ const portfolioData = [{
 		title: `PX to REM Extension for Nova`,
 		description: `PX to REM makes it easy to convert PX to REM in CSS and SASS files.`,
 		date: 'April 2023',
+		siteUrl: "https://extensions.panic.com/extensions/me.daviddyer/me.daviddyer.PXtoREM/",
 		gitUrl: 'https://github.com/davidbdyer/PX-to-REM-nova-extension',
 		imgUrl: 'images/site-thumbs/px-to-rem.png',
 		imgAlt: 'PX to REM',
