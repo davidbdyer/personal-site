@@ -2,11 +2,8 @@
 <html lang="en">
 <?php include 'partials/head.php'; ?>
 
-	<!-- scripts -->
-	<script src="./scripts/scripts-dist.js" defer></script>
-	<!-- <script src="scripts/content.js" defer></script>
-	<script src="scripts/content-builder.js" defer></script>
-	<script src="scripts/controls.js" defer></script> -->
+	<!-- page specific scripts -->
+	<script src="./scripts/script-min.js" defer></script>
 </head>
 <body>
 			<header class="primary-header--container container" aria-label="primary-header">
