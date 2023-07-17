@@ -11,9 +11,18 @@
 
 			<section class="introduction" aria-label="introduction">
 				<h2 class="sr-only">Introduction</h2>
-				<p>Hi, I am a Full Stack Developer well-versed in CSS/SASS, Javascript, HTML, PHP, and SQL, alongside version control systems like git, build systems, and development patterns. I am a highly analytical, creative problem solver passionate about crafting intuitive, enjoyable user experiences for everyone, including those with disabilities. I possess a solid understanding of UX/UI and visual design principles and have over 20yrs of experience working with technology and creating solutions for user needs.<p>
-
-				<p>Furthermore, I have worked with computer systems and technology my entire adult life, and due to my highly analytical and creative nature, I excel at problem solving. Sixteen years of my career were spent working with and helping teach artists and designers in the Division of Art + Design at Indiana Wesleyan University. I studied Computer Science and Media Design while working at Indiana Wesleyan University. I have a solid understanding of UX and Visual Design principles alongside my technical abilities.</p>
+				
+				<p>I am a Full Stack Developer knowledgeable in CSS/SASS, Javascript, HTML, PHP,
+				SQL, Nodejs, and Java. I am passionate about crafting intuitive, enjoyable user
+				experiences for everyone, including those with disabilities. I have a solid
+				understanding of UX/UI and visual design principles and over 20yrs of experience
+				working with technology and creating solutions for user needs. Sixteen years of
+				my career were spent working with and helping teach artists and designers in the
+				Division of Art + Design at Indiana Wesleyan University. Where I studied
+				Computer Science and Media Design, giving me a unique balance of technical and
+				design skills.</p>
+				
+				<p>I am exceptionally gifted concerning technology, and I love Web Development.</p>
 
 				<ul class="lang-list">
 					<li class="html">html</li>
