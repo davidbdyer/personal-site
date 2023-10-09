@@ -1,5 +1,6 @@
 .DS_Store
 .nova/
+.idea/
 .htaccess
 /portfolio_sites/GamePad/
 prepros.config

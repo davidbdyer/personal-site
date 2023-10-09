@@ -28,6 +28,16 @@ const portfolioData = [{
 		],
 	},
 	{
+		title: 'Pray Up Newsletter Signup',
+		description: 'Custom signup form for Pray Up newsletter.',
+		date: 'Sept 2023',
+		siteUrl: 'https://signup.prayuplife.com',
+		imgUrl: 'images/site-thumbs/prayup-newsletter-signup.png',
+		imgAlt: 'Pray Up Newsletter Signup',
+		aria: 'pray-up-newsletter-signup--tab',
+		lang_lib: ['php', 'css', 'javascript', 'mysql'],
+	},
+	{
 		title: 'Pray Up',
 		description: 'A website I designed and implemented for Pray Up ministries. The site is fully responsive and includes Facebook metadata.',
 		date: 'January 2021',

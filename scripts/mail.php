@@ -1,7 +1,7 @@
 <?php
 	if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-		include 'address.php';
+		require 'address.php';
 
 		if(
 			empty($_POST['name']) ||
@@ -20,7 +20,7 @@
 			// header
 			$headers = "From: $email\r\n";
 			$headers .= "Reply-To: $email\r\n";
-			$headers .= "X-Mailer: PHP/".phpversion();
+			$headers = "Content-type: text/plain; charset=UTF-8\r\n";
 
 			// message
 			$formcontent="From: $name \n Email: $email \n Subject: $subject \n Message: $message";

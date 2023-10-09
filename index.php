@@ -13,17 +13,15 @@
 				<h2 class="sr-only">Introduction</h2>
 				
 				<p>I am a Full Stack Developer knowledgeable in CSS/SASS, Javascript, HTML, PHP,
-				SQL, Nodejs, and Java. I am passionate about crafting intuitive, enjoyable user
-				experiences for everyone, including those with disabilities. I have a solid
-				understanding of UX/UI and visual design principles and over 20yrs of experience
-				working with technology and creating solutions for user needs. Sixteen years of
-				my career were spent working with and helping teach artists and designers in the
-				Division of Art + Design at Indiana Wesleyan University. Where I studied
-				Computer Science and Media Design, giving me a unique balance of technical and
-				design skills.</p>
+				SQL, Nodejs, and Java. I am brilliant when it comes to technology, but I'm
+				humble. I am passionate about crafting intuitive, enjoyable user experiences for
+				everyone, including those with disabilities. I have a solid understanding of
+				UX/UI and visual design principles and over 20yrs of experience working with
+				technology and creating solutions for user needs. Sixteen years of my career
+				were spent working with and helping teach artists and designers in the Division
+				of Art + Design at a University. Where I studied Computer Science and Media
+				Design, giving me a unique balance of technical and design skills</p>
 				
-				<p>I am exceptionally gifted concerning technology, and I love Web Development.</p>
-
 				<ul class="lang-list">
 					<li class="html">html</li>
 					<li class="css">css</li>
