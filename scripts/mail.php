@@ -1,32 +1,55 @@
 <?php
-	if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+	require_once './partials/config_session.inc.php';
 
-		require 'address.php';
+	require 'address.php';
 
-		if(
-			empty($_POST['name']) ||
-			empty($_POST['email']) ||
-			empty($_POST['subject']) ||
-			empty($_POST['message']) ||
-			!empty($_POST['website'])
-		){
-			header('Location: https://daviddyer.me');
-		} else {
-			$name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
-			$email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
-			$subject = filter_input(INPUT_POST, 'subject', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
-			$message = filter_input(INPUT_POST, 'message', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+	if (
+		isset($_POST['name']) ||
+		isset($_POST['email']) ||
+		isset($_POST['subject']) ||
+		isset($_POST['message']) ||
+		isset($_POST['token'])
+	) {
+		$name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+		$email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
+		$subject = filter_input(INPUT_POST, 'subject', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+		$message = filter_input(INPUT_POST, 'message', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 
-			// header
-			$headers = "From: $email\r\n";
-			$headers .= "Reply-To: $email\r\n";
-			$headers = "Content-type: text/plain; charset=UTF-8\r\n";
-
-			// message
-			$formcontent="From: $name \n Email: $email \n Subject: $subject \n Message: $message";
-
-			mail($to, $subject, $formcontent, $headers);
-
-			header('Location: https://daviddyer.me');
+		if (strlen($name) < 2 || strlen($name) > 30) {
+			session_destroy();
+			exit;
 		}
+		if (strlen($subject) < 4 || strlen($subject) > 50) {
+			session_destroy();
+			exit;
+		}
+		if (strlen($message) < 200) {
+			session_destroy();
+			exit;
+		}
+		if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+			session_destroy();
+			exit;
+		}
+		if ($_POST['token']!== $_SESSION['signup_token']) {
+			session_destroy();
+			exit;
+		}
+
+		// header
+		$headers = "From: $email\r\n";
+		$headers .= "Reply-To: $email\r\n";
+		$headers = "Content-type: text/plain; charset=UTF-8\r\n";
+
+		// message
+		$formcontent = "From: $name \n Email: $email \n Subject: $subject \n Message: $message";
+
+		mail($to, $subject, $formcontent, $headers);
+
+		header('Location: https://daviddyer.me');
+	} else {
+		header('Location: https://daviddyer.me');
+		exit;
 	}
+}
