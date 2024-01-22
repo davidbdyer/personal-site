@@ -4,7 +4,7 @@
 
 	session_set_cookie_params([
 			'lifetime' => 1800,
-			'domain' => 'localhost',
+			'domain' => 'daviddyer.me',
 			'path' => '/',
 			'secure' => true,
 			'httponly' => true,
