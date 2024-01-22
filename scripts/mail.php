@@ -1,6 +1,6 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-	require_once './partials/config_session.inc.php';
+	require_once '../partials/config_session.inc.php';
 
 	require 'address.php';
 
@@ -18,22 +18,27 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 		if (strlen($name) < 2 || strlen($name) > 30) {
 			session_destroy();
+			header('Location: https://daviddyer.me');
 			exit;
 		}
 		if (strlen($subject) < 4 || strlen($subject) > 50) {
 			session_destroy();
+			header('Location: https://daviddyer.me');
 			exit;
 		}
 		if (strlen($message) < 200) {
 			session_destroy();
+			header('Location: https://daviddyer.me');
 			exit;
 		}
 		if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 			session_destroy();
+			header('Location: https://daviddyer.me');
 			exit;
 		}
-		if ($_POST['token']!== $_SESSION['signup_token']) {
+		if ($_POST['token'] !== $_SESSION['signup_token']) {
 			session_destroy();
+			header('Location: https://daviddyer.me');
 			exit;
 		}
 

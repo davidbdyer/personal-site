@@ -1,4 +1,5 @@
 <?php
+require_once 'partials/config_session.inc.php';
 //  Security token generation.
 $token = "";
 try {
